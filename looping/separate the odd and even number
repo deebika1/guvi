@@ -1,0 +1,36 @@
+# display the odd and even elements in the list and sum of the even and odd digits in the list
+#all[] list is used to store the all the elements
+#even[]  is used to store the even elements present in the list
+#odd[] is used to store the odd elements peresent in the list
+#sume is used to sum the even elements persent in even list
+#sumo is used to sum the odd elements peresent in odd list
+all=[]
+even=[]
+odd=[]
+sume=0
+sumo=0
+newe=[]
+newo=[]
+len1=int(input("enter the no of elements"))
+for i in range(0,len1):
+     a=int(input("enter the elements"))
+     all.append(a)
+print(all)
+for j in all:
+    if(j%2==0):
+     even.append(j)
+    else:
+     odd.append(j)
+print("even",even)
+print("odd",odd)
+for k in even:
+    sume=sume+k
+print("sum of the even elements in the list",sume)
+newe.append(sume)
+print("even digit sum list",newe)
+for l in odd:
+    sumo=sumo+l
+print("sum of the odd elements in the list",sumo)
+newo.append(sumo)
+print("odd digit sum list",newo)
+ 
