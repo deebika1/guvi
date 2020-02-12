@@ -1,0 +1,14 @@
+# to display the grade of the mark
+# a is the mark of the given subject
+
+a=int(input("enter the mark of an subject"))
+if(a>=90):
+  print("A Grade")
+elif(a>=70 and a<=89):
+  print("B Grade")
+elif(a>=50 and a<=69):
+  print("C Grade")
+elif(a>=30 and a<=49):
+  print("D Grade")
+else:
+  print("F Grade")
