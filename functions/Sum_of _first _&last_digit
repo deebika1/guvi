@@ -1,0 +1,16 @@
+#sum of the first and last digit of the given number
+#all=[] the list is empty
+#c is used to calculate the count the digit of the given number
+def sum(n):
+    c=0
+    all=[]
+    while(n>0):
+        t=int(n%10)
+        c=c+1
+        all.append(t)
+        n=int(n//10)
+        sum1=all[0]+all[c-1]
+    print(sum1)
+    return sum1
+n=int(input("enter the number"))
+res=sum(n)
