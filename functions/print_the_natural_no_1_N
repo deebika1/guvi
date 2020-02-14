@@ -1,0 +1,7 @@
+# print the natural number from 1 to N by using function
+def natural(n):
+ for i in range(1,n+1):
+  print(i)
+# n is the input get form the user 
+n=int(input("enter the number"))
+natural(n)
