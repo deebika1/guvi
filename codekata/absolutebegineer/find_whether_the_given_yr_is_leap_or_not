@@ -1,0 +1,10 @@
+# program which is used to display whether it is leapyear or not
+def year(yr):
+ if(yr%4==0):
+   print("Y")
+ else:
+   print("N")
+# get the year from the user
+yr=int(input())
+year(yr)
+
