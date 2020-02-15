@@ -1,0 +1,11 @@
+# sum of all eeven numbers from 1 to N
+def even(num):
+ s=0
+ for i in range(1,num+1):
+  if(i%2==0):
+   s+=i
+ return s
+# get the number form the user
+num=int(input("enter the number"))
+res=even(num)
+print("the resultant of sum of even number",res)
