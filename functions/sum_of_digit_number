@@ -1,0 +1,13 @@
+# sum of digits of a given number
+def sum(num):
+ s=0
+ while(num!=0):
+   t=num%10
+   s+=t
+   num=num//10
+ return(s)
+# get the input form the user
+num=int(input("enter the number"))
+res=sum(num)
+print("the sum of the digits of the number",res)
+ 
