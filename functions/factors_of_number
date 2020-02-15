@@ -1,0 +1,10 @@
+# the program is used to print the factors of the given numeber by using function
+def factors(num):
+ for i in range(1,num+1):
+  if(num%i==0):
+    print(i)
+ return(i)
+# get the input from the user
+num=int(input("enter the number"))
+res=factors(num)
+print("the resultant of the factors of the given number",res)
