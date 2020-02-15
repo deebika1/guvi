@@ -1,0 +1,13 @@
+# to print the product of digits of an number
+def prod(num):
+ s=1
+ while(num!=0):
+  t=int(num%10)
+  s=s*t
+  num=int(num//10)
+ return(s)
+# get the number form the user
+num=int(input("enter the number form the user"))
+product=prod(num)
+print("the product of the digits of the given number",product)
+  
