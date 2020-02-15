@@ -1,0 +1,12 @@
+# sum of all odd number form 1 to N
+def odd(num):
+ s=0
+ for i in range(1,num+1):
+  if(i%2==1):
+   s+=i
+ return s
+# get the value of Num to the user
+num=int(input("enter the number"))
+res=odd(num)
+print("the reslutant of sum of odd number",res)
+ 
