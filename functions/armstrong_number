@@ -1,0 +1,18 @@
+# to check whether the given number is prime or not by using function
+def armstrong(n):
+    s=0
+    while (n>0):
+        d=int(n%10)
+        s=s+d**3
+        n=int(n/10)
+    print(s)
+    return s
+ # get the value form the user
+n=int(input("enter the number"))
+res = armstrong(n)
+
+if(n==res):
+      print("Armstrong",res)
+
+   
+   
