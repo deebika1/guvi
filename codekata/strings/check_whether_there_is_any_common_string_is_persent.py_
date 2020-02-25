@@ -1,0 +1,21 @@
+#Given 2 strings,check whether they have any common characters.If found print 'yes' else print 'no'.
+string1,string2=list(map(str,input().split()))
+c=0
+len1=len(string1)
+len2=len(string2)
+for i in range(0,len1):
+  for j in range(0,len2):
+    if(string1[i]==string2[j]):
+       c+=1
+if(c>1):
+ print("yes")
+else:
+ print("no")
+ 
+#Given 2 strings,check whether they have any common characters.If found print 'yes' else print 'no'.
+#Input Size : |s| <= 100000(O(n))
+#Sample Testcase :
+#INPUT
+#guvi guvigeeks
+#OUTPUT
+#yes
