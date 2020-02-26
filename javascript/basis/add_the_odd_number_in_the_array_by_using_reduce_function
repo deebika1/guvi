@@ -1,0 +1,8 @@
+var array=[1,2,3,4,56,7];
+var sum=array.reduce(function(accumulator,currentvalue,index){
+ if(currentvalue%2==1)
+  {
+   return accumulator+currentvalue;}
+   return accumulator
+});
+console.log(sum);
