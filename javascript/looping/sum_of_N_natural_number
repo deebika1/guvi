@@ -1,0 +1,8 @@
+## sum of N natural number
+var f=prompt("enter the number");
+var s=0;
+for(var i=1;i<=f;i=i+1)
+{
+    s+=i;
+}
+console.log(s);
