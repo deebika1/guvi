@@ -1,0 +1,24 @@
+/*You are provided with a number, "N". Find its factorial.
+
+Input Description:
+A positive integer is provided as an input.
+
+Output Description:
+Print the factorial of the integer.
+
+Sample Input :
+2
+Sample Output :
+2*/
+const readline=require('readline');
+const imp=readline.createInterface({
+  input:process.stdin
+});
+imp.on("line",(data)=>{
+  var fact=1;
+  for(i=1;i<=data;i++)
+  {
+    fact=fact*i;
+  }
+  console.log(fact);
+});
