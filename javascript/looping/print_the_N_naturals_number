@@ -1,0 +1,8 @@
+# print the N naturals number
+var data=prompt("enter the number");
+var i=1;
+while(i<f)
+{
+    console.log(i);
+    i=i+1;
+}
