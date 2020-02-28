@@ -1,0 +1,9 @@
+var f=prompt("enter the number");
+var i=1;
+for(i=1;i<=f;i=i+1)
+{
+    if(i%2==1)
+    {
+        console.log(i);
+    }
+}
