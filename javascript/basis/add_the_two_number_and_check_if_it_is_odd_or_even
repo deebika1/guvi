@@ -1,0 +1,24 @@
+/*Given 2 numbers N and M add both the numbers and check whether the sum is odd or even.
+Sample Testcase :
+INPUT
+9 2
+OUTPUT
+odd*/
+const readline=require('readline');
+const inp=readline.createInterface({
+  input:process.stdin
+});
+var n=[];
+inp.on('line',(data)=>{
+  n.push(data)
+});
+inp.on('close',()=>{
+  var s=n[0].split(' ');
+  var a=parseInt(s[0]);
+  var b=parseInt(s[1]);
+  var c=parseInt(a+b);
+  if(c%2==0)
+    console.log('even');
+  else
+    console.log('odd');
+});
