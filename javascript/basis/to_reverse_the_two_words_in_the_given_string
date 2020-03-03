@@ -1,0 +1,22 @@
+//Given a string S consisting of 2 words reverse the order of two words .
+Input Size : |S| <= 10000000
+Sample Testcase :
+INPUT
+hello world
+OUTPUT
+world hello//
+const readline=require('readline');
+const inp=readline.createInterface({
+  input:process.stdin
+});
+const n=[]
+inp.on('line',(str1)=>{
+    n.push(str1);
+});
+inp.on('close',()=>{
+    var s=n[0].split(" ");
+    var a=s[0];
+    var b=s[1];
+    console.log(b,a);
+   });
+   
