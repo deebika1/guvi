@@ -1,0 +1,14 @@
+// print the odd number form the list by using anonymous function
+var odd=function(number){
+    for(var i=0;i<a.length;i++)
+    {
+        if((a[i]%2)!=0)
+        {
+            s+=a[i]+' ';
+        }
+    }
+    return s;
+}
+var s='';
+var a=[1,2,3,4,5]
+console.log(odd(a));
