@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+    <style>
+        .flex-container {
+          display: flex;
+          flex-wrap: nowrap;
+          background-color: DodgerBlue;
+        }
+        
+        .flex-container > div {
+          background-color: #f1f1f1;
+          width: 423px;
+          margin: 10px;
+          text-align: center;
+          line-height: 75px;
+          font-size: 30px;
+        }
+        #demo{
+          color:red;
+        }
+        </style>
+    <body>
+        <script src="operation.js"></script>
+        <div class="flex-container">
+            <div>
+                <h1>Team 1</h1>
+                <button type="button" id="press1" onclick="play1()">Play</button>
+              
+                <section>
+                    <p id="p1">player</p>
+                    <p id="r1">run</p>
+                    <p id="b1">Ball</p>
+                    <p id="score1">score</p>
+                    <p id="w1">wicket</p>
+                </section>
+            </div>
+            
+            <div>
+                <h1>Team 2</h1>
+                <button type="button" id="press2" onclick="play2()" >Play</button>
+               
+                <section>
+                    <p id="p2">player<p>
+                    <p id="r2">run</p>
+                    <p id="b2">Ball</p>
+                    <p id="score2">score</p>
+                    <p id="w2">wicket</p>
+                </section>
+            </div>
+        </div>
+    <br><br>
+    
+    <div><h1 align="center"><a href="resultcricket.html"> SUBMIT </a></h1></div>
+   
+    
+</body>
+</html>
+
+
+
+//js
+
+
+
+
+class cricket1
+{
+
+constructor(w1,p1,b1,o1,score1,count1,r1,w,p,b,o,score,count,r)
+
+{
+    this.w1=w1;
+    this.p1=p1;
+    this.b1=b1;
+    this.o1=o1;
+    this.score1=score1;
+    this.count1=count;
+    this.w=w;
+    this.p=p;
+    this.b=b;
+    this.o=o;
+    this.count=count;
+    this.score=score;
+    this.r1=r1;
+    this.r=r;
+    
+
+  
+}
+
+ball()
+{
+document.getElementById(this.p1).innerHTML="player:"+this.p;
+console.log("player:",this.p);
+let x= Math.floor(Math.random() * 7);
+this.r=x;
+document.getElementById(this.r1).innerHTML="run:"+this.r;
+this.count=parseInt(this.count)+1;
+console.log("count",this.count);
+console.log("run:",x);
+
+this.score=this.score+x;
+document.getElementById(this.score1).innerHTML="score:"+this.score;
+console.log("score:",this.score);
+if(x==0)
+{
+    this.w=this.w+1;
+    this.p=this.p+1;
+     this.count=0;
+}
+if(this.w == 11 || this.b == 0)
+{
+   
+    document.getElementById("press1").disabled = true; 
+        document.getElementById("press2").disabled = true; 
+    alert("game over");
+    
+}
+
+if(this.count ==6)
+{
+   this.p=this.p+1;
+    
+    this.count=0;
+}
+
+this.b=this.b-1;
+document.getElementById(this.b1).innerHTML="ball:"+this.b;
+console.log("current ball",this.b);
+document.getElementById(this.w1).innerHTML="wicket:"+this.w;
+console.log("current wicket:",this.w);
+
+
+}
+}
+obj1 = new cricket1("w1","p1","b1","o1","score1","count","r1",0,1,36,0,0,0,0);
+obj2 = new cricket1("w2","p2","b2","o2","score2","count","r2",0,1,36,0,0,0,0);
+function play1(){
+    let n=obj1.ball();
+    if(n!="undefined")localStorage.setItem("score1",n);
+}
+function play2(){
+    let m=obj2.ball();
+    if(m!="undefined")localStorage.setItem("score2",m);
+}
+
+//result
+  
+<HTML>
+<head>
+<title>www.cricket/result.com</title>
+<script>
+function act(){
+let Score1=localStorage.getItem("score1");
+let Score2=localStorage.getItem("score2");
+let x=parseInt(Score1);
+let y=parseInt(Score2);
+if(x>y)
+{
+    let s=x-y;
+    alert("TEAM A WON BY "+s+" RUNS");
+    document.getElementById("t").innerHTML="<h1>TEAM A WON BY </h1>" +"<h1>"+s+"</h1>"+"<h1> RUNS</h1>";
+}
+else if(x<y){
+    let s=y-x;alert("TEAM B WON BY "+s+" RUNS");
+   
+    document.getElementById("t").innerHTML ="<h1>TEAM B WON BY </h1>" +"<h1>"+s+"</h1>"+"<h1> RUNS</h1>";
+}
+else{alert("DRAW");
+    document.getElementById("res").style="background-color:Blue;";
+    document.getElementById("t").innerHTML = "<h1>DRAW</h1>";
+}}
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  height: 200px;
+  text-align: center; 
+}
+</style>
+
+</head>
+<body >
+<input type="button" onClick="act()" class="column" id="res" value="RESULT">
+<div class="column" id="t"></div>
+</body>
+
+</HTML>
+
+////
+//ree
+
