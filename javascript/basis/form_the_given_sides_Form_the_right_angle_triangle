@@ -1,0 +1,27 @@
+/*Given 3 numbers A,B,C print 'yes' if they can form the sides of a scalene triangle else print 'no'.
+Input Size : A,B,C <= 100000
+Sample Testcase :
+INPUT
+3 4 5
+OUTPUT
+yes*/
+
+
+const readline=require('readline');
+const inp=readline.createInterface({
+  input:process.stdin
+});
+const n=[];
+inp.on('line',(data)=>{
+  n.push(data);
+});
+inp.on('close',()=>{
+  var a=n[0];
+  var b=n[1];
+  var c=n[2];
+  if(a+b<=c || b+c<=a || c+a<=b)
+    console.log("no");
+  else
+    console.log("yes");
+});
+  
