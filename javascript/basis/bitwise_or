@@ -1,0 +1,27 @@
+/*Given a number N and an array of N elements, find the Bitwise OR of the array elements.
+Input Size : N <= 100000
+Sample Testcase :
+INPUT
+2
+2 4
+OUTPUT
+6*/
+const readline=require('readline');
+const inp=readline.createInterface({
+  input:process.stdin
+});
+const n=[];
+inp.on('line',(data)=>{
+  n.push(data)
+});
+inp.on('close',()=>{
+  var a=n[0];
+  var b=n[1].split(" ");
+  var sum=0;
+  for(var i=0;i<b.length;i++)
+  {
+    sum|=b[i];
+  }
+  console.log(sum);
+ 
+});
