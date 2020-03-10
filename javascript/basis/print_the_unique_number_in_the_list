@@ -1,0 +1,35 @@
+const readline=require('readline');
+const inp=readline.createInterface({
+  input:process.stdin
+});
+const n=[];
+inp.on('line',(data)=>{
+  n.push(data)
+});
+inp.on('close',()=>{
+  var a=n[0].split(" ");
+  console.log(a);
+  var unique=[...new Set(a)];
+  console.log(unique);
+  for(var i=0;i<unique.length;i++)
+  { var c=0;
+      for(var j=0;j<a.length;j++)
+      {
+          if(unique[i]==a[j])
+          {
+              c=c+1;
+          }
+      }
+      if(c<2)
+      console.log(unique[i]);
+  }
+  
+ 
+      
+});
+input:
+1 2 3 1 2
+output:
+[ '1', '2', '3', '1', '2' ]
+[ '1', '2', '3' ]
+3
