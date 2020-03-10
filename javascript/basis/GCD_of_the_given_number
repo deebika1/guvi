@@ -1,0 +1,28 @@
+/*Given 2 numbers N,M find the GCD of N and M.If it cannot be found for given number(s) then print -1
+Sample Testcase :
+INPUT
+10 5
+OUTPUT
+5*/
+const readline=require('readline');
+const inp=readline.createInterface({
+  input:process.stdin
+});
+const n=[];
+inp.on('line',(data)=>{
+  n.push(data)
+});
+inp.on('close',()=>{ 
+ var a=n.toString().split(" ");
+  var b=a[0];
+  var c=a[1];
+   for(i=1; i <= b && i <= c; ++i)
+    {
+      var gcd;
+        // Checks if i is factor of both integers
+        if(b%i==0 && c%i==0)
+            gcd = i;
+    }
+    console.log(gcd);
+});
+  
