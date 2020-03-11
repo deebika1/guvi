@@ -1,0 +1,67 @@
+/*You are given an array of numbers. Print the least occurring element. If there is more than 1 element print all of them in decreasing order of their value.
+
+Input Description:
+You are given a number ‘n’ denoting size of array. Next line contains n space separated numbers.
+
+Output Description:
+Print the number as mentioned
+
+Sample Input :
+9
+1 6 4 56 56 56 6 4 2
+Sample Output :
+2 1*/
+const readline=require('readline');
+const inp=readline.createInterface({
+  input:process.stdin
+});
+const n=[];
+inp.on('line',(data)=>{
+  n.push(data);
+});
+inp.on("close",()=>{
+  var a=n[0];
+  var b=n[1].toString().split(" ");
+  var s=[];
+  var unique=[...new Set(b)];
+  
+  //console.log(unique,b);
+ 
+  for(var i=0;i<unique.length;i++)
+  { var c=0
+          for(var j=0;j<b.length;j++)
+          {
+              if(parseInt(unique[i])==parseInt(b[j]))
+              {
+                  c=c+1;
+                  
+              }
+          }if(c<=1)
+          {
+              s.push(unique[i])
+          }
+  }
+  //console.log(s);
+  for(var i=0;i<s.length;i++)
+  {
+      for(var j=i+1;j<s.length;j++)
+      if(parseInt(s[i])<parseInt(s[j]))
+      {
+           var t=s[i];
+           s[i]=s[j];
+           s[j]=t;
+      }
+  }
+  var c='';
+  for(var i=0;i<s.length;i++)
+  { 
+      c+=s[i]+" ";
+  }
+  console.log(c);
+  
+});
+
+       
+
+
+  
