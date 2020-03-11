@@ -1,0 +1,53 @@
+/*You are given two arrays of equal length. Your task is to merge the two arrays and then sort them too and then find the sum of two middlemost elements.
+
+Input Description:
+You are given a number ‘n’. Then Next line contains n separated numbers.Third line contains n space separated numbers.
+
+Output Description:
+Print the sum of two middle elements
+
+Sample Input :
+5
+1 9 16 25 46
+2 3 4 5 6
+Sample Output :
+11*/
+const readline=require('readline');
+const inp=readline.createInterface({
+  input:process.stdin
+});
+const n=[];
+inp.on('line',(data)=>{
+  n.push(data)
+});
+inp.on("close",()=>{
+       var c=n[0];
+       var t;
+		var s=[];
+       var a=n[1].split(" ");
+       var b=n[2].split(" ");
+       var len1=b.length;
+      for(var i=0;i<len1;i++)
+      {
+        a.push(b[i]);
+      }
+//console.log(a);
+for(var j=0;j<a.length;j++)
+{
+    for(var k=j+1;k<a.length;k++)
+    {
+        if(parseInt(a[j])>parseInt(a[k]))
+        {
+             t=a[j];
+            a[j]=a[k];
+            a[k]=t;
+        }
+    }
+}// console.log(a);
+var index1=a.length;
+//console.log(index1);
+var diff=index1/2;
+console.log(parseInt(a[diff])+parseInt(a[diff-1]));
+});
+
+  
