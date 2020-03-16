@@ -1,0 +1,67 @@
+// sign in html
+<html>
+<head>
+    <style>
+        .box{
+          width: 400px;
+          padding:12px 20px;
+          margin: 8px 0;
+          border: 1px solid;
+          border-radius: 4px;
+          box-sizing: border-box;
+            }  
+    </style>
+</head>
+<body>
+    <div align="center">
+        <div align=center margin_top=500px>
+            <img src="C:\Users\admin\Desktop\ttl\signing.jpg" align="center" height="100" width="100">
+        </div>
+        <div><label for="fname"></label>
+            <input type="text" id="fname" name="fname" placeholder="First Name" class="box"><br><br>
+            <input type="text" id="email" name="email" placeholder="Email" class="box"><br><br>
+            <input type=button onClick="res()" class ="box" value='Sign in'>
+            </div>
+        <div><h4>&#169;Made with &#128512;Memphis </h4></div>
+        </div>
+    <script src="final.js"></script>
+</body>
+</html>
+// login in html
+<html>
+<head>  
+<style>
+.box{
+  width: 400px;
+  padding:12px 20px;
+  margin: 8px 0;
+  border: 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+    }  
+</style>
+</head>
+<body>
+<div align="center">
+<div align=center margin_top=500px>
+<img src="C:\Users\admin\Desktop\ttl\iconenvelope.jpg" align="center" height="100" width="100">
+</div>
+<div><h3>Sign up to my Newsletter!</h3></div>
+<div><label for="fname"></label>
+    <input type="text" id="fname" name="fname" placeholder="First Name" class="box"><br><br>
+    <input type="text" id="lname" name="lname" placeholder="Last Name" class="box"><br><br>
+    <input type="text" id="email" name="email" placeholder="Email" class="box"><br><br>
+    <input type=button onClick="parent.location='sh.html'" class ="box" value='Sign up'>
+    </div>
+<div><h4>&#169;Made with &#128512;Memphis </h4></div>
+</div>
+</body>
+</html>
+// js 
+function res()
+{
+    alert("signed in");
+}
+
+
+       
