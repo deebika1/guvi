@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+.box {
+  border-radius: 5px;
+  width: 130px;
+  padding: 2px;
+  border: 1px solid red;
+  margin: 0;
+}
+.bord{
+  border-radius: 5px;
+  border: 1px solid red;
+  padding:10px;
+  width:500px;
+  }
+.close {
+  cursor: pointer;
+  position: absolute;
+  color:red;
+  top: 13%;
+  right: 54%;
+  padding: 12px 16px;
+  }
+  .result{
+  border-radius: 5px;
+  border: 1px solid red;
+  width:300px;
+  padding:5px
+  }
+  body{
+  background-color:D8D3D2! important;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+<p>Flashcards</p>
+<p class="box">Add Questions</p>
+<br>
+<div class="bord">
+
+<p>Question</p><span class="close">x</span>
+<textarea rows="3" cols="60" id="myText" placeholder="Enter the questions..."></textarea>
+<p>Answer</p>
+  <textarea rows="3" cols="60" id="myAns" placeholder="Enter the answers..." ></textarea>
+  <br>
+<button onclick="myFunction()" id="show">save</button>
+</div>
+<br>
+<div class="result" id="res">
+<p id="demo"></p>
+<p id="demoans"></p>
+<p onclick="answer()">Show/Hide Answer</p>
+<button>EDIT</button>
+&nbsp;&nbsp;&nbsp;<button onclick="remove1()">DELETE</button>
+</div>
+</div>
+<script>
+document.getElementById("res").style.display = "none";
+function myFunction(){
+	document.getElementById("res").style.display = "block";
+	var x = document.getElementById("myText").value;
+  document.getElementById("demo").innerHTML = x;
+	}
+function answer(){
+  var y=document.getElementById("myAns").value;
+  document.getElementById("demoans").innerHTML=y;
+  }
+ function remove1(){
+    res.remove();
+    }  
+</script>
+</body>
+</html>
