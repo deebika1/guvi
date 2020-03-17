@@ -1,0 +1,63 @@
+#a1
+{
+position: relative;
+left:25px;
+width: 11%;
+height: 25px;
+background: white;
+border-style:solid;
+border-color: #ff9900;
+}
+#a2
+{
+position: relative;
+left:25px;
+padding-left: 35px;
+width: 55%;
+height: 375px;
+background: white;
+border-style:solid;
+border-color: #ff9900;
+}
+#q
+{
+width: 85%;
+height: 65px;
+border-color:green;
+}
+#ans
+{
+width: 85%;
+height: 65px;
+border-color:blue ;
+}
+
+#a3
+{   position:absolute;
+width: 41%;
+height: 85px;
+background: white;
+border-style:solid;
+border-color: #ff9900;
+}
+#del
+{
+background-color: blue;
+position:relative;
+top:22px;
+left:45px;
+}
+#edi
+{
+background-color: blue;
+position:relative;
+top:22px;
+}
+#next{
+border-color: green;
+width: 22%;
+height:22px;
+position: relative;
+left:145px;
+}
+
