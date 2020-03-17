@@ -1,0 +1,52 @@
+body{
+   background-color:grey;
+}
+
+#a1
+{  
+    background-color:steelblue;
+}
+#inpfield
+ 
+ {
+    background-color:steelblue;
+}
+#a2
+{
+  background-color:lavender;
+}
+.click
+{
+ border-color:blue;
+}
+.click{
+ text_align:center;
+display:block;
+ width:500px;
+ margin-left:8%;
+padding:2px;
+ }
+.design{
+  border-radius:5px solid black;
+  position:relative;
+  top:100px;
+  left:30%;
+  width:600px;
+  padding:2px;
+  border:1px solid black;
+  margin:0;
+}
+
+.text-line
+{
+color:pink;
+outline:none;
+outline-style:none;
+border-top:none;
+border-left:none;
+border-right:none;
+margin-left:8%;
+padding:3px 165px;
+background color: #0000FF;
+border-color:pink;
+}
