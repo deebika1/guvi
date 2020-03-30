@@ -1,0 +1,51 @@
+// find the greatest number of consequence in the given array
+const readline=require('readline');
+const inp=readline.createInterface({
+  input:process.stdin
+});
+const n=[];
+inp.on('line',(data)=>{
+  n.push(data)
+});
+var a;
+var b;
+var c=1;
+var n1=[];
+var l=[];
+inp.on('close',()=>{
+    n1=n.toString().split(" ");
+    a=n[0];
+    b=n[1].split(" ");
+    console.log(a,b);
+    for(var i=0;i<b.length;i++)
+        {
+            if(parseInt(b[i])<parseInt(b[i+1]))
+            {
+                c=c+1;
+               // console.log(c);
+            }
+            else
+            { 
+                l.push(c);
+                 c=1;
+                //l.push(c);
+            }
+        }
+    console.log(l);
+    
+    var t;
+    t=l[0];
+    for(var i=1;i<l.length;i++)
+    { 
+        if(t<l[i])
+    {    t=l[i];
+    }
+    }
+    console.log(t);
+    
+});
+/ input: 5
+         1 2 0 1 2
+         output:
+         2
+         */
