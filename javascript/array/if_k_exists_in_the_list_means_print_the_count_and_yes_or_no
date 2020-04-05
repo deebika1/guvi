@@ -1,0 +1,43 @@
+/*Given an array of numbers and another number k. Find whether K exists and the number of time k repeats. If it does not exist just print no.
+Input Size : |N| <= 1000000
+Sample Testcase :
+INPUT
+5 3
+3 3 4 4 7
+OUTPUT
+yes 2*/
+const readline=require('readline');
+const inp=readline.createInterface({
+  input:process.stdin
+});
+const t=[];
+inp.on('line',(data)=>{
+  t.push(data);
+});
+var n;
+var k;
+var l;
+var j;
+var c=0;
+inp.on('close',()=>{
+  j=t[0].split(" ");
+  n=parseInt(j[0]);
+  k=parseInt(j[1]);
+  l=t[1].split(" ");
+  for(var i=0;i<l.length;i++)
+  {
+    if(parseInt(l[i])==k)
+    { 
+      c++;
+    }
+  }
+  if(c==0)
+  {
+    console.log("no");
+  }
+  else
+  {
+console.log("yes",c);
+  }
+});
+  
