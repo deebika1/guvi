@@ -1,0 +1,33 @@
+/*Given 2 numbers N and K.Print the number of occurrences of K in N.If K is not found print '-1'.
+Input Size : 1 <= N <= 100000, 0 <= K <= 9
+Sample Testcase :
+INPUT
+1000 0
+OUTPUT
+3*/
+const readline=require('readline');
+const inp=readline.createInterface({
+  input:process.stdin
+});
+const t=[];
+inp.on('line',(data)=>{
+ t.push(data);
+});
+var n;
+var k;
+var a=[];
+var c=0;
+inp.on('close',()=>{
+  a=t[0].split(" ");
+  n=a[0].split("");
+  k=parseInt(a[1]);
+  for(var i=0;i<n.length;i++)
+  {
+    if(parseInt(n[i])==k)
+    {
+      c++;
+    }
+  }
+  console.log(c);
+});
+   
