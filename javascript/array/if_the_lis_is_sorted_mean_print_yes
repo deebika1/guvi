@@ -1,0 +1,47 @@
+/*Given a number N, followed by an array of N elements,print 'yes' if it is a sorted array otherwise print 'no'.
+Input Size : 1 <= N <= 100000
+Sample Testcase :
+INPUT
+3
+2 3 7
+OUTPUT
+yes*/
+const readline=require('readline')
+const inp=readline.createInterface({
+    input:process.stdin
+});
+const t=[];
+inp.on('line',(data)=>{
+    t.push(data);
+});
+var s;
+var n=[];
+var k;
+var c=0;
+inp.on('close',()=>{
+    s=t[0];
+    n=t[1].split(" ");
+    for(var i=0;i<n.length;i++)
+    {
+           if(n[i]<n[i+1])
+           {
+               c=c+1;
+               //console.log(c);
+           }
+     
+    }
+    //console.log(c);
+    //console.log(n.length-1);
+  if(c==(n.length-1))
+  {
+    console.log("yes");
+  }
+  else
+  {
+    console.log("no");
+  }
+    
+   
+   
+   
+});
