@@ -1,0 +1,31 @@
+/*Given a number N and an array of N integers, predict if the product of all elements would be even or odd(actual multiplication may lead to overflows ai <= 100000000).If there is only one element present in the array print whether that number is odd or even.
+Input Size : N <= 100000
+Sample Testcase :
+INPUT
+4
+2 4 4 2
+OUTPUT
+even*/const readline=require('readline');
+const inp=readline.createInterface({
+  input:process.stdin
+});
+const n=[];
+inp.on('line',(data)=>{
+  n.push(data)
+});
+var t;
+var res=1;
+var l=[];
+inp.on('close',()=>{
+  t=parseInt(n[0]);
+  l=n[1].split(" ");
+  for(var i=0;i<l.length;i++)
+  {
+   res=res*l[i];
+  }
+  if(res%2==0)
+    console.log("even");
+  else
+    console.log("odd");
+});
+    
