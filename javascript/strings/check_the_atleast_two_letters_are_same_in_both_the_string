@@ -1,0 +1,36 @@
+/*Design an algorithm to accept 2 strings A and B from the user, and check whether any part of string A (comprising of minimum of 2 consecutive characters) is a sub-string of string B.
+Input Size : A<=1000, B<=1000
+Example:
+INPUT
+abcxyz hagsaabc
+OUTPUT
+yes*/
+const readline=require('readline');
+const inp=readline.createInterface({
+  input:process.stdin
+});
+const n=[];
+inp.on('line',(data)=>{
+  n.push(data);
+});
+var s,s1,t,c=0;
+inp.on('close',()=>{
+  t=n[0].split(" ");
+  s=t[0].split("");
+  s1=t[1].split("");
+  for(var i=0;i<s.length;i++)
+  {
+    for(var j=0;j<s1.length;j++)
+    {
+      if(s[i]==s1[j])
+      {
+        c++;
+      }
+    }
+  }  if(c>=2)
+      console.log("yes");
+     else
+       console.log("no");
+});
+  
+  
