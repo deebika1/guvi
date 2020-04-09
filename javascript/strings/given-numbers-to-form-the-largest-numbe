@@ -1,0 +1,25 @@
+@@ -0,0 +1,25 @@
+const readline=require('readline')
+const imp=readline.createInterface({
+  input:process.stdin
+});
+var user=[];
+imp.on("line",(data)=>{
+  user.push(data)
+});
+imp.on("close",()=>{
+  var a=parseInt(user[0]);
+  var s=user[1].split(" ");
+  var b=[];
+  for(var j=0;j<a;j++)
+  {
+      b.push(parseInt(s[j]))
+  }
+ // console.log(b);
+ b.sort(function(a, b){
+   return b-a
+ });
+//console.log(b);
+var c=b.join("");
+console.log(parseInt(c));
+});
