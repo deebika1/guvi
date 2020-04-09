@@ -1,0 +1,40 @@
+/*Given a string S, check whether the given string is an anagram of the string “dhoni”. Anagram of a given string is a permutation of the set of characters present in the string. For example for the string “baba” aabb and baab are anagrams while aaab and bacd are not.
+Input Size : |S|<=100000
+Example:
+INPUT
+inohd
+OUTPUT
+yes*/
+const readline=require('readline');
+const inp=readline.createInterface({
+  input:process.stdin
+});
+const n=[];
+inp.on('line',(data)=>{
+  n.push(data);
+});
+var t;
+var s="dhoni";
+var v;
+var c=0;
+inp.on('close',()=>{
+  t=n[0].split("");
+  v=s.split("");
+ // console.log(v,t);
+  for(var i=0;i<v.length;i++)
+  {
+    for(var j=0;j<t.length;j++)
+    {
+      if(v[i]==t[j])
+      {
+        c++;
+        //console.log(v[i]);
+      }
+    }
+  }
+  if(c==t.length)
+    console.log("yes");
+  else
+    console.log("no");
+});
+  
