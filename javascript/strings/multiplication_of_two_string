@@ -1,0 +1,19 @@
+const readline= require('readline');
+const inp=readline.createInterface({
+    input:process.stdin
+});
+var user=[];
+inp.on("line",(data)=>{
+    
+    user.push(data)
+});
+inp.on("close",()=>{
+    var a=user[0].split(" ");
+    var p=a[0]*a[1];
+    console.log(p.toString());
+    
+});
+/* input 2 5
+output 10  
+exp: the 10 will be in stirng
+*/
