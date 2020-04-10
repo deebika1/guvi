@@ -1,0 +1,35 @@
+/*Given a string S consisting of lowercase latin letters, arrange all its letters in lexographical order using Counting Sort.
+
+Input Description:
+First Line contains positive integer N denoting the length of string.The second line of input contains the string S.
+
+Output Description:
+Print the sorted string.
+
+Sample Input :
+5
+edsab
+Sample Output :
+abdes*/
+const readline=require('readline');
+const inp=readline.createInterface({
+       input:process.stdin
+});
+const n=[];
+inp.on('line',(data)=>{
+  n.push(data);
+});
+var t;
+var s='';
+var l=[],res=[];
+inp.on('close',()=>{
+  t=parseInt(n[0]);
+  l=n[1].split("");
+  res=l.sort();
+  for(var i=0;i<res.length;i++)
+  {
+      s+=res[i];
+  }
+  console.log(s);
+});
+  
