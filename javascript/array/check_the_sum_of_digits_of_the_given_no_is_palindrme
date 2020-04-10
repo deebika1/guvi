@@ -1,0 +1,36 @@
+/*Given a number N, check if the sum of the digits is a Palindrome. Print 'yes' or 'no' accordingly.
+Input Size : 2 <= N <= 1000000000000000000
+Sample Testcases :
+INPUT
+13
+OUTPUT
+yes*/
+const readline=require('readline');
+const inp=readline.createInterface({
+  input:process.stdin
+});
+const n=[];
+inp.on('line',(data)=>{
+  n.push(data);
+});
+var t;
+var s=0;
+var h=0;
+var m='';
+var k=[];
+inp.on('close',()=>{
+  t=n[0].split("");
+  for(var i=0;i<t.length;i++)
+  {
+    s+=parseInt(t[i]);
+  }
+  //console.log(s);
+  m+=s;
+  r=m.split("").reverse().join("");
+  if(s==r)
+    console.log("yes");
+  else
+    console.log("no");
+});
+  
+  
