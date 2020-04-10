@@ -1,0 +1,38 @@
+/*Given a string, find the length of the longest substring without repeating characters.
+Input Size : |S|<=1000
+Example:
+INPUT
+abcabcccdd
+OUTPUT
+3*/
+const readline=require('readline');
+const inp=readline.createInterface({
+  input:process.stdin
+});
+const n=[];
+inp.on('line',(data)=>{
+  n.push(data);
+});
+var s;
+var res=[]
+var c=0;
+inp.on('close',()=>{
+  s=n[0].split("");
+  for(var i=0;i<s.length;i++)
+  {
+    if(s[i]!=s[i+1])
+    {
+      c++;
+      res.push(s[i]);
+    }
+    else
+    {
+      break;
+    }
+  }
+  //console.log(c);
+  //console.log(res);
+  var unique;
+  unique=[...new Set(res)];
+  console.log(unique.length);
+});
