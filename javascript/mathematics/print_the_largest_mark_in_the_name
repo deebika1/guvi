@@ -1,0 +1,42 @@
+/*Given an arraylist A of string type which has name#mark1#mark2#mark3 format. Retrieve the name of the student who has scored max marks(total of three).
+for eg: input: {'arun#12#12#12','deepak#13#12#12'}
+output: Deepak
+Input Size : A <= 100000
+Sample Testcase :
+INPUT
+arun#12#12#12
+deepak#13#12#12
+OUTPUT
+deepak*/
+const readline=require('readline');
+const inp=readline.createInterface({
+  input:process.stdin
+});
+const n=[];
+inp.on('line',(data)=>{
+  n.push(data);
+});
+var l=[],l1=[];
+var k,k1;
+var sum1=0,sum2=0;
+inp.on('close',()=>{
+   l=n[0].split("#");
+  l1=n[1].split("#");
+  k=l[0];
+  //console.log(k);
+  for(var i=1;i<l.length;i++)
+  {
+    sum1+=parseInt(l[i]);
+  }
+   k1=l1[0];
+   //console.log(k1);
+  for(var j=1;j<l1.length;j++)
+  {
+    sum2+=parseInt(l1[j]);
+  } 
+  if(sum1>sum2)
+    console.log(k);
+  else
+    console.log(k1);
+});
+  
