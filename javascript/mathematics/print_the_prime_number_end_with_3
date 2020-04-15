@@ -1,0 +1,38 @@
+/*Given a number N, find the sum of prime numbers that end with 3 from 2 to N.
+Input Size : N <= 100000
+Sample Testcase :
+INPUT
+5
+OUTPUT
+3*/
+const readline=require('readline');
+const inp=readline.createInterface({
+  input:process.stdin
+});
+const n=[];
+inp.on('line',(data)=>{
+  n.push(data);
+});
+var t;
+var res=[];
+inp.on('close',()=>{
+  t=parseInt(n[0]);
+  for(var i=2;i<=t;i++)
+  {
+    var a=0;
+    for(var j=2;j<=i;j++)
+    {
+      if(i%j==0 && i!=j)
+      {
+        a=1;
+      }
+    }
+    if(a==0)
+    {
+      res.push(i);
+    }
+  } for(var i=0;i<res.length;i++)
+  { if(res[i]==3)
+     console.log(res[i]);
+  }
+});
