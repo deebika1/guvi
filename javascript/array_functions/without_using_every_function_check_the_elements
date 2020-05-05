@@ -1,0 +1,39 @@
+const readline=require('readline');
+const inp=readline.createInterface({
+    input:process.stdin
+});
+const n=[];
+inp.on('line',(data)=>{
+    n.push(data);
+ });
+var k=[];
+var l=0;
+var sum=0;
+var c=0
+inp.on('close',()=>{
+    k=n[0].split(" ");
+    l=parseInt(n[1]);
+function everyone1()
+{
+ for(var i=0;i<k.length;i++)
+ {  
+     if(parseInt(k[i]%2==0))
+     {
+         c++;
+     }
+ }
+ return c-1;
+ }
+res1=everyone1();
+if(res1=k.length)
+console.log("true");
+else
+console.log("false");
+    
+});
+/*
+input:
+2 4 6 8 10
+output: true
+exp:every function is used to check the all the elements in the list is even or odd means print the output as true
+*/
