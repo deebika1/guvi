@@ -1,0 +1,34 @@
+const readline=require('readline');
+const inp=readline.createInterface({
+    input:process.stdin
+});
+const n=[];
+inp.on('line',(data)=>{
+    n.push(data);
+ });
+var str1;
+var str2=[];
+var res;
+var s;
+inp.on('close',()=>{
+   str1=n[0];
+   str2=n[1].split(" ");
+  function concat1()
+ {
+     for(var i=0;i<str2.length;i++)
+ {
+    str1+=str2.toString();
+
+ } 
+ return str1+=s;
+ }
+res=concat1();
+console.log(res);
+});
+/*
+input:
+helo
+world is busy
+output: helo world is busy
+exp:concat function is used to concat the string
+*/
