@@ -1,0 +1,36 @@
+const readline=require('readline');
+const inp=readline.createInterface({
+    input:process.stdin
+});
+const n=[];
+inp.on('line',(data)=>{
+    n.push(data);
+ });
+var k=[];
+var l=0;
+var sum=0;
+var res=[];
+var g;
+inp.on('close',()=>{
+    k=n[0].split(" ");
+function filter1()
+{
+ for(var i=0;i<k.length;i++)
+ {  
+     if(k[i]>5)
+     {
+     res.push(k[i]);
+     }
+ }
+ return g=res.join(" ");
+ 
+}
+res1=filter1();
+console.log(res1);
+});
+/*
+input:
+10 2 5 20 30
+output: 10 20 30
+exp:the filter function is used to filter the number persent in the list below 5 without using filter function
+*/
