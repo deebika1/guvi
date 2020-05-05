@@ -1,0 +1,38 @@
+const readline=require('readline');
+const inp=readline.createInterface({
+    input:process.stdin
+});
+const n=[];
+inp.on('line',(data)=>{
+    n.push(data);
+ });
+var k=[];
+var l=0;
+var sum=0;
+var res=[];
+var g;
+inp.on('close',()=>{
+    k=n[0].split(" ");
+    l=parseInt(n[1]);
+function findindex1()
+{
+ for(var i=0;i<k.length;i++)
+ {  
+     if(parseInt(k[i])==l)
+     {
+     res.push(i);
+     }
+ }
+ return g=res.join(" ");
+ 
+}
+res1=findindex1();
+console.log(res1);
+});
+/*
+input:
+5 4 6 7 2
+2
+output: 4
+exp:the findOfIndex function is used to find the number persent in which index position
+*/
