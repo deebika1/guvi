@@ -1,0 +1,17 @@
+const mysome=(array,callback)=>{
+    for(let i=0;i<array.length;i++)
+    {
+        if(callback(parseInt(array[i])))
+        {
+            return true;
+        }
+    }
+    return false
+}
+const result=(x) =>x>10;
+const data=[100,200,300,4];
+console.log(mysome(data,result));
+/* input 100,200,300,4
+output: true
+exp: some function is used to check if any one of the array elements is greater than 10 means print true..if all the elements is less than 10 means print false
+*/
