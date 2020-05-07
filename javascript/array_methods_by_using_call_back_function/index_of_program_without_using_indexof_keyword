@@ -1,0 +1,15 @@
+const index=(array,value)=>{
+    for(let i=0;i<array.length;i++)
+    { 
+       if(array[i]==value)
+    {
+        return i;
+    }
+}
+return -1;
+}
+const result=index([1,2,3],9);
+console.log(result);
+/* input: 1,2,3
+output: -1
+exp: indexof function is used to find the index position of the value 9 in this progaram. the value 9 is not present in this array so it return -1 ... if the value is 2 it will retrun the index of the 2 is print 1*/
