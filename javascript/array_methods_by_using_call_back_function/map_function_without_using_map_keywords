@@ -1,0 +1,15 @@
+const mymap=(array,callback)=>{
+    var new1=[];
+    for(let i=0;i<array.length;i++)
+    {
+        new1.push(callback(parseInt(array[i])));
+    
+    }
+return new1;
+}
+const result=(m) =>m*10;
+const data=[1,5,10,12];
+console.log(mymap(data,result));
+/* input: 1,5,10,12
+output: 10,50,100,120
+exp: map function is used to access all the array elements and multiply the array elemtns with 10*/
