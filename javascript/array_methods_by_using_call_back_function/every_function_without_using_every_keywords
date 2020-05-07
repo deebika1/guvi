@@ -1,0 +1,20 @@
+const myevery=(array,callback)=>{
+    let c=0;
+    for(let i=0;i<array.length;i++)
+    {
+        if(callback(array[i]))
+        {
+            c+=1;
+        }
+    }
+    if(c===array.length)
+    return true
+    else 
+    return false
+}
+const pre=(x) =>x%2==0;
+const data=[2,4,6,8];
+console.log(myevery(data,pre));
+/* input: apple,battle,cattleee
+output: true
+exp: every function is used to check the array elements should satisfiy the array elements are all mulitply of 2 means it will return true*/
