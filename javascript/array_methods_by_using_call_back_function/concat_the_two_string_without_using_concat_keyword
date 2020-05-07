@@ -1,0 +1,9 @@
+const concat=(ele1,ele2)=>{
+    return ele1+=ele2;
+}
+const result=concat("deebika","sai")
+console.log(result);
+/* input: deebika sai
+output: deebikasai
+exp: concatdinate the two string without using keyword deebika sai
+*/
