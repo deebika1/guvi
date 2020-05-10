@@ -1,0 +1,28 @@
+/*You are provided with a string ‘s’. Your task is to reverse the string using stack Data Structure.
+
+ 
+
+Input Description:
+You are given a string ‘s’.
+
+Output Description:
+Print the reverse string
+
+Sample Input :
+i am jsb
+Sample Output :
+jsb am i*/
+const readline=require('readline');
+const imp=readline.createInterface({
+    input:process.stdin
+});
+var user=[];
+imp.on("line",(data)=>{
+    user.push(data)
+});
+var res=[];
+imp.on("close",()=>{
+  var str=user[0];
+  var rev=str.split(" ").reverse().join(" ");
+  console.log(rev);
+});
