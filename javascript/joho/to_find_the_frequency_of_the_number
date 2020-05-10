@@ -1,0 +1,67 @@
+/*Given an array of N elements, sort the elements of the array based on frequency. If two numbers have the same frequency,then the smaller number comes first (eg) if the elements are 1,1,3,1,2,3,4 then the output is 2,4,3,3,1,1,1
+ 
+
+Input Description:
+Size of the array followed by the number of elements
+
+Output Description:
+Array elements sorted based on increasing frequency
+
+Sample Input :
+5
+8 8 1 1 3
+Sample Output :
+3 1 1 8 8*/
+const readline=require('readline');
+const inp=readline.createInterface({
+    input:process.stdin
+})
+const user=[];
+inp.on('line',(data)=>{
+    user.push(data);
+});
+var n;
+var l=[];
+var da=[];
+var r=[];
+inp.on('close',()=>{
+    n=parseInt(user[0]);
+    l=user[1].split(" ");
+    for(var i=0;i<l.length;i++)
+    {  var c=0;
+        var m=l[i];
+        for(var j=0;j<l.length;j++)
+        {
+            if(parseInt(m)==parseInt(l[j]))
+            {
+                c++;
+            }
+        }
+        r.push(c);
+        da.push(m);
+        m='';
+    }
+    console.log(r);
+    console.log(da);
+    var res=[];
+    res=r.sort();
+    console.log(res);
+    var h=0;
+    var k=[];
+    for(var i=(r.length)-1;i>=0;i--)
+    {  
+        for(var j=0;j<res.length;j++)
+         {
+            if(parseInt(r[i])==parseInt(res[j]))
+            {
+                k.push(da[i]);
+                //console.log(da[i]);
+                break;
+        }
+         }
+    }
+   
+    console.log(k.join(" "));
+   
+   
+});
