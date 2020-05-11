@@ -1,0 +1,61 @@
+const readline=require('readline');
+const inp=readline.createInterface({
+    input:process.stdin
+});
+const user=[];
+inp.on('line',(data)=>{
+    user.push(data);
+});
+var n=[];
+var r;
+var s='';
+var res=[];
+var o=[];
+var g=[];
+var v=[];
+var m='';
+inp.on('close',()=>{
+    n=user[0].split("");
+    //console.log(n);
+    for(var i=0;i<n.length;i++)
+    { 
+          r=n[i];
+          for(var j=0;j<n.length;j++)
+          {
+              if(r!=n[j])
+              {
+                 s+=n[j];
+                 res=s.split("").reverse();
+              }
+          }
+          //console.log(res);
+          var b;
+            b=r+s;
+            //console.log(b);
+            g.push(b);
+            m=m+r;
+          for(var k=0;k<res.length;k++)
+          {
+              m+=res[k];
+          } 
+          //console.log(m);
+          g.push(m);
+          res=[];
+          s='';
+          m='';
+    }
+    //console.log(g);
+    var v=[];
+    v.push(g[0]);
+    v.push(g[3]);
+    v.push(g[5]);
+    v.push(g[2]);
+    v.push(g[4]);
+    v.push(g[1]);
+    for(var k=0;k<v.length;k++)
+    {
+        console.log(v[k]);
+    }
+   
+
+});
