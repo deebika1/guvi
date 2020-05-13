@@ -1,0 +1,41 @@
+/*Write a program to rotate the given string by the given number of times.
+
+Input Description:
+String, rotation times
+
+Output Description:
+print the Rotated string
+
+Sample Input :
+hello 3
+Sample Output :
+llohe*/
+const readline=require('readline');
+const inp=readline.createInterface({
+  input:process.stdin
+});
+const user=[];
+inp.on('line',(data)=>{
+  user.push(data);
+});
+var n;
+var l=[];
+var res=[];
+var m=[];
+inp.on('close',()=>{
+  m=user[0].split(" ");
+  l=m[0].split("");
+  n=parseInt(m[1]);
+  //console.log(l);
+  //console.log(n);
+  for(var i=0;i<n;i++)
+  {
+    var r=l.pop();
+      l.unshift(r);
+    //console.log(r);
+  }
+  console.log(l.join(""));
+  
+
+});
+  
