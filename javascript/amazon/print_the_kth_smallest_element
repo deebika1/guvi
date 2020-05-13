@@ -1,0 +1,41 @@
+/*Given 2 numbers N and K followed by N elements, find the Kth smallest element.If the element cannot be found then print -1
+Input Size : N <= 100000
+Sample Testcase :
+INPUT
+5 2
+1 1 2 4 5
+OUTPUT
+2*/
+const readline=require('readline');
+const imp=readline.createInterface({
+  input:process.stdin
+});
+var user=[];
+imp.on("line",(data)=>{
+  user.push(data)
+});
+var sum=0;
+imp.on("close",()=>{
+    var a=user[0].split(" ");
+    var n=parseInt(a[0]);
+    var k=parseInt(a[1]);
+    var l=user[1].split(" ")
+    var res=[];
+ l.sort(function(a,b){
+     return a-b;
+ });
+ //console.log(l);
+ var unique;
+ unique=[...new Set(l)];
+  if(unique.length>=k)
+  {
+ console.log(unique[k-1]);
+  }
+  else
+  {
+    console.log("-1");
+  }
+});
+   
+   
+ 
