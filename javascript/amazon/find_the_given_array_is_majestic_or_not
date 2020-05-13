@@ -1,0 +1,47 @@
+/*You are given given task is to print whether array is ‘majestic’ or not.A ‘majsetic’ array is an array whose sum of first three number is equal to last three number.
+
+Input Description:
+You are given a number ‘n’,Next line contains ‘n’ space separated
+
+Output Description:
+Print 1 if array is majestic and 0 if it is not
+
+Sample Input :
+7
+1 2 3 4 6 0 0
+Sample Output :
+1*/
+const readline=require('readline');
+const imp=readline.createInterface({
+  input:process.stdin
+});
+var user=[];
+imp.on("line",(data)=>{
+        user.push(data)
+});
+imp.on("close",()=>{
+  var n=parseInt(user[0]);
+  var a=user[1].split(" ");
+  var f=0;var l=0;
+  for(var i=0;i<3;i++)
+  {
+    f+=parseInt(a[i])
+  }
+  var le=a.length-1;
+  var  lef=a.length-3
+  //console.log(l,lef);
+ 
+  for(var j=a.length-1;j>=lef;j--)
+  {
+    l+=parseInt(a[j])
+  }
+ // console.log(f,l);
+  if(f==l)
+  {
+    console.log("1");
+  }
+  else
+  {
+    console.log("0");
+  }
+});
