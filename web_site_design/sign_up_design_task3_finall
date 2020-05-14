@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> loading web page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-0awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <style>
+    .navbar {
+  overflow: hidden;
+  background-color: blue;
+  margin-top:0px;
+  height:53px;
+  margin-left:88px;
+  margin-right:102px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar p {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+body {
+  font-family: Arial;
+}
+#fname
+{
+    background-color:lightblue;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 0px;
+  background-color:lightblue;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+#fname1
+{
+    border-radius:25px;
+    width:20%;
+}
+#b1{
+    background-color:green;
+    text-align:center;
+}
+p
+{
+    color:white;
+}
+.column {
+  float: left;
+  width: 42%;
+  padding: 0px;
+  margin-top:50px;
+  margin-left:25px;
+}
+
+.row {
+    margin: 0px;
+    margin-top:-150px;
+    margin-left:88px;
+    margin-right:102px;
+    }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content
+{
+
+    margin-bottom:150px;
+}
+.row2
+{
+    text-align:center;
+}
+.dot{
+  height:14px;
+  width:14px;
+  border-radius:50%;
+  display:inline-block;
+}
+#cars
+{
+  background-color:lightblue;
+  width:170px;
+}
+.row3
+{
+  margin-left:88px;
+  margin-right:101px;
+}
+</style>
+<body> 
+  <div class="row3" style="background-color:gray">
+      <span class="dot" style="background-color:red"></span>
+      <span class="dot" style="background-color:yellow"></span>
+      <span class="dot" style="background-color:green"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span style="background-color:white"><i class="fa fa-search"></i></span>
+      <input type="text" placeholder="search or enter website name">
+      <span style="background-color:white"><i class="fa">&#xf021;</i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button style="font-size:10px"> <i class="fa fa-plus"></i></button>
+  </div>
+    <div class="navbar">
+        <a href="#">landing</a>
+        
+    <p style="float: right; width:60px"><button style="background-color:blue;border:1px solid white;color:white;border-color: white;" type="button">Get Started</button></p>
+    <p style="float: right;  width:70px">FAQ</p> 
+    <p style="float: right;  width:70px">Pricing</p>
+    <p style="float: right;  width:60px">Reviews</p>
+    <p style="float: right;  width:70px" >Features</p>
+    <p style="float: right; width:60px">Home</p>
+    
+    </div>
+    
+    <div class="row" style="background-color:blue";style="width:100px">
+        <div class="content">
+        <div class="column" style="background-color:blue"; style="width:50%">
+          <p style="font-size:32px">Fly makes you</p>  
+          <p style="font-size:32px">faster</p><br>
+          <p>New free template by uicookiescom.For more</p>
+          <p>template visit the site.Lorem ipsum dolor sitamet,</p>
+          <p>consectetur adipisicing elit.</p>
+          <button type="button" class="b1" style="background-color:green">SEE PRICING</button>
+        </div>
+    </div>
+<div class="column" style="background-color:white" style="width:50%">
+    <div class="content" style="text-align:center" style="background-color:white">
+<h2> Sign Up for Free</h2> 
+<input type="text" id="fname" placeholder="Full name"><br><br>
+<input type="text" id="fname" placeholder="Email"><br><br>
+<input type="text" id="fname" placeholder="Email"><br><br>
+<select id="cars">
+  <option>type</option>
+  <option value="type" placeholder="type"></option>
+  <option value="type1" placeholder="type"></option>
+</select>
+<br><br><button type="button" id="fname1" style="background-color:blue">Register</button>
+</div>
+</div>
+</div>
+<div class="row2">
+    <p style="color:gray">Features</p>
+  <h2 style="color:gray"; style="text-align:center">App Features</h2>
+
+    </div>
+</body>
+</html>
