@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> PAN CARD</title>
+</head>
+<body>
+<script>
+var bo=document.querySelectorAll("body");
+            bo.style.color="lightyellow";
+            var x = document.createElement("TABLE");
+  x.setAttribute("id", "myTable");
+  x.style.border="1px solid black";
+  x.style.border="1px solid black";
+  x.style.borderCollapse="collapse";
+  document.body.appendChild(x);
+  x.style.width="100%";
+  var y = document.createElement("TR");
+  y.setAttribute("id", "myTr1");
+  y.style.background="brown";
+  y.style.border = "1px solid black";
+  y.style.borderCollapse="collapse";
+ document.getElementById("myTable").appendChild(y);
+ var z1 = document.createElement("TH");
+ z1.style.border = "1px solid black";
+    z1.style.borderCollapse="collapse";
+  var t1 = document.createTextNode(" ");
+  z1.appendChild(t1);
+  z1.style.width="50px";
+  z1.style.color="white";
+  var z2 = document.createElement("TH");
+    z2.style.border = "1px solid black";
+    z2.style.borderCollapse="collapse";
+   var t2 = document.createTextNode("Request For New PAN Card Or/And Changes Or Correction in PAN DATA");
+   z2.style.wordSpacing="8px";
+  z2.appendChild(t2);
+  var newElem = document.createElement("BR");
+  z2.appendChild(newElem);
+  var t4=document.createTextNode("Feilds marked with")
+  z2.appendChild(t4);
+  var star=document.createElement("SPAN");
+  var startext=document.createTextNode("*");
+  star.style.color="red";
+  star.appendChild(startext);
+  z2.appendChild(star);
+  
+  var t3= document.createTextNode("(asterisk) are mandatory.To avoid mistake(s). Please refer.");
+   z2.appendChild(t3);
+  z2.style.color="white";
+  var p=document.createElement("SPAN");
+  var g=document.createElement("U");   
+  var gtext=document.createTextNode("guidelines");
+  g.appendChild(gtext);
+  g.style.color="orange";
+   p.appendChild(g);
+  var an=document.createTextNode("and");
+   p.appendChild(an);
+  var ins=document.createElement("U");
+  var instext=document.createTextNode("Instructions")
+  ins.appendChild(instext);
+  ins.style.color="orange";
+  p.appendChild(ins);
+  z2.appendChild(p);
+  document.getElementById("myTr1").appendChild(z1);
+  document.getElementById("myTr1").appendChild(z2);
+
+  
+  var y2 = document.createElement("TR");
+  y2.style.background="lightyellow";
+  y2.setAttribute("id", "myTr2");
+  document.getElementById("myTable").appendChild(y2);
+  var z21 = document.createElement("TD");
+  z21.style.border = "1px solid black";
+    z21.style.borderCollapse="collapse";
+  var t=document.createTextNode("")
+  z21.appendChild(t);
+ 
+ var z22=document.createElement("TD");
+ z22.style.border = "1px solid black";
+ z22.style.borderCollapse="collapse";
+ 
+  var c22=document.createElement("SPAN");
+  var startext=document.createTextNode("* ");
+  c22.style.color="red";
+  c22.appendChild(startext);
+  z22.appendChild(c22);
+  var w=document.createTextNode("Whether you are the Citizen of India           ");
+  z22.appendChild(w);
+  var y = document.createElement("LABEL");
+  y.style.marginLeft="112px";
+  var t = document.createTextNode("Yes");
+  y.appendChild(t);
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "radio");
+  z22.appendChild(y);
+  z22.appendChild(x);
+  var y = document.createElement("LABEL");
+  var t = document.createTextNode("No");
+  y.style.marginLeft="60px";
+  y.appendChild(t);
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "radio");
+  z22.appendChild(y);
+  z22.appendChild(x);
+  document.getElementById("myTr2").appendChild(z21);
+  document.getElementById("myTr2").appendChild(z22);
+  
+
+  var y3 = document.createElement("TR");
+  y3.style.background="lightyellow";
+  y3.setAttribute("id", "myTr3");
+  document.getElementById("myTable").appendChild(y3);
+  var z31 = document.createElement("TD");
+  z31.style.border = "1px solid black";
+    z31.style.borderCollapse="collapse";
+    var t3=document.createTextNode(" ");
+    z31.appendChild(t3);
+ 
+ var z32=document.createElement("TD");
+ z32.style.border = "1px solid black";
+ z32.style.borderCollapse="collapse";
+ 
+  var c32=document.createElement("SPAN");
+  var startext=document.createTextNode("* ");
+  c32.style.color="red";
+  c32.appendChild(startext);
+  z32.appendChild(c32);
+  var w=document.createTextNode("Permanent Account Number(PAN)");
+  var t=document.createElement("INPUT");
+  t.setAttribute("type", "text");
+  z32.appendChild(w);
+  z32.appendChild(t);
+  document.getElementById("myTr3").appendChild(z31);
+  document.getElementById("myTr3").appendChild(z32);
+
+
+  var y4 = document.createElement("TR");
+  y4.style.background="lightyellow";
+  y4.setAttribute("id", "myTr4");
+  document.getElementById("myTable").appendChild(y4);
+  var z41 = document.createElement("TD");
+  z41.style.border = "1px solid black";
+    z41.style.borderCollapse="collapse";
+    var t4=document.createTextNode(" ");
+    z41.appendChild(t4);
+ 
+ var z42=document.createElement("TD");
+ z42.style.border = "1px solid black";
+ z42.style.borderCollapse="collapse";
+ 
+  var c42=document.createElement("SPAN");
+  var startext=document.createTextNode("* ");
+  c42.style.color="red";
+  c42.appendChild(startext);
+  z42.appendChild(c42);
+  var w=document.createTextNode("1. Name");
+  z42.appendChild(w);
+  document.getElementById("myTr4").appendChild(z41);
+  document.getElementById("myTr4").appendChild(z42);
+  
+
+  var y5 = document.createElement("TR");
+  y5.style.background="lightyellow";
+  y5.setAttribute("id", "myTr5");
+  document.getElementById("myTable").appendChild(y5);
+  var z51 = document.createElement("TD");
+  z51.style.border = "1px solid black";
+    z51.style.borderCollapse="collapse";
+    var t5=document.createTextNode(" ");
+    z51.appendChild(t5);
+ 
+ var z52=document.createElement("TD");
+ z52.style.border = "1px solid black";
+ z52.style.borderCollapse="collapse";
+ 
+  var w=document.createTextNode("Title");
+  z52.appendChild(w);
+  var y = document.createElement("LABEL");
+  y.style.marginLeft="112px";
+  var t = document.createTextNode("Shri/Mr");
+  y.appendChild(t);
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "radio");
+  z52.appendChild(y);
+  z52.appendChild(x);
+  var y = document.createElement("LABEL");
+  var t = document.createTextNode("Smt./Mrs.");
+  y.style.marginLeft="60px";
+  y.appendChild(t);
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "radio");
+  
+  z52.appendChild(y);
+  z52.appendChild(x);
+  var y = document.createElement("LABEL");
+  var t = document.createTextNode("Kumari/Ms");
+  y.style.marginLeft="60px";
+  y.appendChild(t);
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "radio");
+  
+  z52.appendChild(y);
+  z52.appendChild(x);
+  var y = document.createElement("LABEL");
+  var t = document.createTextNode("M/s");
+  y.style.marginLeft="60px";
+  y.appendChild(t);
+  y.setAttribute.color="grey";
+  z52.appendChild(y);
+  
+  
+  document.getElementById("myTr5").appendChild(z51);
+  document.getElementById("myTr5").appendChild(z52);
+
+
+
+  var y6 = document.createElement("TR");
+  y6.style.background="lightyellow";
+  y6.setAttribute("id", "myTr6");
+  document.getElementById("myTable").appendChild(y6);
+  var z61 = document.createElement("TD");
+  z61.style.border = "1px solid black";
+    z61.style.borderCollapse="collapse";
+    var t6=document.createTextNode(" ");
+    z61.appendChild(t6);
+ 
+ var z62=document.createElement("TD");
+ z62.style.border = "1px solid black";
+ z62.style.borderCollapse="collapse";
+ 
+  var c62=document.createElement("SPAN");
+  var startext=document.createTextNode("Last Name/Surname ");
+  c62.appendChild(startext);
+  z62.appendChild(c62);
+  var newElem = document.createElement("BR");
+  z62.appendChild(newElem);
+  var t=document.createElement("INPUT");
+  t.setAttribute("type", "text");
+  z62.appendChild(t);
+  
+  
+  var c62=document.createElement("SPAN");
+  var startext=document.createTextNode("First Name ");
+  c62.appendChild(startext);
+  z62.appendChild(c62);
+  c62.style.maginTop="20px";
+  c62.style.marginLeft="112px";
+  var newElem = document.createElement("BR");
+  z62.appendChild(newElem);
+  var t=document.createElement("INPUT");
+  t.setAttribute("type", "text");
+  z62.appendChild(t);
+  t.style.marginLeft="217px";
+
+
+  var c62=document.createElement("SPAN");
+  var startext=document.createTextNode("Middle Name");
+  c62.appendChild(startext);
+  z62.appendChild(c62);
+  c62.style.maginTop="20px";
+  c62.style.marginLeft="450px";
+  var newElem = document.createElement("BR");
+  z62.appendChild(newElem);
+  var t=document.createElement("INPUT");
+  t.setAttribute("type", "text");
+  z62.appendChild(t);
+  t.style.marginLeft="433px";
+
+  document.getElementById("myTr6").appendChild(z61);
+  document.getElementById("myTr6").appendChild(z62);
+
+  var y9 = document.createElement("TR");
+  y9.style.background="lightyellow";
+  y9.setAttribute("id", "myTr9");
+  document.getElementById("myTable").appendChild(y9);
+  var z91 = document.createElement("TD");
+  z91.style.border = "1px solid black";
+    z91.style.borderCollapse="collapse";
+    var t9=document.createTextNode(" ");
+    z91.appendChild(t9);
+ 
+ var z92=document.createElement("TD");
+ z92.style.border = "1px solid black";
+ z92.style.borderCollapse="collapse";
+ 
+  var c92=document.createElement("SPAN");
+  var startext=document.createTextNode("* ");
+  c92.style.color="red";
+  c92.appendChild(startext);
+  z92.appendChild(c92);
+  var w=document.createTextNode("Name as you would like it printed on the card");
+  z92.appendChild(w);
+  var c93=document.createElement("SPAN");
+  var startext=document.createTextNode("(Prefix like Shri,Smt,Kumari,Late,Dr,CA,Ms,Mr,MRs,Alias,etc..are not allowed");
+  c93.style.color="blue";
+  c93.appendChild(startext);
+  z92.appendChild(c93);
+  document.getElementById("myTr9").appendChild(z91);
+  document.getElementById("myTr9").appendChild(z92);
+
+
+  var y10 = document.createElement("TR");
+  y10.style.background="lightyellow";
+  y10.setAttribute("id", "myTr10");
+  document.getElementById("myTable").appendChild(y10);
+  var z101 = document.createElement("TD");
+  z101.style.border = "1px solid black";
+    z91.style.borderCollapse="collapse";
+    var t10=document.createTextNode(" ");
+    z101.appendChild(t10);
+ 
+ var z102=document.createElement("TD");
+ z102.style.border = "1px solid black";
+ z102.style.borderCollapse="collapse";
+ var t=document.createElement("INPUT");
+  t.setAttribute("type", "text");
+  z102.appendChild(t);
+
+  document.getElementById("myTr10").appendChild(z101);
+  document.getElementById("myTr10").appendChild(z102);
+
+  var y11 = document.createElement("TR");
+  y11.style.background="lightyellow";
+  y11.setAttribute("id", "myTr11");
+  document.getElementById("myTable").appendChild(y11);
+  var z111 = document.createElement("TD");
+  z111.style.border = "1px solid black";
+    z111.style.borderCollapse="collapse";
+    var t11=document.createTextNode(" ");
+    z111.appendChild(t11);
+ 
+ var z112=document.createElement("TD");
+ z112.style.border = "1px solid black";
+ z112.style.borderCollapse="collapse";
+ 
+  var w=document.createTextNode("Details of Parents.");
+  z112.appendChild(w);
+  var c113=document.createElement("SPAN");
+  var startext=document.createTextNode("(Prefix like Shri,Smt,Kumari,Late,Dr,CA,Ms,Mr,MRs,Alias,etc..are not allowed");
+  c113.style.color="blue";
+  c113.appendChild(startext);
+  z112.appendChild(c113);
+  document.getElementById("myTr11").appendChild(z111);
+  document.getElementById("myTr11").appendChild(z112);
+
+
+  var y12 = document.createElement("TR");
+  y12.style.background="lightyellow";
+  y12.setAttribute("id", "myTr12");
+  document.getElementById("myTable").appendChild(y12);
+  var z121 = document.createElement("TD");
+  z121.style.border = "1px solid black";
+    z121.style.borderCollapse="collapse";
+  var t=document.createTextNode("")
+  z121.appendChild(t);
+ 
+ var z122=document.createElement("TD");
+ z122.style.border = "1px solid black";
+ z122.style.borderCollapse="collapse";
+
+  var w=document.createTextNode("Whether mother is single parent and you wish to apply for PAN by furnishing the name of your");
+  z122.appendChild(w);
+  var w1=document.createTextNode("mother only");
+  z122.appendChild(w1);
+  var y = document.createElement("LABEL");
+  y.style.marginLeft="420px";
+  var t = document.createTextNode("Yes");
+  y.appendChild(t);
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "radio");
+  z122.appendChild(y);
+  z122.appendChild(x);
+  var y = document.createElement("LABEL");
+  var t = document.createTextNode("No");
+  y.style.marginLeft="500px";
+  y.appendChild(t);
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "radio");
+  z122.appendChild(y);
+  z122.appendChild(x);
+  document.getElementById("myTr12").appendChild(z121);
+  document.getElementById("myTr12").appendChild(z122);
+  
+
+  var y13 = document.createElement("TR");
+  y13.style.background="lightyellow";
+  y13.setAttribute("id", "myTr13");
+  document.getElementById("myTable").appendChild(y13);
+  var z131 = document.createElement("TD");
+  z131.style.border = "1px solid black";
+    z131.style.borderCollapse="collapse";
+    var t13=document.createTextNode(" ");
+    z131.appendChild(t13);
+ 
+ var z132=document.createElement("TD");
+ z132.style.border = "1px solid black";
+ z132.style.borderCollapse="collapse";
+
+ var y14 = document.createElement("TR");
+  y14.style.background="lightyellow";
+  y14.setAttribute("id", "myTr14");
+  document.getElementById("myTable").appendChild(y14);
+  var z141 = document.createElement("TD");
+  z141.style.border = "1px solid black";
+    z141.style.borderCollapse="collapse";
+    var t8=document.createTextNode(" ");
+    z141.appendChild(t8);
+ 
+ var z142=document.createElement("TD");
+ z142.style.border = "1px solid black";
+ z142.style.borderCollapse="collapse";
+ 
+  var c82=document.createElement("SPAN");
+  var startext=document.createTextNode("Last Name/Surname ");
+  c82.appendChild(startext);
+  z142.appendChild(c82);
+  var newElem = document.createElement("BR");
+  z142.appendChild(newElem);
+  var t=document.createElement("INPUT");
+  t.setAttribute("type", "text");
+  z142.appendChild(t);
+  
+  
+  var c82=document.createElement("SPAN");
+  var startext=document.createTextNode("First Name ");
+  c82.appendChild(startext);
+  z142.appendChild(c82);
+  c82.style.maginTop="20px";
+  c82.style.marginLeft="112px";
+  var newElem = document.createElement("BR");
+  z142.appendChild(newElem);
+  var t=document.createElement("INPUT");
+  t.setAttribute("type", "text");
+  z142.appendChild(t);
+  t.style.marginLeft="217px";
+
+
+  var c82=document.createElement("SPAN");
+  var startext=document.createTextNode("Middle Name");
+  c82.appendChild(startext);
+  z142.appendChild(c82);
+  c82.style.maginTop="20px";
+  c82.style.marginLeft="450px";
+  var newElem = document.createElement("BR");
+  z142.appendChild(newElem);
+  var t=document.createElement("INPUT");
+  t.setAttribute("type", "text");
+  z142.appendChild(t);
+  t.style.marginLeft="433px";
+
+  document.getElementById("myTr14").appendChild(z141);
+  document.getElementById("myTr14").appendChild(z142);
+  
+ 
+  var c92=document.createElement("SPAN");
+  var startext=document.createTextNode("* ");
+  c92.style.color="red";
+  c92.appendChild(startext);
+  z132.appendChild(c92);
+  var w=document.createTextNode("Father's Name");
+  z132.appendChild(w);
+  var c93=document.createElement("SPAN");
+  var startext=document.createTextNode("(Mandatory field.Even married women should give father's name only.)");
+  c93.style.color="blue";
+  c93.appendChild(startext);
+  z132.appendChild(c93);
+  document.getElementById("myTr13").appendChild(z131);
+  document.getElementById("myTr13").appendChild(z132);
+
+
+
+  var y7 = document.createElement("TR");
+  y7.style.background="lightyellow";
+  y7.setAttribute("id", "myTr7");
+  document.getElementById("myTable").appendChild(y7);
+  var z71 = document.createElement("TD");
+  z71.style.border = "1px solid black";
+    z71.style.borderCollapse="collapse";
+    var t7=document.createTextNode(" ");
+    z71.appendChild(t7);
+ 
+ var z72=document.createElement("TD");
+ z72.style.border = "1px solid black";
+ z72.style.borderCollapse="collapse";
+ 
+  var c72=document.createElement("SPAN");
+  var startext=document.createTextNode("Mother's Name(This field is optional)");
+  c72.style.color="blue";
+  c72.appendChild(startext);
+  z72.appendChild(c72);
+  document.getElementById("myTr7").appendChild(z71);
+  document.getElementById("myTr7").appendChild(z72);
+  
+
+
+  var y8 = document.createElement("TR");
+  y8.style.background="lightyellow";
+  y8.setAttribute("id", "myTr8");
+  document.getElementById("myTable").appendChild(y8);
+  var z81 = document.createElement("TD");
+  z81.style.border = "1px solid black";
+    z61.style.borderCollapse="collapse";
+    var t8=document.createTextNode(" ");
+    z81.appendChild(t8);
+ 
+ var z82=document.createElement("TD");
+ z82.style.border = "1px solid black";
+ z82.style.borderCollapse="collapse";
+ 
+  var c82=document.createElement("SPAN");
+  var startext=document.createTextNode("Last Name/Surname ");
+  c82.appendChild(startext);
+  z82.appendChild(c82);
+  var newElem = document.createElement("BR");
+  z82.appendChild(newElem);
+  var t=document.createElement("INPUT");
+  t.setAttribute("type", "text");
+  z82.appendChild(t);
+  
+  
+  var c82=document.createElement("SPAN");
+  var startext=document.createTextNode("First Name ");
+  c82.appendChild(startext);
+  z82.appendChild(c82);
+  c82.style.maginTop="20px";
+  c82.style.marginLeft="112px";
+  var newElem = document.createElement("BR");
+  z82.appendChild(newElem);
+  var t=document.createElement("INPUT");
+  t.setAttribute("type", "text");
+  z82.appendChild(t);
+  t.style.marginLeft="217px";
+
+
+  var c82=document.createElement("SPAN");
+  var startext=document.createTextNode("Middle Name");
+  c82.appendChild(startext);
+  z82.appendChild(c82);
+  c82.style.maginTop="20px";
+  c82.style.marginLeft="450px";
+  var newElem = document.createElement("BR");
+  z82.appendChild(newElem);
+  var t=document.createElement("INPUT");
+  t.setAttribute("type", "text");
+  z82.appendChild(t);
+  t.style.marginLeft="433px";
+
+  document.getElementById("myTr8").appendChild(z81);
+  document.getElementById("myTr8").appendChild(z82);
+
+  var y15 = document.createElement("TR");
+  y15.style.background="lightyellow";
+  y15.setAttribute("id", "myTr15");
+  document.getElementById("myTable").appendChild(y15);
+  var z151 = document.createElement("TD");
+  z151.style.border = "1px solid black";
+    z151.style.borderCollapse="collapse";
+    var t15=document.createTextNode(" ");
+    z151.appendChild(t15);
+ 
+ var z152=document.createElement("TD");
+ z152.style.border = "1px solid black";
+ z152.style.borderCollapse="collapse";
+ 
+  var c152=document.createElement("SPAN");
+  var startext=document.createTextNode("* ");
+  c152.style.color="red";
+  c152.appendChild(startext);
+  z152.appendChild(c152);
+  var w=document.createTextNode("4.Select Parent name which is to be printed on the card");
+  z152.appendChild(w);
+  var c93=document.createElement("SPAN");
+  var startext=document.createTextNode("(In case no option is provided then PAN card will be issued with father's name");
+  c93.style.color="blue";
+  c93.appendChild(startext);
+  z152.appendChild(c93);
+  var z153=document.createElement("TD");
+ z153.style.border = "1px solid black";
+ z153.style.borderCollapse="collapse";
+ 
+  var y = document.createElement("LABEL");
+  y.style.marginLeft="26px";
+  var t = document.createTextNode("Father");
+  y.appendChild(t);
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "radio");
+  z153.appendChild(y);
+  z153.appendChild(x);
+  var y = document.createElement("LABEL");
+  var t = document.createTextNode("Mother");
+  y.style.marginLeft="25px";
+  y.appendChild(t);
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "radio");
+  z153.appendChild(y);
+  z153.appendChild(x);
+  document.getElementById("myTr15").appendChild(z151);
+  document.getElementById("myTr15").appendChild(z152);
+  document.getElementById("myTr15").appendChild(z153);
+
+
+
+  var y16 = document.createElement("TR");
+  y16.style.background="lightyellow";
+  y16.setAttribute("id", "myTr16");
+  document.getElementById("myTable").appendChild(y16);
+  var z161 = document.createElement("TD");
+  z161.style.border = "1px solid black";
+    z161.style.borderCollapse="collapse";
+    var t16=document.createTextNode(" ");
+    z161.appendChild(t16);
+ 
+ var z162=document.createElement("TD");
+ z162.style.border = "1px solid black";
+ z162.style.borderCollapse="collapse";
+ 
+  var c162=document.createElement("SPAN");
+  var startext=document.createTextNode("* ");
+  c162.style.color="red";
+  c162.appendChild(startext);
+  z162.appendChild(c162);
+  var w=document.createTextNode("5. Date of Birth/Incorporation/Agreement/Partnership");
+  z162.appendChild(w);
+  var w1=document.createTextNode("or Trust Deed/Formation of Body of Individuals/");
+  z162.appendChild(w1);
+  var w2=document.createTextNode("Association of Persons");
+  z162.appendChild(w2);
+
+  var z163=document.createElement("TD");
+ z163.style.border = "1px solid black";
+ z163.style.borderCollapse="collapse";
+ 
+  var y = document.createElement("LABEL");
+  y.style.marginLeft="26px";
+  var t = document.createTextNode("DD MM  YYY");
+  y.appendChild(t);
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "date");
+  z163.appendChild(y);
+  z163.appendChild(x);
+
+  document.getElementById("myTr16").appendChild(z161);
+  document.getElementById("myTr16").appendChild(z162);
+  document.getElementById("myTr16").appendChild(z163);
+
+
+  var y17 = document.createElement("TR");
+  y17.style.background="lightyellow";
+  y17.setAttribute("id", "myTr17");
+  document.getElementById("myTable").appendChild(y17);
+  var z171 = document.createElement("TD");
+  z171.style.border = "1px solid black";
+    z171.style.borderCollapse="collapse";
+    var t17=document.createTextNode(" ");
+    z171.appendChild(t17);
+ 
+ var z172=document.createElement("TD");
+ z172.style.border = "1px solid black";
+ z172.style.borderCollapse="collapse";
+ 
+  var c172=document.createElement("SPAN");
+  var startext=document.createTextNode("* ");
+  c172.style.color="red";
+  c172.appendChild(startext);
+  z172.appendChild(c172);
+  var w=document.createTextNode("6. Gender");
+  z172.appendChild(w);
+
+  var z173=document.createElement("TD");
+ z173.style.border = "1px solid black";
+ z173.style.borderCollapse="collapse";
+ 
+  var y = document.createElement("LABEL");
+  y.style.marginLeft="26px";
+  var t = document.createTextNode("Male");
+  y.appendChild(t);
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "radio");
+  z173.appendChild(y);
+  z173.appendChild(x);
+  var y = document.createElement("LABEL");
+  var t = document.createTextNode("Female");
+  y.style.marginLeft="25px";
+  y.appendChild(t);
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "radio");
+  z173.appendChild(y);
+  z173.appendChild(x);
+  var y = document.createElement("LABEL");
+  var t = document.createTextNode("Transgender");
+  y.style.marginLeft="25px";
+  y.appendChild(t);
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "radio");
+  z173.appendChild(y);
+  z173.appendChild(x);
+  document.getElementById("myTr17").appendChild(z171);
+  document.getElementById("myTr17").appendChild(z172);
+  document.getElementById("myTr17").appendChild(z173);
+
+  var y19 = document.createElement("TR");
+  y19.style.background="lightyellow";
+  y19.setAttribute("id", "myTr18");
+  document.getElementById("myTable").appendChild(y19);
+  var z191 = document.createElement("TD");
+  z191.style.border = "1px solid black";
+    z191.style.borderCollapse="collapse";
+    var t19=document.createTextNode(" ");
+    z191.appendChild(t19);
+ 
+ var z192=document.createElement("TD");
+ z192.style.border = "1px solid black";
+ z192.style.borderCollapse="collapse";
+  var w=document.createTextNode("8. Photo Mismatch");
+  z192.appendChild(w);
+  document.getElementById("myTr18").appendChild(z191);
+  document.getElementById("myTr18").appendChild(z192);
+ 
+
+
+
+
+ var y19 = document.createElement("TR");
+  y19.style.background="lightyellow";
+  y19.setAttribute("id", "myTr19");
+  document.getElementById("myTable").appendChild(y19);
+  var z191 = document.createElement("TD");
+  z191.style.border = "1px solid black";
+    z191.style.borderCollapse="collapse";
+    var t19=document.createTextNode(" ");
+    z191.appendChild(t19);
+ 
+ var z192=document.createElement("TD");
+ z192.style.border = "1px solid black";
+ z192.style.borderCollapse="collapse";
+  var w=document.createTextNode("8.Signature Mismatch");
+  z192.appendChild(w);
+  document.getElementById("myTr19").appendChild(z191);
+  document.getElementById("myTr19").appendChild(z192);
+
+
+
+  var y17 = document.createElement("TR");
+  y17.style.background="lightyellow";
+  y17.setAttribute("id", "myTr20");
+  document.getElementById("myTable").appendChild(y17);
+  var z171 = document.createElement("TD");
+  z171.style.border = "1px solid black";
+    z171.style.borderCollapse="collapse";
+    var t17=document.createTextNode(" ");
+    z171.appendChild(t17);
+ 
+ var z172=document.createElement("TD");
+ z172.style.border = "1px solid black";
+ z172.style.borderCollapse="collapse";
+ 
+  var c172=document.createElement("SPAN");
+  var startext=document.createTextNode("* ");
+  c172.style.color="red";
+  c172.appendChild(startext);
+  z172.appendChild(c172);
+  var w=document.createTextNode("9.Address for Communication");
+  z172.appendChild(w);
+
+  var z173=document.createElement("TD");
+ z173.style.border = "1px solid black";
+ z173.style.borderCollapse="collapse";
+ 
+  var y = document.createElement("LABEL");
+  y.style.marginLeft="26px";
+  var t = document.createTextNode("Residential");
+  y.appendChild(t);
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "radio");
+  z173.appendChild(y);
+  z173.appendChild(x);
+  var y = document.createElement("LABEL");
+  var t = document.createTextNode("Office");
+  y.style.marginLeft="25px";
+  y.appendChild(t);
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "radio");
+  z173.appendChild(y);
+  z173.appendChild(x);
+
+  document.getElementById("myTr20").appendChild(z171);
+  document.getElementById("myTr20").appendChild(z172);
+  document.getElementById("myTr20").appendChild(z173); 
+
+
+ 
+ 
+
+
+
+</script>
+</body>
+</html>
