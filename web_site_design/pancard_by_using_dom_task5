@@ -6,7 +6,7 @@
 <body>
 <script>
 var bo=document.querySelectorAll("body");
-            bo.style.color="lightyellow";
+            //bo.style.color="lightyellow";
             var x = document.createElement("TABLE");
   x.setAttribute("id", "myTable");
   x.style.border="1px solid black";
@@ -738,7 +738,6 @@ var bo=document.querySelectorAll("body");
   document.getElementById("myTr19").appendChild(z192);
 
 
-
   var y17 = document.createElement("TR");
   y17.style.background="lightyellow";
   y17.setAttribute("id", "myTr20");
@@ -758,7 +757,7 @@ var bo=document.querySelectorAll("body");
   c172.style.color="red";
   c172.appendChild(startext);
   z172.appendChild(c172);
-  var w=document.createTextNode("9.Address for Communication");
+  var w=document.createTextNode("9. Address for Communication");
   z172.appendChild(w);
 
   var z173=document.createElement("TD");
@@ -774,7 +773,7 @@ var bo=document.querySelectorAll("body");
   z173.appendChild(y);
   z173.appendChild(x);
   var y = document.createElement("LABEL");
-  var t = document.createTextNode("Office");
+  var t = document.createTextNode("office");
   y.style.marginLeft="25px";
   y.appendChild(t);
    var x = document.createElement("INPUT");
@@ -784,12 +783,292 @@ var bo=document.querySelectorAll("body");
 
   document.getElementById("myTr20").appendChild(z171);
   document.getElementById("myTr20").appendChild(z172);
-  document.getElementById("myTr20").appendChild(z173); 
+  document.getElementById("myTr20").appendChild(z173);
 
 
+  
+  
+
+  var y17 = document.createElement("TR");
+  y17.style.background="lightyellow";
+  y17.setAttribute("id", "myTr21");
+  document.getElementById("myTable").appendChild(y17);
+  var z171 = document.createElement("TD");
+  z171.style.border = "1px solid black";
+    z171.style.borderCollapse="collapse";
+    var t17=document.createTextNode(" ");
+    z171.appendChild(t17);
+ 
+ var z172=document.createElement("TD");
+ z172.style.border = "1px solid black";
+ z172.style.borderCollapse="collapse";
+ 
+  var w=document.createTextNode("Office Name(addres to be filled in case of office address)");
+  z172.appendChild(w);
+
+  var z173=document.createElement("TD");
+ z173.style.border = "1px solid black";
+ z173.style.borderCollapse="collapse";
+ 
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "text");
+  z173.appendChild(x);
+
+  document.getElementById("myTr21").appendChild(z171);
+  document.getElementById("myTr21").appendChild(z172);
+  document.getElementById("myTr21").appendChild(z173); 
+
+
+  var y17 = document.createElement("TR");
+  y17.style.background="lightyellow";
+  y17.setAttribute("id", "myTr22");
+  document.getElementById("myTable").appendChild(y17);
+  var z171 = document.createElement("TD");
+  z171.style.border = "1px solid black";
+    z171.style.borderCollapse="collapse";
+    var t17=document.createTextNode(" ");
+    z171.appendChild(t17);
+ 
+ var z172=document.createElement("TD");
+ z172.style.border = "1px solid black";
+ z172.style.borderCollapse="collapse";
+ 
+  var w=document.createTextNode("Flat/Doors/Block No.");
+  z172.appendChild(w);
+
+  var z173=document.createElement("TD");
+ z173.style.border = "1px solid black";
+ z173.style.borderCollapse="collapse";
+ 
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "text");
+  z173.appendChild(x);
+
+  document.getElementById("myTr22").appendChild(z171);
+  document.getElementById("myTr22").appendChild(z172);
+  document.getElementById("myTr22").appendChild(z173); 
+
+
+  var y17 = document.createElement("TR");
+  y17.style.background="lightyellow";
+  y17.setAttribute("id", "myTr23");
+  document.getElementById("myTable").appendChild(y17);
+  var z171 = document.createElement("TD");
+  z171.style.border = "1px solid black";
+    z171.style.borderCollapse="collapse";
+    var t17=document.createTextNode(" ");
+    z171.appendChild(t17);
+ 
+ var z172=document.createElement("TD");
+ z172.style.border = "1px solid black";
+ z172.style.borderCollapse="collapse";
+ 
+  var w=document.createTextNode("Name of Premises/Building/Village");
+  z172.appendChild(w);
+
+  var z173=document.createElement("TD");
+ z173.style.border = "1px solid black";
+ z173.style.borderCollapse="collapse";
+ 
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "text");
+  z173.appendChild(x);
+
+  document.getElementById("myTr23").appendChild(z171);
+  document.getElementById("myTr23").appendChild(z172);
+  document.getElementById("myTr23").appendChild(z173); 
+
+
+
+
+
+  var y17 = document.createElement("TR");
+  y17.style.background="lightyellow";
+  y17.setAttribute("id", "myTr24");
+  document.getElementById("myTable").appendChild(y17);
+  var z171 = document.createElement("TD");
+  z171.style.border = "1px solid black";
+    z171.style.borderCollapse="collapse";
+    var t17=document.createTextNode(" ");
+    z171.appendChild(t17);
+ 
+ var z172=document.createElement("TD");
+ z172.style.border = "1px solid black";
+ z172.style.borderCollapse="collapse";
+ 
+  var w=document.createTextNode("Road/Street/Lane/Post Office");
+  z172.appendChild(w);
+
+  var z173=document.createElement("TD");
+ z173.style.border = "1px solid black";
+ z173.style.borderCollapse="collapse";
+ 
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "text");
+  z173.appendChild(x);
+
+  document.getElementById("myTr24").appendChild(z171);
+  document.getElementById("myTr24").appendChild(z172);
+  document.getElementById("myTr24").appendChild(z173); 
+  
+   
+   var y17 = document.createElement("TR");
+  y17.style.background="lightyellow";
+  y17.setAttribute("id", "myTr25");
+  document.getElementById("myTable").appendChild(y17);
+  var z171 = document.createElement("TD");
+  z171.style.border = "1px solid black";
+    z171.style.borderCollapse="collapse";
+    var t17=document.createTextNode(" ");
+    z171.appendChild(t17);
+ 
+ var z172=document.createElement("TD");
+ z172.style.border = "1px solid black";
+ z172.style.borderCollapse="collapse";
+ 
+  var w=document.createTextNode("Area/Locality/Street/Sub-divison");
+  z172.appendChild(w);
+
+  var z173=document.createElement("TD");
+ z173.style.border = "1px solid black";
+ z173.style.borderCollapse="collapse";
+ 
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "text");
+  z173.appendChild(x);
+
+  document.getElementById("myTr25").appendChild(z171);
+  document.getElementById("myTr25").appendChild(z172);
+  document.getElementById("myTr25").appendChild(z173); 
  
  
+  var y17 = document.createElement("TR");
+  y17.style.background="lightyellow";
+  y17.setAttribute("id", "myTr26");
+  document.getElementById("myTable").appendChild(y17);
+  var z171 = document.createElement("TD");
+  z171.style.border = "1px solid black";
+    z171.style.borderCollapse="collapse";
+    var t17=document.createTextNode(" ");
+    z171.appendChild(t17);
+ 
+ var z172=document.createElement("TD");
+ z172.style.border = "1px solid black";
+ z172.style.borderCollapse="collapse";
+ 
+  var w=document.createTextNode("Town/City/District");
+  z172.appendChild(w);
 
+  var z173=document.createElement("TD");
+ z173.style.border = "1px solid black";
+ z173.style.borderCollapse="collapse";
+ 
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "text");
+  z173.appendChild(x);
+
+  document.getElementById("myTr26").appendChild(z171);
+  document.getElementById("myTr26").appendChild(z172);
+  document.getElementById("myTr26").appendChild(z173); 
+ 
+
+
+  var y17 = document.createElement("TR");
+  y17.style.background="lightyellow";
+  y17.setAttribute("id", "myTr27");
+  document.getElementById("myTable").appendChild(y17);
+  var z171 = document.createElement("TD");
+  z171.style.border = "1px solid black";
+    z171.style.borderCollapse="collapse";
+    var t17=document.createTextNode(" ");
+    z171.appendChild(t17);
+ 
+ var z172=document.createElement("TD");
+ z172.style.border = "1px solid black";
+ z172.style.borderCollapse="collapse";
+ 
+  var w=document.createTextNode("State/Union Teritory");
+  z172.appendChild(w);
+
+  var z173=document.createElement("TD");
+ z173.style.border = "1px solid black";
+ z173.style.borderCollapse="collapse";
+ var t= document.createTextNode("...please select.....")
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "option");
+  z173.appendChild(t);
+  z173.appendChild(x);
+
+  document.getElementById("myTr27").appendChild(z171);
+  document.getElementById("myTr27").appendChild(z172);
+  document.getElementById("myTr27").appendChild(z173); 
+
+ 
+  
+  
+
+  var y17 = document.createElement("TR");
+  y17.style.background="lightyellow";
+  y17.setAttribute("id", "myTr28");
+  document.getElementById("myTable").appendChild(y17);
+  var z171 = document.createElement("TD");
+  z171.style.border = "1px solid black";
+    z171.style.borderCollapse="collapse";
+    var t17=document.createTextNode(" ");
+    z171.appendChild(t17);
+ 
+ var z172=document.createElement("TD");
+ z172.style.border = "1px solid black";
+ z172.style.borderCollapse="collapse";
+ 
+  var w=document.createTextNode("PIN(indicating PIN is mandatory)");
+  z172.appendChild(w);
+
+  var z173=document.createElement("TD");
+ z173.style.border = "1px solid black";
+ z173.style.borderCollapse="collapse";
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "text");
+  z173.appendChild(x);
+
+  document.getElementById("myTr28").appendChild(z171);
+  document.getElementById("myTr28").appendChild(z172);
+  document.getElementById("myTr28").appendChild(z173); 
+
+
+
+  
+  
+  var y17 = document.createElement("TR");
+  y17.style.background="lightyellow";
+  y17.setAttribute("id", "myTr30");
+  document.getElementById("myTable").appendChild(y17);
+  var z171 = document.createElement("TD");
+  z171.style.border = "1px solid black";
+    z171.style.borderCollapse="collapse";
+    var t17=document.createTextNode(" ");
+    z171.appendChild(t17);
+ 
+ var z172=document.createElement("TD");
+ z172.style.border = "1px solid black";
+ z172.style.borderCollapse="collapse";
+ 
+  var w=document.createTextNode("ZIP");
+  z172.appendChild(w);
+
+  var z173=document.createElement("TD");
+ z173.style.border = "1px solid black";
+ z173.style.borderCollapse="collapse";
+   var x = document.createElement("INPUT");
+  x.setAttribute("type", "text");
+  z173.appendChild(x);
+
+  document.getElementById("myTr30").appendChild(z171);
+  document.getElementById("myTr30").appendChild(z172);
+  document.getElementById("myTr30").appendChild(z173); 
+
+
+  
 
 
 </script>
