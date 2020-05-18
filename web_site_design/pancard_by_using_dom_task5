@@ -1,1076 +1,1131 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> PAN CARD</title>
+        <title>PAN CARD USING JS</title>
 </head>
-<body>
+<body id="mybody">
 <script>
-var bo=document.querySelectorAll("body");
-            //bo.style.color="lightyellow";
-            var x = document.createElement("TABLE");
-  x.setAttribute("id", "myTable");
-  x.style.border="1px solid black";
-  x.style.border="1px solid black";
-  x.style.borderCollapse="collapse";
-  document.body.appendChild(x);
-  x.style.width="100%";
-  var y = document.createElement("TR");
-  y.setAttribute("id", "myTr1");
-  y.style.background="brown";
-  y.style.border = "1px solid black";
-  y.style.borderCollapse="collapse";
- document.getElementById("myTable").appendChild(y);
- var z1 = document.createElement("TH");
- z1.style.border = "1px solid black";
-    z1.style.borderCollapse="collapse";
-  var t1 = document.createTextNode(" ");
-  z1.appendChild(t1);
-  z1.style.width="50px";
-  z1.style.color="white";
-  var z2 = document.createElement("TH");
-    z2.style.border = "1px solid black";
-    z2.style.borderCollapse="collapse";
-   var t2 = document.createTextNode("Request For New PAN Card Or/And Changes Or Correction in PAN DATA");
-   z2.style.wordSpacing="8px";
-  z2.appendChild(t2);
-  var newElem = document.createElement("BR");
-  z2.appendChild(newElem);
-  var t4=document.createTextNode("Feilds marked with")
-  z2.appendChild(t4);
-  var star=document.createElement("SPAN");
-  var startext=document.createTextNode("*");
-  star.style.color="red";
-  star.appendChild(startext);
-  z2.appendChild(star);
-  
-  var t3= document.createTextNode("(asterisk) are mandatory.To avoid mistake(s). Please refer.");
-   z2.appendChild(t3);
-  z2.style.color="white";
-  var p=document.createElement("SPAN");
-  var g=document.createElement("U");   
-  var gtext=document.createTextNode("guidelines");
-  g.appendChild(gtext);
-  g.style.color="orange";
-   p.appendChild(g);
-  var an=document.createTextNode("and");
-   p.appendChild(an);
-  var ins=document.createElement("U");
-  var instext=document.createTextNode("Instructions")
-  ins.appendChild(instext);
-  ins.style.color="orange";
-  p.appendChild(ins);
-  z2.appendChild(p);
-  document.getElementById("myTr1").appendChild(z1);
-  document.getElementById("myTr1").appendChild(z2);
-
-  
-  var y2 = document.createElement("TR");
-  y2.style.background="lightyellow";
-  y2.setAttribute("id", "myTr2");
-  document.getElementById("myTable").appendChild(y2);
-  var z21 = document.createElement("TD");
-  z21.style.border = "1px solid black";
-    z21.style.borderCollapse="collapse";
-  var t=document.createTextNode("")
-  z21.appendChild(t);
- 
- var z22=document.createElement("TD");
- z22.style.border = "1px solid black";
- z22.style.borderCollapse="collapse";
- 
-  var c22=document.createElement("SPAN");
-  var startext=document.createTextNode("* ");
-  c22.style.color="red";
-  c22.appendChild(startext);
-  z22.appendChild(c22);
-  var w=document.createTextNode("Whether you are the Citizen of India           ");
-  z22.appendChild(w);
-  var y = document.createElement("LABEL");
-  y.style.marginLeft="112px";
-  var t = document.createTextNode("Yes");
-  y.appendChild(t);
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "radio");
-  z22.appendChild(y);
-  z22.appendChild(x);
-  var y = document.createElement("LABEL");
-  var t = document.createTextNode("No");
-  y.style.marginLeft="60px";
-  y.appendChild(t);
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "radio");
-  z22.appendChild(y);
-  z22.appendChild(x);
-  document.getElementById("myTr2").appendChild(z21);
-  document.getElementById("myTr2").appendChild(z22);
-  
-
-  var y3 = document.createElement("TR");
-  y3.style.background="lightyellow";
-  y3.setAttribute("id", "myTr3");
-  document.getElementById("myTable").appendChild(y3);
-  var z31 = document.createElement("TD");
-  z31.style.border = "1px solid black";
-    z31.style.borderCollapse="collapse";
-    var t3=document.createTextNode(" ");
-    z31.appendChild(t3);
- 
- var z32=document.createElement("TD");
- z32.style.border = "1px solid black";
- z32.style.borderCollapse="collapse";
- 
-  var c32=document.createElement("SPAN");
-  var startext=document.createTextNode("* ");
-  c32.style.color="red";
-  c32.appendChild(startext);
-  z32.appendChild(c32);
-  var w=document.createTextNode("Permanent Account Number(PAN)");
-  var t=document.createElement("INPUT");
-  t.setAttribute("type", "text");
-  z32.appendChild(w);
-  z32.appendChild(t);
-  document.getElementById("myTr3").appendChild(z31);
-  document.getElementById("myTr3").appendChild(z32);
-
-
-  var y4 = document.createElement("TR");
-  y4.style.background="lightyellow";
-  y4.setAttribute("id", "myTr4");
-  document.getElementById("myTable").appendChild(y4);
-  var z41 = document.createElement("TD");
-  z41.style.border = "1px solid black";
-    z41.style.borderCollapse="collapse";
-    var t4=document.createTextNode(" ");
-    z41.appendChild(t4);
- 
- var z42=document.createElement("TD");
- z42.style.border = "1px solid black";
- z42.style.borderCollapse="collapse";
- 
-  var c42=document.createElement("SPAN");
-  var startext=document.createTextNode("* ");
-  c42.style.color="red";
-  c42.appendChild(startext);
-  z42.appendChild(c42);
-  var w=document.createTextNode("1. Name");
-  z42.appendChild(w);
-  document.getElementById("myTr4").appendChild(z41);
-  document.getElementById("myTr4").appendChild(z42);
-  
-
-  var y5 = document.createElement("TR");
-  y5.style.background="lightyellow";
-  y5.setAttribute("id", "myTr5");
-  document.getElementById("myTable").appendChild(y5);
-  var z51 = document.createElement("TD");
-  z51.style.border = "1px solid black";
-    z51.style.borderCollapse="collapse";
-    var t5=document.createTextNode(" ");
-    z51.appendChild(t5);
- 
- var z52=document.createElement("TD");
- z52.style.border = "1px solid black";
- z52.style.borderCollapse="collapse";
- 
-  var w=document.createTextNode("Title");
-  z52.appendChild(w);
-  var y = document.createElement("LABEL");
-  y.style.marginLeft="112px";
-  var t = document.createTextNode("Shri/Mr");
-  y.appendChild(t);
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "radio");
-  z52.appendChild(y);
-  z52.appendChild(x);
-  var y = document.createElement("LABEL");
-  var t = document.createTextNode("Smt./Mrs.");
-  y.style.marginLeft="60px";
-  y.appendChild(t);
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "radio");
-  
-  z52.appendChild(y);
-  z52.appendChild(x);
-  var y = document.createElement("LABEL");
-  var t = document.createTextNode("Kumari/Ms");
-  y.style.marginLeft="60px";
-  y.appendChild(t);
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "radio");
-  
-  z52.appendChild(y);
-  z52.appendChild(x);
-  var y = document.createElement("LABEL");
-  var t = document.createTextNode("M/s");
-  y.style.marginLeft="60px";
-  y.appendChild(t);
-  y.setAttribute.color="grey";
-  z52.appendChild(y);
-  
-  
-  document.getElementById("myTr5").appendChild(z51);
-  document.getElementById("myTr5").appendChild(z52);
-
-
-
-  var y6 = document.createElement("TR");
-  y6.style.background="lightyellow";
-  y6.setAttribute("id", "myTr6");
-  document.getElementById("myTable").appendChild(y6);
-  var z61 = document.createElement("TD");
-  z61.style.border = "1px solid black";
-    z61.style.borderCollapse="collapse";
-    var t6=document.createTextNode(" ");
-    z61.appendChild(t6);
- 
- var z62=document.createElement("TD");
- z62.style.border = "1px solid black";
- z62.style.borderCollapse="collapse";
- 
-  var c62=document.createElement("SPAN");
-  var startext=document.createTextNode("Last Name/Surname ");
-  c62.appendChild(startext);
-  z62.appendChild(c62);
-  var newElem = document.createElement("BR");
-  z62.appendChild(newElem);
-  var t=document.createElement("INPUT");
-  t.setAttribute("type", "text");
-  z62.appendChild(t);
-  
-  
-  var c62=document.createElement("SPAN");
-  var startext=document.createTextNode("First Name ");
-  c62.appendChild(startext);
-  z62.appendChild(c62);
-  c62.style.maginTop="20px";
-  c62.style.marginLeft="112px";
-  var newElem = document.createElement("BR");
-  z62.appendChild(newElem);
-  var t=document.createElement("INPUT");
-  t.setAttribute("type", "text");
-  z62.appendChild(t);
-  t.style.marginLeft="217px";
-
-
-  var c62=document.createElement("SPAN");
-  var startext=document.createTextNode("Middle Name");
-  c62.appendChild(startext);
-  z62.appendChild(c62);
-  c62.style.maginTop="20px";
-  c62.style.marginLeft="450px";
-  var newElem = document.createElement("BR");
-  z62.appendChild(newElem);
-  var t=document.createElement("INPUT");
-  t.setAttribute("type", "text");
-  z62.appendChild(t);
-  t.style.marginLeft="433px";
-
-  document.getElementById("myTr6").appendChild(z61);
-  document.getElementById("myTr6").appendChild(z62);
-
-  var y9 = document.createElement("TR");
-  y9.style.background="lightyellow";
-  y9.setAttribute("id", "myTr9");
-  document.getElementById("myTable").appendChild(y9);
-  var z91 = document.createElement("TD");
-  z91.style.border = "1px solid black";
-    z91.style.borderCollapse="collapse";
-    var t9=document.createTextNode(" ");
-    z91.appendChild(t9);
- 
- var z92=document.createElement("TD");
- z92.style.border = "1px solid black";
- z92.style.borderCollapse="collapse";
- 
-  var c92=document.createElement("SPAN");
-  var startext=document.createTextNode("* ");
-  c92.style.color="red";
-  c92.appendChild(startext);
-  z92.appendChild(c92);
-  var w=document.createTextNode("Name as you would like it printed on the card");
-  z92.appendChild(w);
-  var c93=document.createElement("SPAN");
-  var startext=document.createTextNode("(Prefix like Shri,Smt,Kumari,Late,Dr,CA,Ms,Mr,MRs,Alias,etc..are not allowed");
-  c93.style.color="blue";
-  c93.appendChild(startext);
-  z92.appendChild(c93);
-  document.getElementById("myTr9").appendChild(z91);
-  document.getElementById("myTr9").appendChild(z92);
-
-
-  var y10 = document.createElement("TR");
-  y10.style.background="lightyellow";
-  y10.setAttribute("id", "myTr10");
-  document.getElementById("myTable").appendChild(y10);
-  var z101 = document.createElement("TD");
-  z101.style.border = "1px solid black";
-    z91.style.borderCollapse="collapse";
-    var t10=document.createTextNode(" ");
-    z101.appendChild(t10);
- 
- var z102=document.createElement("TD");
- z102.style.border = "1px solid black";
- z102.style.borderCollapse="collapse";
- var t=document.createElement("INPUT");
-  t.setAttribute("type", "text");
-  z102.appendChild(t);
-
-  document.getElementById("myTr10").appendChild(z101);
-  document.getElementById("myTr10").appendChild(z102);
-
-  var y11 = document.createElement("TR");
-  y11.style.background="lightyellow";
-  y11.setAttribute("id", "myTr11");
-  document.getElementById("myTable").appendChild(y11);
-  var z111 = document.createElement("TD");
-  z111.style.border = "1px solid black";
-    z111.style.borderCollapse="collapse";
-    var t11=document.createTextNode(" ");
-    z111.appendChild(t11);
- 
- var z112=document.createElement("TD");
- z112.style.border = "1px solid black";
- z112.style.borderCollapse="collapse";
- 
-  var w=document.createTextNode("Details of Parents.");
-  z112.appendChild(w);
-  var c113=document.createElement("SPAN");
-  var startext=document.createTextNode("(Prefix like Shri,Smt,Kumari,Late,Dr,CA,Ms,Mr,MRs,Alias,etc..are not allowed");
-  c113.style.color="blue";
-  c113.appendChild(startext);
-  z112.appendChild(c113);
-  document.getElementById("myTr11").appendChild(z111);
-  document.getElementById("myTr11").appendChild(z112);
-
-
-  var y12 = document.createElement("TR");
-  y12.style.background="lightyellow";
-  y12.setAttribute("id", "myTr12");
-  document.getElementById("myTable").appendChild(y12);
-  var z121 = document.createElement("TD");
-  z121.style.border = "1px solid black";
-    z121.style.borderCollapse="collapse";
-  var t=document.createTextNode("")
-  z121.appendChild(t);
- 
- var z122=document.createElement("TD");
- z122.style.border = "1px solid black";
- z122.style.borderCollapse="collapse";
-
-  var w=document.createTextNode("Whether mother is single parent and you wish to apply for PAN by furnishing the name of your");
-  z122.appendChild(w);
-  var w1=document.createTextNode("mother only");
-  z122.appendChild(w1);
-  var y = document.createElement("LABEL");
-  y.style.marginLeft="420px";
-  var t = document.createTextNode("Yes");
-  y.appendChild(t);
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "radio");
-  z122.appendChild(y);
-  z122.appendChild(x);
-  var y = document.createElement("LABEL");
-  var t = document.createTextNode("No");
-  y.style.marginLeft="500px";
-  y.appendChild(t);
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "radio");
-  z122.appendChild(y);
-  z122.appendChild(x);
-  document.getElementById("myTr12").appendChild(z121);
-  document.getElementById("myTr12").appendChild(z122);
-  
-
-  var y13 = document.createElement("TR");
-  y13.style.background="lightyellow";
-  y13.setAttribute("id", "myTr13");
-  document.getElementById("myTable").appendChild(y13);
-  var z131 = document.createElement("TD");
-  z131.style.border = "1px solid black";
-    z131.style.borderCollapse="collapse";
-    var t13=document.createTextNode(" ");
-    z131.appendChild(t13);
- 
- var z132=document.createElement("TD");
- z132.style.border = "1px solid black";
- z132.style.borderCollapse="collapse";
-
- var y14 = document.createElement("TR");
-  y14.style.background="lightyellow";
-  y14.setAttribute("id", "myTr14");
-  document.getElementById("myTable").appendChild(y14);
-  var z141 = document.createElement("TD");
-  z141.style.border = "1px solid black";
-    z141.style.borderCollapse="collapse";
-    var t8=document.createTextNode(" ");
-    z141.appendChild(t8);
- 
- var z142=document.createElement("TD");
- z142.style.border = "1px solid black";
- z142.style.borderCollapse="collapse";
- 
-  var c82=document.createElement("SPAN");
-  var startext=document.createTextNode("Last Name/Surname ");
-  c82.appendChild(startext);
-  z142.appendChild(c82);
-  var newElem = document.createElement("BR");
-  z142.appendChild(newElem);
-  var t=document.createElement("INPUT");
-  t.setAttribute("type", "text");
-  z142.appendChild(t);
-  
-  
-  var c82=document.createElement("SPAN");
-  var startext=document.createTextNode("First Name ");
-  c82.appendChild(startext);
-  z142.appendChild(c82);
-  c82.style.maginTop="20px";
-  c82.style.marginLeft="112px";
-  var newElem = document.createElement("BR");
-  z142.appendChild(newElem);
-  var t=document.createElement("INPUT");
-  t.setAttribute("type", "text");
-  z142.appendChild(t);
-  t.style.marginLeft="217px";
-
-
-  var c82=document.createElement("SPAN");
-  var startext=document.createTextNode("Middle Name");
-  c82.appendChild(startext);
-  z142.appendChild(c82);
-  c82.style.maginTop="20px";
-  c82.style.marginLeft="450px";
-  var newElem = document.createElement("BR");
-  z142.appendChild(newElem);
-  var t=document.createElement("INPUT");
-  t.setAttribute("type", "text");
-  z142.appendChild(t);
-  t.style.marginLeft="433px";
-
-  document.getElementById("myTr14").appendChild(z141);
-  document.getElementById("myTr14").appendChild(z142);
-  
- 
-  var c92=document.createElement("SPAN");
-  var startext=document.createTextNode("* ");
-  c92.style.color="red";
-  c92.appendChild(startext);
-  z132.appendChild(c92);
-  var w=document.createTextNode("Father's Name");
-  z132.appendChild(w);
-  var c93=document.createElement("SPAN");
-  var startext=document.createTextNode("(Mandatory field.Even married women should give father's name only.)");
-  c93.style.color="blue";
-  c93.appendChild(startext);
-  z132.appendChild(c93);
-  document.getElementById("myTr13").appendChild(z131);
-  document.getElementById("myTr13").appendChild(z132);
-
-
-
-  var y7 = document.createElement("TR");
-  y7.style.background="lightyellow";
-  y7.setAttribute("id", "myTr7");
-  document.getElementById("myTable").appendChild(y7);
-  var z71 = document.createElement("TD");
-  z71.style.border = "1px solid black";
-    z71.style.borderCollapse="collapse";
-    var t7=document.createTextNode(" ");
-    z71.appendChild(t7);
- 
- var z72=document.createElement("TD");
- z72.style.border = "1px solid black";
- z72.style.borderCollapse="collapse";
- 
-  var c72=document.createElement("SPAN");
-  var startext=document.createTextNode("Mother's Name(This field is optional)");
-  c72.style.color="blue";
-  c72.appendChild(startext);
-  z72.appendChild(c72);
-  document.getElementById("myTr7").appendChild(z71);
-  document.getElementById("myTr7").appendChild(z72);
-  
-
-
-  var y8 = document.createElement("TR");
-  y8.style.background="lightyellow";
-  y8.setAttribute("id", "myTr8");
-  document.getElementById("myTable").appendChild(y8);
-  var z81 = document.createElement("TD");
-  z81.style.border = "1px solid black";
-    z61.style.borderCollapse="collapse";
-    var t8=document.createTextNode(" ");
-    z81.appendChild(t8);
- 
- var z82=document.createElement("TD");
- z82.style.border = "1px solid black";
- z82.style.borderCollapse="collapse";
- 
-  var c82=document.createElement("SPAN");
-  var startext=document.createTextNode("Last Name/Surname ");
-  c82.appendChild(startext);
-  z82.appendChild(c82);
-  var newElem = document.createElement("BR");
-  z82.appendChild(newElem);
-  var t=document.createElement("INPUT");
-  t.setAttribute("type", "text");
-  z82.appendChild(t);
-  
-  
-  var c82=document.createElement("SPAN");
-  var startext=document.createTextNode("First Name ");
-  c82.appendChild(startext);
-  z82.appendChild(c82);
-  c82.style.maginTop="20px";
-  c82.style.marginLeft="112px";
-  var newElem = document.createElement("BR");
-  z82.appendChild(newElem);
-  var t=document.createElement("INPUT");
-  t.setAttribute("type", "text");
-  z82.appendChild(t);
-  t.style.marginLeft="217px";
-
-
-  var c82=document.createElement("SPAN");
-  var startext=document.createTextNode("Middle Name");
-  c82.appendChild(startext);
-  z82.appendChild(c82);
-  c82.style.maginTop="20px";
-  c82.style.marginLeft="450px";
-  var newElem = document.createElement("BR");
-  z82.appendChild(newElem);
-  var t=document.createElement("INPUT");
-  t.setAttribute("type", "text");
-  z82.appendChild(t);
-  t.style.marginLeft="433px";
-
-  document.getElementById("myTr8").appendChild(z81);
-  document.getElementById("myTr8").appendChild(z82);
-
-  var y15 = document.createElement("TR");
-  y15.style.background="lightyellow";
-  y15.setAttribute("id", "myTr15");
-  document.getElementById("myTable").appendChild(y15);
-  var z151 = document.createElement("TD");
-  z151.style.border = "1px solid black";
-    z151.style.borderCollapse="collapse";
-    var t15=document.createTextNode(" ");
-    z151.appendChild(t15);
- 
- var z152=document.createElement("TD");
- z152.style.border = "1px solid black";
- z152.style.borderCollapse="collapse";
- 
-  var c152=document.createElement("SPAN");
-  var startext=document.createTextNode("* ");
-  c152.style.color="red";
-  c152.appendChild(startext);
-  z152.appendChild(c152);
-  var w=document.createTextNode("4.Select Parent name which is to be printed on the card");
-  z152.appendChild(w);
-  var c93=document.createElement("SPAN");
-  var startext=document.createTextNode("(In case no option is provided then PAN card will be issued with father's name");
-  c93.style.color="blue";
-  c93.appendChild(startext);
-  z152.appendChild(c93);
-  var z153=document.createElement("TD");
- z153.style.border = "1px solid black";
- z153.style.borderCollapse="collapse";
- 
-  var y = document.createElement("LABEL");
-  y.style.marginLeft="26px";
-  var t = document.createTextNode("Father");
-  y.appendChild(t);
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "radio");
-  z153.appendChild(y);
-  z153.appendChild(x);
-  var y = document.createElement("LABEL");
-  var t = document.createTextNode("Mother");
-  y.style.marginLeft="25px";
-  y.appendChild(t);
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "radio");
-  z153.appendChild(y);
-  z153.appendChild(x);
-  document.getElementById("myTr15").appendChild(z151);
-  document.getElementById("myTr15").appendChild(z152);
-  document.getElementById("myTr15").appendChild(z153);
-
-
-
-  var y16 = document.createElement("TR");
-  y16.style.background="lightyellow";
-  y16.setAttribute("id", "myTr16");
-  document.getElementById("myTable").appendChild(y16);
-  var z161 = document.createElement("TD");
-  z161.style.border = "1px solid black";
-    z161.style.borderCollapse="collapse";
-    var t16=document.createTextNode(" ");
-    z161.appendChild(t16);
- 
- var z162=document.createElement("TD");
- z162.style.border = "1px solid black";
- z162.style.borderCollapse="collapse";
- 
-  var c162=document.createElement("SPAN");
-  var startext=document.createTextNode("* ");
-  c162.style.color="red";
-  c162.appendChild(startext);
-  z162.appendChild(c162);
-  var w=document.createTextNode("5. Date of Birth/Incorporation/Agreement/Partnership");
-  z162.appendChild(w);
-  var w1=document.createTextNode("or Trust Deed/Formation of Body of Individuals/");
-  z162.appendChild(w1);
-  var w2=document.createTextNode("Association of Persons");
-  z162.appendChild(w2);
-
-  var z163=document.createElement("TD");
- z163.style.border = "1px solid black";
- z163.style.borderCollapse="collapse";
- 
-  var y = document.createElement("LABEL");
-  y.style.marginLeft="26px";
-  var t = document.createTextNode("DD MM  YYY");
-  y.appendChild(t);
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "date");
-  z163.appendChild(y);
-  z163.appendChild(x);
-
-  document.getElementById("myTr16").appendChild(z161);
-  document.getElementById("myTr16").appendChild(z162);
-  document.getElementById("myTr16").appendChild(z163);
-
-
-  var y17 = document.createElement("TR");
-  y17.style.background="lightyellow";
-  y17.setAttribute("id", "myTr17");
-  document.getElementById("myTable").appendChild(y17);
-  var z171 = document.createElement("TD");
-  z171.style.border = "1px solid black";
-    z171.style.borderCollapse="collapse";
-    var t17=document.createTextNode(" ");
-    z171.appendChild(t17);
- 
- var z172=document.createElement("TD");
- z172.style.border = "1px solid black";
- z172.style.borderCollapse="collapse";
- 
-  var c172=document.createElement("SPAN");
-  var startext=document.createTextNode("* ");
-  c172.style.color="red";
-  c172.appendChild(startext);
-  z172.appendChild(c172);
-  var w=document.createTextNode("6. Gender");
-  z172.appendChild(w);
-
-  var z173=document.createElement("TD");
- z173.style.border = "1px solid black";
- z173.style.borderCollapse="collapse";
- 
-  var y = document.createElement("LABEL");
-  y.style.marginLeft="26px";
-  var t = document.createTextNode("Male");
-  y.appendChild(t);
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "radio");
-  z173.appendChild(y);
-  z173.appendChild(x);
-  var y = document.createElement("LABEL");
-  var t = document.createTextNode("Female");
-  y.style.marginLeft="25px";
-  y.appendChild(t);
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "radio");
-  z173.appendChild(y);
-  z173.appendChild(x);
-  var y = document.createElement("LABEL");
-  var t = document.createTextNode("Transgender");
-  y.style.marginLeft="25px";
-  y.appendChild(t);
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "radio");
-  z173.appendChild(y);
-  z173.appendChild(x);
-  document.getElementById("myTr17").appendChild(z171);
-  document.getElementById("myTr17").appendChild(z172);
-  document.getElementById("myTr17").appendChild(z173);
-
-  var y19 = document.createElement("TR");
-  y19.style.background="lightyellow";
-  y19.setAttribute("id", "myTr18");
-  document.getElementById("myTable").appendChild(y19);
-  var z191 = document.createElement("TD");
-  z191.style.border = "1px solid black";
-    z191.style.borderCollapse="collapse";
-    var t19=document.createTextNode(" ");
-    z191.appendChild(t19);
- 
- var z192=document.createElement("TD");
- z192.style.border = "1px solid black";
- z192.style.borderCollapse="collapse";
-  var w=document.createTextNode("8. Photo Mismatch");
-  z192.appendChild(w);
-  document.getElementById("myTr18").appendChild(z191);
-  document.getElementById("myTr18").appendChild(z192);
- 
-
-
-
-
- var y19 = document.createElement("TR");
-  y19.style.background="lightyellow";
-  y19.setAttribute("id", "myTr19");
-  document.getElementById("myTable").appendChild(y19);
-  var z191 = document.createElement("TD");
-  z191.style.border = "1px solid black";
-    z191.style.borderCollapse="collapse";
-    var t19=document.createTextNode(" ");
-    z191.appendChild(t19);
- 
- var z192=document.createElement("TD");
- z192.style.border = "1px solid black";
- z192.style.borderCollapse="collapse";
-  var w=document.createTextNode("8.Signature Mismatch");
-  z192.appendChild(w);
-  document.getElementById("myTr19").appendChild(z191);
-  document.getElementById("myTr19").appendChild(z192);
-
-
-  var y17 = document.createElement("TR");
-  y17.style.background="lightyellow";
-  y17.setAttribute("id", "myTr20");
-  document.getElementById("myTable").appendChild(y17);
-  var z171 = document.createElement("TD");
-  z171.style.border = "1px solid black";
-    z171.style.borderCollapse="collapse";
-    var t17=document.createTextNode(" ");
-    z171.appendChild(t17);
- 
- var z172=document.createElement("TD");
- z172.style.border = "1px solid black";
- z172.style.borderCollapse="collapse";
- 
-  var c172=document.createElement("SPAN");
-  var startext=document.createTextNode("* ");
-  c172.style.color="red";
-  c172.appendChild(startext);
-  z172.appendChild(c172);
-  var w=document.createTextNode("9. Address for Communication");
-  z172.appendChild(w);
-
-  var z173=document.createElement("TD");
- z173.style.border = "1px solid black";
- z173.style.borderCollapse="collapse";
- 
-  var y = document.createElement("LABEL");
-  y.style.marginLeft="26px";
-  var t = document.createTextNode("Residential");
-  y.appendChild(t);
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "radio");
-  z173.appendChild(y);
-  z173.appendChild(x);
-  var y = document.createElement("LABEL");
-  var t = document.createTextNode("office");
-  y.style.marginLeft="25px";
-  y.appendChild(t);
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "radio");
-  z173.appendChild(y);
-  z173.appendChild(x);
-
-  document.getElementById("myTr20").appendChild(z171);
-  document.getElementById("myTr20").appendChild(z172);
-  document.getElementById("myTr20").appendChild(z173);
-
-
-  
-  
-
-  var y17 = document.createElement("TR");
-  y17.style.background="lightyellow";
-  y17.setAttribute("id", "myTr21");
-  document.getElementById("myTable").appendChild(y17);
-  var z171 = document.createElement("TD");
-  z171.style.border = "1px solid black";
-    z171.style.borderCollapse="collapse";
-    var t17=document.createTextNode(" ");
-    z171.appendChild(t17);
- 
- var z172=document.createElement("TD");
- z172.style.border = "1px solid black";
- z172.style.borderCollapse="collapse";
- 
-  var w=document.createTextNode("Office Name(addres to be filled in case of office address)");
-  z172.appendChild(w);
-
-  var z173=document.createElement("TD");
- z173.style.border = "1px solid black";
- z173.style.borderCollapse="collapse";
- 
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "text");
-  z173.appendChild(x);
-
-  document.getElementById("myTr21").appendChild(z171);
-  document.getElementById("myTr21").appendChild(z172);
-  document.getElementById("myTr21").appendChild(z173); 
-
-
-  var y17 = document.createElement("TR");
-  y17.style.background="lightyellow";
-  y17.setAttribute("id", "myTr22");
-  document.getElementById("myTable").appendChild(y17);
-  var z171 = document.createElement("TD");
-  z171.style.border = "1px solid black";
-    z171.style.borderCollapse="collapse";
-    var t17=document.createTextNode(" ");
-    z171.appendChild(t17);
- 
- var z172=document.createElement("TD");
- z172.style.border = "1px solid black";
- z172.style.borderCollapse="collapse";
- 
-  var w=document.createTextNode("Flat/Doors/Block No.");
-  z172.appendChild(w);
-
-  var z173=document.createElement("TD");
- z173.style.border = "1px solid black";
- z173.style.borderCollapse="collapse";
- 
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "text");
-  z173.appendChild(x);
-
-  document.getElementById("myTr22").appendChild(z171);
-  document.getElementById("myTr22").appendChild(z172);
-  document.getElementById("myTr22").appendChild(z173); 
-
-
-  var y17 = document.createElement("TR");
-  y17.style.background="lightyellow";
-  y17.setAttribute("id", "myTr23");
-  document.getElementById("myTable").appendChild(y17);
-  var z171 = document.createElement("TD");
-  z171.style.border = "1px solid black";
-    z171.style.borderCollapse="collapse";
-    var t17=document.createTextNode(" ");
-    z171.appendChild(t17);
- 
- var z172=document.createElement("TD");
- z172.style.border = "1px solid black";
- z172.style.borderCollapse="collapse";
- 
-  var w=document.createTextNode("Name of Premises/Building/Village");
-  z172.appendChild(w);
-
-  var z173=document.createElement("TD");
- z173.style.border = "1px solid black";
- z173.style.borderCollapse="collapse";
- 
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "text");
-  z173.appendChild(x);
-
-  document.getElementById("myTr23").appendChild(z171);
-  document.getElementById("myTr23").appendChild(z172);
-  document.getElementById("myTr23").appendChild(z173); 
-
-
-
-
-
-  var y17 = document.createElement("TR");
-  y17.style.background="lightyellow";
-  y17.setAttribute("id", "myTr24");
-  document.getElementById("myTable").appendChild(y17);
-  var z171 = document.createElement("TD");
-  z171.style.border = "1px solid black";
-    z171.style.borderCollapse="collapse";
-    var t17=document.createTextNode(" ");
-    z171.appendChild(t17);
- 
- var z172=document.createElement("TD");
- z172.style.border = "1px solid black";
- z172.style.borderCollapse="collapse";
- 
-  var w=document.createTextNode("Road/Street/Lane/Post Office");
-  z172.appendChild(w);
-
-  var z173=document.createElement("TD");
- z173.style.border = "1px solid black";
- z173.style.borderCollapse="collapse";
- 
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "text");
-  z173.appendChild(x);
-
-  document.getElementById("myTr24").appendChild(z171);
-  document.getElementById("myTr24").appendChild(z172);
-  document.getElementById("myTr24").appendChild(z173); 
-  
-   
-   var y17 = document.createElement("TR");
-  y17.style.background="lightyellow";
-  y17.setAttribute("id", "myTr25");
-  document.getElementById("myTable").appendChild(y17);
-  var z171 = document.createElement("TD");
-  z171.style.border = "1px solid black";
-    z171.style.borderCollapse="collapse";
-    var t17=document.createTextNode(" ");
-    z171.appendChild(t17);
- 
- var z172=document.createElement("TD");
- z172.style.border = "1px solid black";
- z172.style.borderCollapse="collapse";
- 
-  var w=document.createTextNode("Area/Locality/Street/Sub-divison");
-  z172.appendChild(w);
-
-  var z173=document.createElement("TD");
- z173.style.border = "1px solid black";
- z173.style.borderCollapse="collapse";
- 
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "text");
-  z173.appendChild(x);
-
-  document.getElementById("myTr25").appendChild(z171);
-  document.getElementById("myTr25").appendChild(z172);
-  document.getElementById("myTr25").appendChild(z173); 
- 
- 
-  var y17 = document.createElement("TR");
-  y17.style.background="lightyellow";
-  y17.setAttribute("id", "myTr26");
-  document.getElementById("myTable").appendChild(y17);
-  var z171 = document.createElement("TD");
-  z171.style.border = "1px solid black";
-    z171.style.borderCollapse="collapse";
-    var t17=document.createTextNode(" ");
-    z171.appendChild(t17);
- 
- var z172=document.createElement("TD");
- z172.style.border = "1px solid black";
- z172.style.borderCollapse="collapse";
- 
-  var w=document.createTextNode("Town/City/District");
-  z172.appendChild(w);
-
-  var z173=document.createElement("TD");
- z173.style.border = "1px solid black";
- z173.style.borderCollapse="collapse";
- 
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "text");
-  z173.appendChild(x);
-
-  document.getElementById("myTr26").appendChild(z171);
-  document.getElementById("myTr26").appendChild(z172);
-  document.getElementById("myTr26").appendChild(z173); 
- 
-
-
-  var y17 = document.createElement("TR");
-  y17.style.background="lightyellow";
-  y17.setAttribute("id", "myTr27");
-  document.getElementById("myTable").appendChild(y17);
-  var z171 = document.createElement("TD");
-  z171.style.border = "1px solid black";
-    z171.style.borderCollapse="collapse";
-    var t17=document.createTextNode(" ");
-    z171.appendChild(t17);
- 
- var z172=document.createElement("TD");
- z172.style.border = "1px solid black";
- z172.style.borderCollapse="collapse";
- 
-  var w=document.createTextNode("State/Union Teritory");
-  z172.appendChild(w);
-
-  var z173=document.createElement("TD");
- z173.style.border = "1px solid black";
- z173.style.borderCollapse="collapse";
- var t= document.createTextNode("...please select.....")
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "option");
-  z173.appendChild(t);
-  z173.appendChild(x);
-
-  document.getElementById("myTr27").appendChild(z171);
-  document.getElementById("myTr27").appendChild(z172);
-  document.getElementById("myTr27").appendChild(z173); 
-
- 
-  
-  
-
-  var y17 = document.createElement("TR");
-  y17.style.background="lightyellow";
-  y17.setAttribute("id", "myTr28");
-  document.getElementById("myTable").appendChild(y17);
-  var z171 = document.createElement("TD");
-  z171.style.border = "1px solid black";
-    z171.style.borderCollapse="collapse";
-    var t17=document.createTextNode(" ");
-    z171.appendChild(t17);
- 
- var z172=document.createElement("TD");
- z172.style.border = "1px solid black";
- z172.style.borderCollapse="collapse";
- 
-  var w=document.createTextNode("PIN(indicating PIN is mandatory)");
-  z172.appendChild(w);
-
-  var z173=document.createElement("TD");
- z173.style.border = "1px solid black";
- z173.style.borderCollapse="collapse";
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "text");
-  z173.appendChild(x);
-
-  document.getElementById("myTr28").appendChild(z171);
-  document.getElementById("myTr28").appendChild(z172);
-  document.getElementById("myTr28").appendChild(z173); 
-
-
-
-  
-  
-  var y17 = document.createElement("TR");
-  y17.style.background="lightyellow";
-  y17.setAttribute("id", "myTr30");
-  document.getElementById("myTable").appendChild(y17);
-  var z171 = document.createElement("TD");
-  z171.style.border = "1px solid black";
-    z171.style.borderCollapse="collapse";
-    var t17=document.createTextNode(" ");
-    z171.appendChild(t17);
- 
- var z172=document.createElement("TD");
- z172.style.border = "1px solid black";
- z172.style.borderCollapse="collapse";
- 
-  var w=document.createTextNode("ZIP");
-  z172.appendChild(w);
-
-  var z173=document.createElement("TD");
- z173.style.border = "1px solid black";
- z173.style.borderCollapse="collapse";
-   var x = document.createElement("INPUT");
-  x.setAttribute("type", "text");
-  z173.appendChild(x);
-
-  document.getElementById("myTr30").appendChild(z171);
-  document.getElementById("myTr30").appendChild(z172);
-  document.getElementById("myTr30").appendChild(z173); 
-
-
-  
-
-
+var a=document.getElementById("mybody");
+a.style.backgroundColor="lightyellow";
+var table=document.createElement("TABLE");
+table.setAttribute("width","100%");
+table.setAttribute("border","1px","solid black");
+table.setAttribute("style","border-collapse:collapse");
+var caption=document.createElement("caption");
+caption.setAttribute("style","background-color:brown");
+var h4=document.createElement("h4");
+h4.setAttribute("style","color:white")
+h4.innerHTML="Request For New PAN Card Or/And Changes Or Correction in PAN DATA";
+caption.appendChild(h4);
+var h2=document.createElement("h4");
+h2.innerHTML="Feilds marked with";
+h2.setAttribute("style","color:white")
+var s=document.createElement("span")
+s.innerHTML="*";
+s.setAttribute("style","color:red")
+h2.appendChild(s);
+var s2=document.createElement("SPAN")
+s2.innerHTML="(asterisk) are mandatory. To avoid mistake(s). Please refer.  ";
+s2.setAttribute("style","color:white");
+h2.appendChild(s2);
+var guide=document.createElement("SPAN");
+var u=document.createElement("u");
+u.innerHTML="guideliness  ";
+guide.appendChild(u);
+guide.setAttribute("style","color:orange");
+h2.appendChild(guide);
+var span2=document.createElement("SPAN");
+span2.innerHTML="and  ";
+h2.appendChild(span2);
+var read=document.createElement("SPAN");
+var u1=document.createElement("u");
+ u1.innerHTML="readliness";
+ u1.setAttribute("style","color:orange");
+ read.appendChild(u1);
+ h2.appendChild(read);
+caption.appendChild(h2);
+table.appendChild(caption);
+
+
+
+
+var row1=table.insertRow(0);
+var cell1=row1.insertCell(0);
+cell1.setAttribute("style","width:82px");
+var sp=document.createTextNode(" ");
+cell1.appendChild(sp);
+var cell2=row1.insertCell(1);
+var p=document.createElement("P");
+var l=document.createElement("label");
+l.innerHTML="*";
+l.style.color="red";
+p.appendChild(l);
+var t=document.createTextNode("whether citizen of India.");
+p.appendChild(t);
+var y=document.createElement("label");
+y.innerHTML="Yes";
+p.appendChild(y);
+var r1=document.createElement("input");
+r1.setAttribute("type","radio");
+p.appendChild(r1);
+var n=document.createElement("label");
+n.innerHTML="No";
+p.appendChild(n);
+var r2=document.createElement("input");
+r2.setAttribute("type","radio");
+p.appendChild(r2);
+cell2.appendChild(p);
+
+var row2=table.insertRow(1);
+var c21=row2.insertCell(0);
+var c22=row2.insertCell(1);
+c21.setAttribute("width","5%");
+c21.setAttribute("height","30px");
+
+var l1=document.createElement("p");
+var m2=document.createElement("label");
+m2.innerHTML="*";
+m2.style.color="red";
+var lab3=document.createElement("label");
+lab3.innerHTML="Permanent Account Number(PAN)";
+var i3=document.createElement("input");
+i3.setAttribute("type","text");
+l1.appendChild(m2);
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c22.appendChild(l1);
+
+var row3=table.insertRow(2);
+var c31=row3.insertCell(0);
+var c32=row3.insertCell(1);
+c31.setAttribute("width","5%");
+c31.setAttribute("height","30px");
+
+var l1=document.createElement("p");
+var m2=document.createElement("label");
+m2.innerHTML="*";
+m2.style.color="red";
+var lab3=document.createElement("label");
+lab3.innerHTML="1.Name";
+l1.appendChild(m2);
+l1.appendChild(lab3);
+c32.appendChild(l1);
+
+
+var row4=table.insertRow(3);
+var c41=row4.insertCell(0);
+var c42=row4.insertCell(1);
+c31.setAttribute("width","5%");
+c31.setAttribute("height","30px");
+
+var l1=document.createElement("p");
+var m2=document.createElement("label");
+m2.innerHTML="Title";
+var lab3=document.createElement("label");
+lab3.innerHTML="Shri/Mr";
+lab3.style.paddingLeft="60px";
+var i1=document.createElement("input");
+i1.setAttribute("type","radio");
+//var l2=document.createElement("p");
+var lab4=document.createElement("label");
+lab4.innerHTML="Smt/Mrs.";
+lab4.style.paddingLeft="60px";
+var i2=document.createElement("input");
+i2.setAttribute("type","radio");
+//var l3=document.createElement("p");
+var lab5=document.createElement("label");
+lab5.innerHTML="Kumari/Ms.";
+lab5.style.paddingLeft="60px";
+var i3=document.createElement("input");
+i3.setAttribute("type","radio");
+var l2=document.createElement("p");
+var lab6=document.createElement("label");
+lab6.innerHTML="M/S.";
+lab6.style.paddingLeft="60px";
+lab6.style.color="gray";
+l1.appendChild(m2);
+l1.appendChild(lab3);
+l1.appendChild(i1);
+c42.appendChild(l1);
+l1.appendChild(lab4);
+l1.appendChild(i2);
+c42.appendChild(l1);
+l1.appendChild(lab5);
+l1.appendChild(i3);
+c42.appendChild(l1);
+//l2.appendchild(lab6);
+//l1.appendChild(l2);
+//c42.appendchild(l2);
+
+
+var row5=table.insertRow(4);
+var c51=row5.insertCell(0);
+var c52=row5.insertCell(1);
+c51.setAttribute("width","5%");
+c51.setAttribute("height","30px");
+
+
+var p=document.createElement("p");
+var lab1=document.createElement("label");
+lab1.innerHTML="FirstName";
+var i1=document.createElement("input");
+var lab2=document.createElement("label");
+lab2.innerHTML="MiddleName";
+var i2=document.createElement("input");
+var lab3=document.createElement("label");
+lab3.innerHTML="LastName";
+var i3=document.createElement("input");
+p.setAttribute("type","text");
+p.appendChild(lab1);
+p.appendChild(i1);
+p.appendChild(lab2);
+p.appendChild(i2);
+p.appendChild(lab3);
+p.appendChild(i3);
+c52.appendChild(p);
+
+
+var row6=table.insertRow(5);
+var c61=row6.insertCell(0);
+var c62=row6.insertCell(1);
+c61.setAttribute("width","5%");
+c61.setAttribute("height","30px");
+var t1=document.createElement("p");
+var m12=document.createElement("label");
+m12.innerHTML="*";
+m12.style.color="red";
+var text12=document.createElement("b");
+text12.innerHTML="Name as you would like it printed on the card";
+var t22=document.createElement("span");
+t22.style.color="blue";
+t22.innerHTML="(Prefix like Shri,Smt,Kumari,Late,Dr,CA,Ms,Mr,M/s ec..,are not allowed.)";
+
+t1.appendChild(m12);
+text12.appendChild(t22);
+t1.appendChild(text12);
+c62.appendChild(t1);
+
+var row7=table.insertRow(6);
+var c71=row7.insertCell(0);
+var c72=row7.insertCell(1);
+c71.setAttribute("width","5%");
+c71.setAttribute("height","30px");
+
+var p=document.createElement("p");
+var i=document.createElement("input");
+p.setAttribute("type","text");
+p.appendChild(i);
+c72.appendChild(p);
+
+var row8=table.insertRow(7);
+var c81=row8.insertCell(0);
+var c82=row8.insertCell(1);
+c81.setAttribute("width","5%");
+c81.setAttribute("height","30px");
+var t2=document.createElement("p1");
+var text21=document.createElement("b");
+text21.innerHTML="Details of Parents";
+var t23=document.createElement("span");
+t23.style.color="blue";
+t23.innerHTML="(Prefix like Shri,Smt,Kumari,Late,Dr,CA,Ms,Mr,M/s ec..,are not allowed.)";
+t2.appendChild(text21);
+c82.appendChild(t2);
+text21.appendChild(t23);
+
+var row9=table.insertRow(8);
+var c91=row9.insertCell(0);
+var c92=row9.insertCell(1);
+c91.setAttribute("width","5%");
+c91.setAttribute("height","30px");
+
+var text=document.createElement("b");
+var lab1=document.createElement("label");
+lab1.innerHTML="yes";
+lab1.style.paddingLeft="55px";
+var i1=document.createElement("input");
+i1.setAttribute("type","radio");
+var lab2=document.createElement("label");
+lab2.innerHTML="no";
+var i2=document.createElement("input");
+i2.setAttribute("type","radio");
+text.innerHTML="Whether Mother is single parent and you wish to apply for PAN by furnishing the name of your mother name only ";
+c92.appendChild(text);
+text.appendChild(lab1);
+text.appendChild(i1);
+text.appendChild(lab2);
+text.appendChild(i2);
+
+var row10=table.insertRow(9);
+var c101=row10.insertCell(0);
+var c102=row10.insertCell(1);
+c101.setAttribute("width","5%");
+c101.setAttribute("height","30px");
+
+var c2=document.createElement("input");
+c2.setAttribute("type","checkbox");
+c101.appendChild(c2);
+var text3=document.createElement("b");
+var m4=document.createElement("label");
+m4.innerHTML="*";
+m4.style.color="red";
+var text4=document.createElement("label");
+
+text4.innerHTML="Father's Name";
+var t4=document.createElement("span");
+t4.style.color="blue";
+t4.innerHTML="(Mandatory field,Even married women should give father's name only.)";
+text3.appendChild(m4);
+text3.appendChild(text4);
+text4.appendChild(t4);
+c102.appendChild(text3);
+
+var row11=table.insertRow(10);
+var c111=row11.insertCell(0);
+var c112=row11.insertCell(1);
+c111.setAttribute("width","5%");
+c111.setAttribute("height","30px");
+
+var p=document.createElement("p");
+var lab1=document.createElement("label");
+lab1.innerHTML="FirstName";
+var i1=document.createElement("input");
+var lab2=document.createElement("label");
+lab2.innerHTML="MiddleName";
+var i2=document.createElement("input");
+var lab3=document.createElement("label");
+lab3.innerHTML="LastName";
+var i3=document.createElement("input");
+p.setAttribute("type","text");
+p.appendChild(lab1);
+p.appendChild(i1);
+p.appendChild(lab2);
+p.appendChild(i2);
+p.appendChild(lab3);
+p.appendChild(i3);
+c112.appendChild(p);
+
+var row12=table.insertRow(11);
+var c121=row12.insertCell(0);
+var c122=row12.insertCell(1);
+c121.setAttribute("width","5%");
+c121.setAttribute("height","30px");
+
+var text1=document.createElement("b");
+text1.innerHTML="Mother's Name";
+var t6=document.createElement("span");
+t6.style.color="blue";
+t6.innerHTML="(This field is optional.)";
+text1.appendChild(t6);
+c122.appendChild(text1);
+
+var row13=table.insertRow(12);
+var c131=row13.insertCell(0);
+var c132=row13.insertCell(1);
+c131.setAttribute("width","5%");
+c131.setAttribute("height","30px");
+
+var p=document.createElement("p");
+var lab1=document.createElement("label");
+lab1.innerHTML="FirstName";
+var i1=document.createElement("input");
+var lab2=document.createElement("label");
+lab2.innerHTML="MiddleName";
+var i2=document.createElement("input");
+var lab3=document.createElement("label");
+lab3.innerHTML="LastName";
+var i3=document.createElement("input");
+p.setAttribute("type","text");
+p.appendChild(lab1);
+p.appendChild(i1);
+p.appendChild(lab2);
+p.appendChild(i2);
+p.appendChild(lab3);
+p.appendChild(i3);
+c132.appendChild(p);
+
+var row14=table.insertRow(13);
+var c141=row14.insertCell(0);
+var c142=row14.insertCell(1);
+c141.setAttribute("width","5%");
+c141.setAttribute("height","30px");
+
+var text=document.createElement("b");
+var m51=document.createElement("label");
+m51.innerHTML="*";
+m51.style.color="red";
+var lab1=document.createElement("label");
+lab1.innerHTML="Father Name";
+lab1.style.paddingLeft="300px";
+var i1=document.createElement("input");
+i1.setAttribute("type","radio");
+var lab2=document.createElement("label");
+lab2.innerHTML="Mother Name";
+lab2.style.paddingLeft="30px";
+var i2=document.createElement("input");
+i2.setAttribute("type","radio");
+text.innerHTML="Select parent which is to be printed on the card";
+text.appendChild(m51);
+c142.appendChild(text);
+text.appendChild(lab1);
+text.appendChild(i1);
+text.appendChild(lab2);
+text.appendChild(i2);
+
+var row15=table.insertRow(14);
+var c151=row15.insertCell(0);
+var c152=row15.insertCell(1);
+c151.setAttribute("width","5%");
+c151.setAttribute("height","30px");
+
+var text=document.createElement("b");
+var lab1=document.createElement("label");
+lab1.innerHTML="Date of Birth/Incorporation/Agreement/Partnership or trust Deed/Formation of body of individuals/Association of Persons";
+var i1=document.createElement("input");
+i1.style.marginLeft="55px";
+i1.setAttribute("type","date");
+c152.appendChild(text);
+text.appendChild(lab1);
+text.appendChild(i1);
+
+var row16=table.insertRow(15);
+var c161=row16.insertCell(0);
+var c162=row16.insertCell(1);
+c161.setAttribute("width","5%");
+c161.setAttribute("height","30px");
+
+var text2=document.createElement("b");
+var m6=document.createElement("label");
+m6.innerHTML="*";
+m6.style.color="red";
+var lab1=document.createElement("label");
+lab1.innerHTML="Male";
+lab1.style.paddingLeft="600px";
+var i1=document.createElement("input");
+i1.setAttribute("type","radio");
+var lab2=document.createElement("label");
+lab2.innerHTML="Female";
+lab2.style.paddingLeft="35px";
+var i2=document.createElement("input");
+i2.setAttribute("type","radio");
+var lab3=document.createElement("label");
+lab3.innerHTML="Transgender";
+lab3.style.paddingLeft="35px";
+var i3=document.createElement("input");
+i3.setAttribute("type","radio");
+text2.innerHTML="Gender";
+var ch1=document.createElement("input");
+ch1.setAttribute("type","checkbox");
+text2.appendChild(m6);
+c162.appendChild(text2);
+text2.appendChild(lab1);
+text2.appendChild(i1);
+text2.appendChild(lab2);
+text2.appendChild(i2);
+text2.appendChild(lab3);
+text2.appendChild(i3);
+c161.appendChild(ch1);
+
+var row17=table.insertRow(16);
+var c171=row17.insertCell(0);
+var c172=row17.insertCell(1);
+c171.setAttribute("width","5%");
+c171.setAttribute("height","30px");
+
+var text1=document.createElement("b");
+text1.innerHTML="Photo Mismatch";
+var ch1=document.createElement("input");
+ch1.setAttribute("type","checkbox");
+c172.appendChild(text1);
+c171.appendChild(ch1);
+
+
+var row18=table.insertRow(17);
+var c181=row18.insertCell(0);
+var c182=row18.insertCell(1);
+c181.setAttribute("width","5%");
+c181.setAttribute("height","30px");
+
+
+var text1=document.createElement("b");
+text1.innerHTML="Signature Mismatch";
+var ch1=document.createElement("input");
+ch1.setAttribute("type","checkbox");
+c182.appendChild(text1);
+c181.appendChild(ch1);
+
+var row19=table.insertRow(18);
+var c191=row19.insertCell(0);
+var c192=row19.insertCell(1);
+c191.setAttribute("width","5%");
+c191.setAttribute("height","30px");
+
+var text2=document.createElement("b");
+var m7=document.createElement("label");
+m7.innerHTML="*";
+m7.style.color="red";
+var lab1=document.createElement("label");
+lab1.innerHTML="Residential";
+lab1.style.paddingLeft="500px";
+var i1=document.createElement("input");
+i1.setAttribute("type","radio");
+var lab2=document.createElement("label");
+lab2.innerHTML="Office";
+lab2.style.paddingLeft="30px";
+var i2=document.createElement("input");
+i2.setAttribute("type","radio");
+text2.innerHTML="Address for Communication";
+var ch1=document.createElement("input");
+ch1.setAttribute("type","checkbox");
+c192.appendChild(text2);
+text2.appendChild(m7);
+text2.appendChild(lab1);
+text2.appendChild(i1);
+text2.appendChild(lab2);
+text2.appendChild(i2);
+c191.appendChild(ch1);
+
+var row20=table.insertRow(19);
+var c201=row20.insertCell(0);
+var c202=row20.insertCell(1);
+c201.setAttribute("width","5%");
+c201.setAttribute("height","30px");
+
+var l1=document.createElement("b");
+var lab3=document.createElement("label");
+lab3.innerHTML="Office Name";
+var i3=document.createElement("input");
+i3.style.marginLeft="640px";
+i3.setAttribute("type","text");
+var ch1=document.createElement("input");
+ch1.setAttribute("type","checkbox");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c202.appendChild(l1);
+c201.appendChild(ch1);
+
+var row21=table.insertRow(20);
+var c211=row21.insertCell(0);
+var c212=row21.insertCell(1);
+c211.setAttribute("width","5%");
+c211.setAttribute("height","30px");
+
+var l1=document.createElement("b");
+var lab3=document.createElement("label");
+lab3.innerHTML="Flat/Door/Block No.";
+var i3=document.createElement("input");
+i3.style.marginLeft="590px";
+i3.setAttribute("type","text");
+var ch1=document.createElement("input");
+ch1.setAttribute("type","checkbox");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c212.appendChild(l1);
+c211.appendChild(ch1);
+
+var row22=table.insertRow(21);
+var c221=row22.insertCell(0);
+var c222=row22.insertCell(1);
+c221.setAttribute("width","5%");
+c221.setAttribute("height","30px");
+
+var l1=document.createElement("b");
+var lab3=document.createElement("label");
+lab3.innerHTML="Name of Premises/Building Village";
+var i3=document.createElement("input");
+i3.style.marginLeft="490px";
+i3.setAttribute("type","text");
+var ch1=document.createElement("input");
+ch1.setAttribute("type","checkbox");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c222.appendChild(l1);
+c221.appendChild(ch1);
+
+var row23=table.insertRow(22);
+var c231=row23.insertCell(0);
+var c232=row23.insertCell(1);
+c231.setAttribute("width","5%");
+c231.setAttribute("height","30px");
+
+var l1=document.createElement("b");
+var lab3=document.createElement("label");
+lab3.innerHTML="Road/Street/Lane/PostOffice";
+var i3=document.createElement("input");
+i3.style.marginLeft="530px";
+i3.setAttribute("type","text");
+var ch1=document.createElement("input");
+ch1.setAttribute("type","checkbox");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c232.appendChild(l1);
+c231.appendChild(ch1);
+
+
+var row24=table.insertRow(23);
+var c241=row24.insertCell(0);
+var c242=row24.insertCell(1);
+c241.setAttribute("width","5%");
+c241.setAttribute("height","30px");
+
+var l1=document.createElement("b");
+var lab3=document.createElement("label");
+lab3.innerHTML="Area/Locality/Taluka/Sub-Division";
+var i3=document.createElement("input");
+i3.style.marginLeft="490px";
+i3.setAttribute("type","text");
+var ch1=document.createElement("input");
+ch1.setAttribute("type","checkbox");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c242.appendChild(l1);
+c241.appendChild(ch1);
+
+var row25=table.insertRow(24);
+var c251=row25.insertCell(0);
+var c252=row25.insertCell(1);
+c251.setAttribute("width","5%");
+c251.setAttribute("height","30px");
+
+var l1=document.createElement("b");
+var lab3=document.createElement("label");
+lab3.innerHTML="Town/City/District";
+var i3=document.createElement("input");
+i3.style.marginLeft="600px";
+i3.setAttribute("type","text");
+var ch1=document.createElement("input");
+ch1.setAttribute("type","checkbox");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c252.appendChild(l1);
+c251.appendChild(ch1);
+
+
+var row26=table.insertRow(25);
+var c261=row26.insertCell(0);
+var c262=row26.insertCell(1);
+c261.setAttribute("width","5%");
+c261.setAttribute("height","30px");
+
+var row27=table.insertRow(26);
+var c271=row27.insertCell(0);
+var c272=row27.insertCell(1);
+c271.setAttribute("width","5%");
+c271.setAttribute("height","30px");
+
+var l1=document.createElement("b");
+var lab3=document.createElement("label");
+lab3.innerHTML="Pincode";
+var i3=document.createElement("input");
+i3.style.marginLeft="680px";
+i3.setAttribute("type","text");
+var ch1=document.createElement("input");
+ch1.setAttribute("type","checkbox");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c272.appendChild(l1);
+c271.appendChild(ch1);
+
+var row28=table.insertRow(27);
+var c281=row28.insertCell(0);
+var c282=row28.insertCell(1);
+c281.setAttribute("width","5%");
+c281.setAttribute("height","30px");
+
+
+var row29=table.insertRow(28);
+var c291=row29.insertCell(0);
+var c292=row29.insertCell(1);
+c291.setAttribute("width","5%");
+c291.setAttribute("height","30px");
+
+var l1=document.createElement("b");
+var lab3=document.createElement("label");
+lab3.innerHTML="ZIP";
+var i3=document.createElement("input");
+i3.style.marginLeft="700px";
+i3.setAttribute("type","text");
+var ch1=document.createElement("input");
+ch1.setAttribute("type","checkbox");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c292.appendChild(l1);
+c291.appendChild(ch1);
+
+var row30=table.insertRow(29);
+var c301=row30.insertCell(0);
+var c302=row30.insertCell(1);
+c301.setAttribute("width","5%");
+c301.setAttribute("height","30px");
+
+var text1=document.createElement("b");
+text1.innerHTML="If you desire to update your other address, give required details & submit proof of other address also";
+var ch1=document.createElement("input");
+ch1.setAttribute("type","checkbox");
+c302.appendChild(text1);
+c301.appendChild(ch1);
+
+var row31=table.insertRow(30);
+var c311=row31.insertCell(0);
+var c312=row31.insertCell(1);
+c311.setAttribute("width","5%");
+c311.setAttribute("height","30px");
+
+var text2=document.createElement("b");
+var lab1=document.createElement("label");
+lab1.innerHTML="Mobile No:";
+lab1.style.paddingLeft="590px";
+var i1=document.createElement("input");
+i1.setAttribute("type","radio");
+var lab2=document.createElement("label");
+lab2.innerHTML="Telephone No:";
+lab2.style.paddingLeft="25px";
+var i2=document.createElement("input");
+i2.setAttribute("type","radio");
+text2.innerHTML="Telephone Number.";
+var ch1=document.createElement("input");
+ch1.setAttribute("type","checkbox");
+c312.appendChild(text2);
+text2.appendChild(lab1);
+text2.appendChild(i1);
+text2.appendChild(lab2);
+text2.appendChild(i2);
+c311.appendChild(ch1);
+
+var row32=table.insertRow(31);
+var c321=row32.insertCell(0);
+var c322=row32.insertCell(1);
+c321.setAttribute("width","5%");
+c321.setAttribute("height","30px");
+
+var l1=document.createElement("b");
+var m8=document.createElement("label");
+m8.innerHTML="*";
+m8.style.color="red";
+var lab3=document.createElement("label");
+lab3.innerHTML="E-Mail Id:";
+var i3=document.createElement("input");
+i3.style.marginLeft="650px";
+i3.setAttribute("type","text");
+var ch1=document.createElement("input");
+ch1.setAttribute("type","checkbox");
+l1.appendChild(m8);
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c322.appendChild(l1);
+c321.appendChild(ch1);
+
+var row33=table.insertRow(32);
+var c331=row33.insertCell(0);
+var c332=row33.insertCell(1);
+c331.setAttribute("width","5%");
+c331.setAttribute("height","30px");
+
+var text2=document.createElement("b");
+var lab1=document.createElement("label");
+lab1.innerHTML="AADHAR";
+lab1.style.paddingLeft="590px";
+var i1=document.createElement("input");
+i1.setAttribute("type","radio");
+var lab2=document.createElement("label");
+lab2.innerHTML="EID";
+lab2.style.paddingLeft="40px";
+var i2=document.createElement("input");
+i2.setAttribute("type","radio");
+text2.innerHTML="Incase Citizen of India";
+c332.appendChild(text2);
+text2.appendChild(lab1);
+text2.appendChild(i1);
+text2.appendChild(lab2);
+text2.appendChild(i2);
+
+var row34=table.insertRow(33);
+var c341=row34.insertCell(0);
+var c342=row34.insertCell(1);
+c341.setAttribute("width","5%");
+c341.setAttribute("height","30px");
+
+var l1=document.createElement("b");
+var m9=document.createElement("label");
+m9.innerHTML="*";
+m9.style.color="red";
+var lab3=document.createElement("label");
+lab3.innerHTML="AADHAR Number";
+var i3=document.createElement("input");
+i3.style.marginLeft="600px";
+i3.setAttribute("type","text");
+var ch1=document.createElement("input");
+ch1.setAttribute("type","checkbox");
+l1.appendChild(m9);
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c342.appendChild(l1);
+c341.appendChild(ch1);
+
+var row35=table.insertRow(34);
+var c351=row35.insertCell(0);
+var c352=row35.insertCell(1);
+c351.setAttribute("width","5%");
+c351.setAttribute("height","30px");
+
+var l1=document.createElement("p");
+var m10=document.createElement("label");
+m10.innerHTML="*";
+m10.style.color="red";
+var lab3=document.createElement("label");
+lab3.innerHTML="Name as per AADHAR Letter or as per the enrollment ID of aadhar application form";
+var i3=document.createElement("input");
+i3.style.marginLeft="190px";
+i3.setAttribute("type","text");
+var ch1=document.createElement("input");
+ch1.setAttribute("type","checkbox");
+l1.appendChild(m10);
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c352.appendChild(l1);
+c351.appendChild(ch1);
+
+var row36=table.insertRow(35);
+var c361=row36.insertCell(0);
+var c362=row36.insertCell(1);
+c361.setAttribute("width","5%");
+c361.setAttribute("height","30px");
+
+var l1=document.createElement("b");
+var lab3=document.createElement("label");
+lab3.innerHTML="GSTN";
+var i3=document.createElement("input");
+i3.style.marginLeft="700px";
+i3.setAttribute("type","text");
+var ch1=document.createElement("input");
+ch1.setAttribute("type","checkbox");
+l1.appendChild(lab3);
+l1.appendChild(i3);
+c362.appendChild(l1);
+c361.appendChild(ch1);
+
+var row37=table.insertRow(36);
+var c371=row37.insertCell(0);
+var c372=row37.insertCell(1);
+c371.setAttribute("width","5%");
+c371.setAttribute("height","30px");
+
+var text1=document.createElement("b");
+text1.innerHTML="Mention other Permanent Account Numbers(PANs).if any,Inadvertently allotted to you. Submit proof of surrendered PAN(s) along with the application";
+var ch1=document.createElement("input");
+ch1.setAttribute("type","checkbox");
+c372.appendChild(text1);
+c371.appendChild(ch1);
+
+
+var row38=table.insertRow(37);
+var c381=row38.insertCell(0);
+var c382=row38.insertCell(1);
+c381.setAttribute("width","5%");
+c381.setAttribute("height","30px");
+
+var p=document.createElement("b");
+var lab1=document.createElement("label");
+lab1.innerHTML="PAN1";
+var i1=document.createElement("input");
+var lab2=document.createElement("label");
+lab2.innerHTML="PAN2";
+var i2=document.createElement("input");
+var lab3=document.createElement("label");
+lab3.innerHTML="PAN3";
+var i3=document.createElement("input");
+var lab4=document.createElement("label");
+lab4.innerHTML="PAN4";
+var i4=document.createElement("input");
+var ch1=document.createElement("input");
+ch1.setAttribute("type","checkbox");
+p.setAttribute("type","text");
+p.appendChild(lab1);
+p.appendChild(i1);
+p.appendChild(lab2);
+p.appendChild(i2);
+p.appendChild(lab3);
+p.appendChild(i3);
+p.appendChild(lab4);
+p.appendChild(i4);
+c382.appendChild(p);
+c381.appendChild(ch1);
+
+var row39=table.insertRow(38);
+var c391=row39.insertCell(0);
+var c392=row39.insertCell(1);
+c391.setAttribute("width","5%");
+c391.setAttribute("height","30px");
+
+var text1=document.createElement("b");
+var ch1=document.createElement("input");
+ch1.setAttribute("type","checkbox");
+text1.innerHTML="Verification";
+c392.appendChild(text1);
+c391.appendChild(ch1);
+
+var row40=table.insertRow(39);
+var c401=row40.insertCell(0);
+var c402=row40.insertCell(1);
+c401.setAttribute("width","5%");
+c401.setAttribute("height","30px");
+
+var p=document.createElement("b");
+var lab1=document.createElement("label");
+lab1.innerHTML="I/we";
+var i1=document.createElement("input");
+var lab2=document.createElement("label");
+lab2.innerHTML=", the applicant,in the capacity of";
+var i2=document.createElement("input");
+var lab3=document.createElement("label");
+lab3.innerHTML="do hereby declare that what is stated above is true to the best of my information and belief.";
+var lab4=document.createElement("label");
+lab4.innerHTML="I have enclosed";
+var i4=document.createElement("input");
+var lab5=document.createElement("label");
+lab5.innerHTML="(number of documents) in support of proposed changes/Corrections";
+p.setAttribute("type","text");
+p.appendChild(lab1);
+p.appendChild(i1);
+p.appendChild(lab2);
+p.appendChild(i2);
+p.appendChild(lab3);
+p.appendChild(lab4);
+p.appendChild(i4);
+p.appendChild(lab5);
+c402.appendChild(p);
+
+var row41=table.insertRow(40);
+var c411=row41.insertCell(0);
+var c412=row41.insertCell(1);
+c411.setAttribute("width","5%");
+c411.setAttribute("height","30px");
+
+var p=document.createElement("b");
+var lab1=document.createElement("label");
+lab1.innerHTML="Place";
+var i1=document.createElement("input");
+p.setAttribute("type","text");
+p.appendChild(lab1);
+p.appendChild(i1);
+c412.appendChild(p);
+
+var row42=table.insertRow(41);
+var c421=row42.insertCell(0);
+var c422=row42.insertCell(1);
+c421.setAttribute("width","5%");
+c421.setAttribute("height","30px");
+
+var text1=document.createElement("b");
+text1.innerHTML="Verified today: 18/04/2020";
+c422.appendChild(text1);
+
+var row43=table.insertRow(42);
+var c431=row43.insertCell(0);
+var c432=row43.insertCell(1);
+c431.setAttribute("width","5%");
+c431.setAttribute("height","30px");
+
+var p=document.createElement("b");
+var lab1=document.createElement("label");
+lab1.innerHTML="I/we";
+var i1=document.createElement("input");
+var lab2=document.createElement("label");
+lab2.innerHTML="as proof of address";
+var i2=document.createElement("input");
+var lab3=document.createElement("label");
+lab3.innerHTML="as proof of date of birth";
+var i3=document.createElement("input");
+var lab4=document.createElement("label");
+lab4.innerHTML="and as proof of PAN allotted";
+p.setAttribute("type","text");
+p.appendChild(lab1);
+p.appendChild(i1);
+p.appendChild(lab2);
+p.appendChild(i2);
+p.appendChild(lab3);
+p.appendChild(i3);
+p.appendChild(lab4);
+c432.appendChild(p);
+
+var row44=table.insertRow(43);
+var c441=row44.insertCell(0);
+var c442=row44.insertCell(1);
+c441.setAttribute("width","5%");
+c441.setAttribute("height","30px");
+
+var text2=document.createElement("b");
+var lab1=document.createElement("label");
+lab1.innerHTML="Only e-PAN card";
+lab1.style.paddingLeft="55px";
+var i1=document.createElement("input");
+i1.setAttribute("type","radio");
+var lab2=document.createElement("label");
+lab2.innerHTML="Physical PAN Card & e-pan card";
+var i2=document.createElement("input");
+i2.setAttribute("type","radio");
+text2.innerHTML="Whether you wish to have? ";
+c442.appendChild(text2);
+text2.appendChild(lab1);
+text2.appendChild(i1);
+text2.appendChild(lab2);
+text2.appendChild(i2);
+
+var row45=table.insertRow(44);
+var c451=row45.insertCell(0);
+var c452=row45.insertCell(1);
+c451.setAttribute("width","5%");
+c451.setAttribute("height","30px");
+
+var text2=document.createElement("b");
+var lab1=document.createElement("label");
+lab1.innerHTML="Other Details";
+c452.appendChild(text2);
+text2.appendChild(lab1);
+
+var row46=table.insertRow(45);
+var c461=row46.insertCell(0);
+var c462=row46.insertCell(1);
+c461.setAttribute("width","5%");
+c461.setAttribute("height","30px");
+
+var text2=document.createElement("b");
+var lab1=document.createElement("label");
+lab1.innerHTML="Depository Account Details";
+c462.appendChild(text2);
+text2.appendChild(lab1);
+
+var row47=table.insertRow(46);
+var c471=row47.insertCell(0);
+var c472=row47.insertCell(1);
+c471.setAttribute("width","5%");
+c471.setAttribute("height","30px");
+
+var p=document.createElement("p");
+var lab=document.createElement("label");
+lab.innerHTML="DP ID";
+var i=document.createElement("input");
+var lab2=document.createElement("label");
+lab2.innerHTML="Client ID";
+var i2=document.createElement("input");
+p.setAttribute("type","text");
+p.appendChild(lab);
+p.appendChild(i);
+p.appendChild(lab2);
+p.appendChild(i2);
+c472.appendChild(p);
+
+var row48=table.insertRow(47);
+var c481=row48.insertCell(0);
+var c482=row48.insertCell(1);
+c481.setAttribute("width","5%");
+c481.setAttribute("height","30px");
+
+
+var text=document.createElement("b");
+var lab=document.createElement("label");
+lab.innerHTML="Payment Details";
+c482.appendChild(text);
+text.appendChild(lab);
+
+var row49=table.insertRow(48);
+var c491=row49.insertCell(0);
+var c492=row49.insertCell(1);
+c491.setAttribute("width","5%");
+c491.setAttribute("height","30px");
+
+
+var text=document.createElement("b");
+var lab=document.createElement("label");
+var ch=document.createElement("input");
+ch.setAttribute("type","checkbox");
+lab.innerHTML="Online Payment";
+c492.appendChild(text);
+c491.appendChild(ch);
+text.appendChild(lab);
+document.body.appendChild(table)
+
+var tet=document.createElement("p");
+var la1=document.createElement("label");
+la1.innerHTML="Yes";
+la1.style.paddingLeft="55px";
+var k=document.createElement("input");
+k.setAttribute("type","radio");
+var la2=document.createElement("label");
+la2.innerHTML="No";
+var j=document.createElement("input");
+j.setAttribute("type","radio");
+text.innerHTML="For paperless PAN application"
+text.appendChild(la1);
+text.appendChild(k);
+text.appendChild(la2);
+text.appendChild(j);
+document.body.appendChild(tet);
+
+var t=document.createElement("b");
+var lab1=document.createElement("label");
+lab1.innerHTML="DSC";
+var i1=document.createElement("input");
+i1.setAttribute("type","radio");
+t.appendChild(lab1);
+t.appendChild(i1);
+document.body.appendChild(text1);
+
+
+
+var t=document.createElement("p");
+var l1=document.createElement("label");
+l1.innerHTML="Upload Photo";
+var f=document.createElement("input");
+f.setAttribute("type","file");
+t.appendChild(l1);
+t.appendChild(f);
+document.body.appendChild(t);
+
+var t2=document.createElement("p");
+var l=document.createElement("label");
+l.innerHTML="Upload Document";
+var f=document.createElement("input");
+f.setAttribute("type","file");
+t2.appendChild(l);
+t2.appendChild(f);
+document.body.appendChild(t2);
+
+var t1=document.createElement("p");
+var l1=document.createElement("label");
+l1.innerHTML="Upload Signature";
+var v=document.createElement("input");
+v.setAttribute("type","file");
+text1.appendChild(l1);
+text1.appendChild(v);
+document.body.appendChild(t1);
+
+var p=document.createElement("p");
+var l=document.createElement("label");
+l.innerHTML="Already Uploaded Photo";
+var c=document.createElement("input");
+p.setAttribute("type","text");
+p.appendChild(l);
+p.appendChild(c);
+document.body.appendChild(p);
+
+var p=document.createElement("b");
+var l=cument.createElement("label");
+l.innerHTML="Already Uploaded Signature";
+var a=document.createElement("input");
+p.setAttribute("type","text");
+p.appendChild(l);
+p.appendChild(a);
+document.body.appendChild(p);
+
+var p=document.createElement("b");
+var l1=document.createElement("label");
+l1.innerHTML="Already Uploaded Documents";
+var b=document.createElement("input");
+p.setAttribute("type","text");
+p.appendChild(l1);
+p.appendChild(b);
+
+document.body.appendChild(p);
 </script>
 </body>
 </html>
