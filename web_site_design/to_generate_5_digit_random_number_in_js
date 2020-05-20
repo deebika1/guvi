@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> To generate the random 5 digit number</title>
+</head>
+<script>
+var m;
+var res=[];
+var new1=[];
+var p=0;
+function myfunc(){
+    for(var i=0;i<5;i++)
+    {
+        var c=Math.floor(Math.random()*10);
+          res.push(c);
+    }
+    console.log(res);
+   var unique=[];
+   unique=[...new Set(res)];
+   console.log(unique);
+   var u=parseInt(unique.length);
+   var r=parseInt(res.length);
+   console.log(r,u);
+   var sub=r-u;
+   console.log(sub);
+   function repitation(sub,unique)
+   {
+   for(var k=0;k<sub;k++)
+   {
+      var b=Math.floor(Math.random()*10);
+      new1.push(b);
+   }
+   //console.log(new1);
+   var unique2=[...new Set(new1)];
+   console.log(unique2);
+   for(var i=0;i<unique2.length;i++)
+   {    var t=parseInt(unique2[i]);
+         //console.log(t);
+          var p=0;
+       for(var j=0;j<unique.length;j++)
+       {
+           if(t==parseInt(unique[j]))
+           {  
+               p=1;
+               break;
+               //console.log(t,unique[j]);
+           }
+       }
+          if(p==0)
+          {
+              unique.push(t);
+           }
+           t=0;
+   }
+  // console.log(unique.join(""));
+   return unique;
+   }
+    var re=repitation(sub,unique);
+    console.log(re.join(""));
+    if(re.length!=5)
+    {  
+        var b=parseInt(5-re.length);
+        repitation(b,re);
+    }
+document.getElementById("re").innerHTML= unique.join("")
+}
+</script>
+<center> <h2>RANDOM NUMBER GENERATOR </h2></center> 
+   <center> <button type="button" onclick="myfunc()" style="background-color:red;color:black">CLICK HERE!</button></center>
+    <p id="re"></p>
+</body>
