@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="mystyle2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+<body>
+<div class="myDiv">
+<p></p>
+</div>
+<div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn" style="background-color:red">Home 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div> 
+    <a href="#home">About</a>
+    <a href="#news">Blog</a>
+    <div class="dropdown">
+        <button class="dropbtn" style="background-color:black">pages
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn" style="background-color:black">Components
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn" style="background-color:black">Browse file
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div> 
+      <a href="#home">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="f1.png" alt="facebooklogo" class="l1">>&nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="t.png" alt="twitterlogo" class="l2">>&nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="in.jpg" alt="linkedinlogo" class="l3">>&nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="g.png" alt="g+logo" class="l4">>&nbsp;&nbsp;&nbsp;&nbsp;
+      <img src="po.png" alt="idlogo" class="l5">>&nbsp;&nbsp;&nbsp;&nbsp;
+  </div>
+  <div class="row3">
+    <img src="s.jpg" alt="settinglogo" class="l6">  
+    <p class="p1">18AUGST</p>
+    <input type="text" placeholder="start searching...." class="t1"><i class="fa fa-search" id="l"></i>
+    <button type="button" class="b3">Login</button>
+    <button type="button" class="b4">Regsister free</button>
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+        <img src="die.jpeg" class="k1" style="width:8%">
+        <img src="poc.jpeg"  class="k2" style="width:10%">
+        <img src="book.jpg"  class="k2" style="width:8%">
+        <img src="risa.jpg"  class="k2" style="width:8%">
+        <img src="w.jpg"  class="k3" style="width:10%">
+        <img src="foot.jpg"  class="k2" style="width:8%">
+        <img src="mick.jpg"  class="k2" style="width:9%">
+        <img src="s1.png"  class="k2" style="width:8%">
+        <img src="horr.jpg"  class="k2" style="width:10%">
+        <img src="risa.jpg"  class="k2" style="width:8%">
+        <img src="book.jpg"  class="k2" style="width:8%">
+        <p class="v1">BE CREATIVE</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+        <img src="poc.jpeg" class="k1" style="width:8%">
+        <img src="die.jpeg"  class="k2" style="width:10%">
+        <img src="risa.jpg"  class="k2" style="width:8%">
+        <img src="w.jpg"  class="k2" style="width:8%">
+        <img src="foot.jpg"  class="k3" style="width:10%">
+        <img src="foot.jpg"  class="k2" style="width:8%">
+        <img src="s1.png"  class="k2" style="width:9%">
+        <img src="s1.png"  class="k2" style="width:8%">
+        <img src="horr.jpg"  class="k2" style="width:10%">
+        <img src="book.jpg"  class="k2" style="width:8%">
+        <img src="w.jpg"  class="k2" style="width:8%">
+    </div>
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+        <img src="mick.jpg" class="k1" style="width:8%">
+        <img src="risa.jpg"  class="k2" style="width:10%">
+        <img src="w.jpg"  class="k2" style="width:8%">
+        <img src="mick.jpg"  class="k2" style="width:8%">
+        <img src="book.jpg"  class="k3" style="width:10%">
+        <img src="foot.jpg"  class="k2" style="width:8%">
+        <img src="s1.png"  class="k2" style="width:9%">
+        <img src="die.jpeg"  class="k2" style="width:8%">
+        <img src="horr.jpg"  class="k2" style="width:10%">
+        <img src="book.jpg"  class="k2" style="width:8%">
+        <img src="s1.png"  class="k2" style="width:8%">
+        <button type="button" class="c1">SIGN UP FOR FREE</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+        <img src="mick.jpg" class="k1" style="width:8%">
+        <img src="book.jpg"  class="k2" style="width:10%">
+        <img src="risa.jpg"  class="k2" style="width:8%">
+        <img src="mick.jpg"  class="k2" style="width:8%">
+        <img src="book.jpg"  class="k3" style="width:10%">
+        <img src="foot.jpg"  class="k2" style="width:8%">
+        <img src="s1.png"  class="k2" style="width:9%">
+        <img src="die.jpeg"  class="k2" style="width:8%">
+        <img src="horr.jpg"  class="k2" style="width:10%">
+        <img src="risa.jpg"  class="k2" style="width:8%">
+        <img src="mick.jpg"  class="k2" style="width:8%">
+    </div>
+  </div>
+</body>
+</html>
