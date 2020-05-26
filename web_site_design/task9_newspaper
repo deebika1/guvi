@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#h1{
+    font-size:5px;
+    margin-top:-63px;
+    margin-left:64px;
+
+}
+#h2{    font-size:19px;
+    margin-left:295px;
+    margin-top:-8px;
+}
+#h3{
+    margin-top:-23px;
+    margin-left:305px;
+    font-size:5px;
+
+}
+#h4{
+    font-size:5px;
+    margin-top:-63px;
+    margin-left:64px;
+
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+p.solid {border-style: solid;
+font-size:12px;
+margin-top:0px;
+background-color:whitesmoke;
+border-width: 1px;}
+#k1{
+    text-align:center;
+    font-sizw:12px;
+}
+#k2{
+    font-size:12px;
+}
+.m{
+    margin-left:0px;
+    margin-top:0px;
+}
+#is{
+    font-size:12px;
+}
+#ish{
+    font-size:12px;
+}
+</style>
+</head>
+<body>
+
+<div class="row" style="background-color:whitesmoke;height:105px;">
+  <div class="column" style="background-color:gray; width:131px; height:104px;">
+    <img src="m.jpg" al="man" style="width:45px; height:60px">&nbsp;&nbsp;&nbsp;<p id="h1">A choose company for build fake movie to replace the copy steed rights</p><br>
+    <p>on pages 654</p>
+  </div>
+  <div class="column" style="background-color:whitesmoke; width:131px; height:104px; margin-left:50px;">
+    <p id="h2">The &nbsp;&nbsp;Rising &nbsp;&nbsp;Sun</p>
+    <h5 id="h3">super fast news reporting around the world</h5>
+  </div>
+  <div class="column" style="background-color:gray; width:131px; height:104px; margin-left:1200px; margin-top:-106px;">
+    <img src="w.jpg" al="wedding" style="width:45px; height:60px; ">&nbsp;&nbsp;&nbsp;<p id="h4">Google workers make a decision to start a new thing</p><br>
+    <p>on page 60</p>
+  </div>
+</div>
+<div class="row">
+    <p class="solid">Wednessday, October 24,2018- Florida -united states &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; www.thirisgnsm.org&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;       volume 34 /price 13 /pages 01 of 32</p>
+</div>
+<div class="row" style="background-color:whitesmoke;height:720px; margin-top:-437px;">
+    <div class="column" style="background-color:whitesmoke; width:904px;">
+        <h1>ELECTRIC CARS: THE FUTURE</h1>
+        <h1>OF TRANSFORMATION</h1>
+           <img src="beach.jpg" al="beach" style="width:812px; height:403px">
+        <p> By David D.Kirparick and Carban Gall</p>
+          <p>we have became extremely reliaxe on cars in the technology advanced care.Whether it's for week.peeks.shapes,etc....we</p>
+          <p>everywhere.But we have thought little about the amount of pollutnats leading to environmental</p>
+      <p>transporation is responsible for 30% if greenhouse gas emission in the environmental in etc.united states according</p>      <p>of 2016 by Environmental Production Agency(EPA)</p>
+    </div>
+    <div class="column" style="background-color:whitesmoke; width:900px; margin-left:906px;margin-top:-300px;">
+        <p>POLITICS</p>
+        <img src="flag.jpg" alt="beach" style="width:506px; height:103px; margin-left:0px;">
+        <h5>A CHINESE COMPANY</h5>
+        <h5>TO BUILD A FAKE</h5>
+        <h5>MOON TO REPLACE</h5>
+        <h5>THE CITY</h5>
+        <p>By DavidD.kindwrick and Carban Gal</p>
+        <p>According to chiense online newspaper "Peoples is Daily".A</p>
+        <p>chinese company wants to build a false moon to replace the</p>
+        <p>city streelights in the country.Apple never fails to show</p>
+        <p>concern over environment and the surrounding we live in</p>
+        <p>semone several that she heared about Appke's MRS>Flork and Alie is</p>
+        <p>mark and of see yeild aluminia</p>
+        <p>Apple never fails to show concern over  environment and the</p>
+        <p>vandering we live in secure reveal out the brank of new</p>
+        <p>Apple's MAcBook.Alie is made owm of reveied Aluminium</p>
+        <p>Apple never fails to show concern over environment and the future</p>
+    </div>
+</div>
+    <div class="row" style="background-color:whitesmoke;;width:900px;height:900px; margin-top:430px;">
+        <div class="column" style="background-color:whitesmoke; width:311px;height:201px; margin-top:1px;">
+           <h6>NEWS AROLAND TIME WORLD</h6>
+                <h6>WORLD'S FIRST UNDERWATER</h6>
+                <h6>HOTEL VILLA</h6>
+            <img src="paper.jpg" alt="paper" style="background-color:whitesmoke; width:106px;margin-top:-19px;">
+            <div class="m"style="margin-top:-203px;margin-left:168px; font-size:10px;">
+            <p>world's finall underwater hote villa </p>
+            <p>open in Maldives.One can book the</p> 
+            <p>villa dr 330,0000 a night.You can now</p>
+            <p>literally sleep with fish,vingrays,sheeks</p>
+            <p>and have a cace in lifetime experience.</p>
+        </div>
+
+        <div class="column" style="background-color:whitesmoke; width:311px;height:201px; margin-left:435px; margin-top:-174px;">
+            <p id="is">THE TALLEST STATUEIN THE WORLD</p>
+             <img src="phone.jpg" alt="paper" style="background-color:whitesmoke; width:106px;margin-top:13px;">
+             <div class="m1"style="margin-top:-97px;margin-left:168px; font-size:10px;">
+             <p>world's finall underwater hote villa </p>
+             <p>open in Maldives.One can book the</p> 
+             <p>villa dr 330,0000 a night.You can now</p>
+             <p>literally sleep with fish,vingrays,sheeks</p>
+             <p>and have a cace in lifetime experience.</p>
+         </div>
+    </div>
+    
+    <div class="column" style="background-color:whitesmoke; width:311px;height:201px; margin-left:-9px; margin-top:90px;">
+        <p id="ish">ELECTRIC CARS THE FUTURE OF TRANSFORMATION</p>
+         <img src="run.jpg" alt="paper" style="background-color:whitesmoke; width:106px;margin-top:13px;">
+         <div class="m2" style="margin-top:-97px;margin-left:168px; font-size:10px;">
+         <p>world's finall underwater hote villa </p>
+         <p>open in Maldives.One can book the</p> 
+         <p>villa dr 330,0000 a night.You can now</p>
+         <p>literally sleep with fish,vingrays,sheeks</p>
+         <p>and have a cace in lifetime experience.</p>
+     </div>
+</div>
+
+<div class="column" style="background-color:whitesmoke; width:311px;height:201px; margin-left:435px; margin-top:-213px;">
+    <p id="is">THE TALLEST STATUEIN THE WORLD</p>
+     <img src="gruop.jpg" alt="paper" style="background-color:whitesmoke; width:106px;margin-top:13px;">
+     <div class="m1"style="margin-top:-97px;margin-left:168px; font-size:10px;">
+     <p>world's finall underwater hote villa </p>
+     <p>open in Maldives.One can book the</p> 
+     <p>villa dr 330,0000 a night.You can now</p>
+     <p>literally sleep with fish,vingrays,sheeks</p>
+     <p>and have a cace in lifetime experience.</p>
+ </div>
+</div>
+
+       </div>
+
+</body>
+</html>
