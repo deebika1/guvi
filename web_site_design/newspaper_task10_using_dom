@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>NEWS PAPER USING JS</title>
+</head>
+<body id="mybody">
+<script>
+var a=document.getElementById("mybody");
+a.style.backgroundColor="whitesmoke";
+var div=document.createElement("div");
+div.setAttribute("style","width:81px; height:104px; margin-left:0px; background-color:whitesmoke;");
+document.body.appendChild(div);
+var p3=document.createElement("P");
+p3.innerHTML="The Rising Sun";
+p3.setAttribute("style","text-align:center; font-size:26px; margin-left:389px; margin-top:-17px;");
+div.appendChild(p3);
+var p4=document.createElement("P");
+p4.setAttribute("style","text-align:center; font-size:15px; margin-left:-205px;margin-top:-103px;");
+p4.innerHTML="super fast news reporting around the world";
+div.appendChild(p4);
+
+
+var div1=document.createElement("div");
+div1.setAttribute("style","width:100px; margin-left:96px; background-color:gray; margin-top:-95px; height:85px;");
+div.appendChild(div1);
+var x = document.createElement("IMG");
+  x.setAttribute("src", "m.jpg");
+  x.setAttribute("width", "50");
+  x.setAttribute("height", "58");
+  x.setAttribute("Left","100");
+  x.setAttribute("alt", "coouple");
+    div1.appendChild(x);
+    div.appendChild(div1);
+  var p=document.createElement("P");
+  p.setAttribute("style","margin-top:0px;");
+  p.innerHTML="on pages 65";
+    div1.appendChild(p);
+    div.appendChild(div1);
+    var p2=document.createElement("P");
+  p2.setAttribute("style","font-size:7px; margin-top: -89px; margin-left:64px;");
+  p2.innerHTML="A choose company for build fake movie to replace the copy steed rights";
+   div1.appendChild(p2);
+   div.appendChild(div1);
+
+   var div2=document.createElement("div");
+div2.setAttribute("style","width:100px; margin-left:990px; background-color:gray; margin-top:-83px; height:85px;");
+div.appendChild(div2);
+var x = document.createElement("IMG");
+  x.setAttribute("src", "w.jpg");
+  x.setAttribute("width", "50");
+  x.setAttribute("height", "58");
+  x.setAttribute("Left","100");
+  x.setAttribute("alt", "coouple");
+    div2.appendChild(x);
+    div.appendChild(div2);
+  var p=document.createElement("P");
+  p.setAttribute("style","margin-top:0px;");
+  p.innerHTML="on pages 196";
+    div2.appendChild(p);
+    div.appendChild(div2);
+    var p2=document.createElement("P");
+  p2.setAttribute("style","font-size:7px; margin-top: -89px; margin-left:64px;");
+  p2.innerHTML="Google workers make a decision to start a new thing";
+   div2.appendChild(p2);
+   div.appendChild(div2);
+  
+  
+   var div3= document.createElement("div");
+   div3.setAttribute("style","width:990px;height:20px;border:2px solid black;border-left:none;border-right:none;margin-top:15px;margin-left:97px;");
+   document.body.appendChild(div3);
+   var p1=document.createElement("P");
+  p1.setAttribute("style","margin-top:0px;");
+  p1.innerHTML="Wednessday, October 24,2018- Florida -united states";
+    div3.appendChild(p1);
+    var p2=document.createElement("P");
+  p2.setAttribute("style","margin-top:-35px;margin-left:439px;");
+  p2.innerHTML="www.thirisgnsm.org";
+    div3.appendChild(p2);
+    var p3=document.createElement("P");
+  p3.setAttribute("style","margin-top:-35px;margin-left:757px");
+  p3.innerHTML="volume 34 /price 13 /pages 01 of 32";
+    div3.appendChild(p3);
+
+
+    var div4= document.createElement("div");
+   div4.setAttribute("style","width:990px;height:100px;margin-left:97px; background-color:whitesmoke;");
+   document.body.appendChild(div4);
+   var p1=document.createElement("P");
+  p1.setAttribute("style","margin-top:0px; color:black; font-zize:10px;");
+  p1.innerHTML="ELECTRIC CARS: THE FUTURE";
+    div4.appendChild(p1);
+    var p2=document.createElement("P");
+  p2.setAttribute("style","margin-top:0px; color:black; font-zize:10px;");
+  p2.innerHTML="OF TRANSFORMATION";
+    div4.appendChild(p4);
+    var y = document.createElement("IMG");
+  y.setAttribute("src", "beach.jpg");
+  y.setAttribute("style","width:450px;margin-top:63px;margin-left:0px;height:125px;");
+    div4.appendChild(y);
+    var p8=document.createElement("P");
+      p8.setAttribute("style","margin-top:0px; color:black; font-zize:10px;");
+       p8.innerHTML="world's finall underwater hote villa open in Maldives.One can book the";
+      var p9=document.createElement("p");
+          p9.setAttribute("style","margin-top:0px; color:black; font-zize:10px;");
+          p9.innerHTML="villa dr 330,0000 a night.You can nowliterally sleep with fish,vingrays";
+          var p10=document.createElement("p");
+          p10.setAttribute("style","margin-top:0px; color:black; font-zize:10px;");
+          p10.innerHTML=",sheeksand have a cace in lifetime experience.";
+          var p11=document.createElement("p");
+          p11.setAttribute("style","margin-top:0px; color:black; font-zize:10px;");
+          p11.innerHTML="finall rever undereater hote willl vilaa opened.";
+           div4.appendChild(p8);
+           div4.appendChild(p9);
+           div4.appendChild(p10);
+           div4.appendChild(p11);
+           var z = document.createElement("IMG");
+  z.setAttribute("src", "flag.jpg");
+  z.setAttribute("style","width:450px;margin-top:-263px;margin-left:0px;height:125px;float:right");
+    div4.appendChild(z);
+    var p12=document.createElement("p");
+          p12.setAttribute("style","margin-top:-117px; color:black; font-zize:10px;float:right;text-align:center;margin-right:-77px;");
+          p12.innerHTML="A CHINESE COMPANY TO BUILD A FAKE MOON TO REPLACE THE CITY ";
+           div4.appendChild(p12);
+           var p13=document.createElement("p");
+          p13.setAttribute("style","margin-top:-99px; color:black; font-zize:10px; float:right;margin-right:-179px;");
+          p13.innerHTML="By DavidD.kindwrick and Carban Gal According to chiense online newspaper Peoples is Daily.A";
+           div4.appendChild(p13);
+           var p14=document.createElement("p");
+          p14.setAttribute("style","margin-top:-72px; color:black; font-zize:10px; float:right;margin-right:-279px;");
+          p14.innerHTML="chinese company wants to build a false moon to replace the city streelights in the country.Apple never fails to show ";
+           div4.appendChild(p14);
+    
+           var p15=document.createElement("p");
+          p15.setAttribute("style","margin-top:-52px; color:black; font-zize:10px; float:right;margin-right:-353px;");
+          p15.innerHTML="concern over environment and the surrounding we live in semone several that she heared about Appke's MRS>Flork and Alie is";
+           div4.appendChild(p15);
+           var p16=document.createElement("p");
+          p16.setAttribute("style","margin-top:-29px; color:black; font-zize:10px; float:right;margin-right:-477px;");
+          p16.innerHTML="mark and of see yeild aluminia Apple never fails to show concern over  environment and the vandering we live in secure reveal out the brank of new";
+           div4.appendChild(p16);
+           var p17=document.createElement("p");
+          p17.setAttribute("style","margin-top:-14px; color:black; font-zize:10px; float:right; margin-right:-298px;");
+          p17.innerHTML=" Apple's MAcBook.Alie is made owm of reveied Aluminium Apple never fails to show concern over environment and the future";
+           div4.appendChild(p17);
+    
+</script>
+</body>
+</html>
