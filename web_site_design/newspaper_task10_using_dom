@@ -142,7 +142,106 @@ var x = document.createElement("IMG");
           p17.setAttribute("style","margin-top:-14px; color:black; font-zize:10px; float:right; margin-right:-298px;");
           p17.innerHTML=" Apple's MAcBook.Alie is made owm of reveied Aluminium Apple never fails to show concern over environment and the future";
            div4.appendChild(p17);
+           
+           
+           
+           var div5= document.createElement("div");
+   div5.setAttribute("style","width:990px;height:271px;border:2px solid black;border-top:none;border-bottom:none;margin-top:222px;margin-left:97px;");
+   document.body.appendChild(div5);
+   var p18=document.createElement("P");
+  p18.setAttribute("style","margin-top:0px;font-size:25px;");
+  p18.innerHTML="POLITICS";
+    div5.appendChild(p18);
+    var k = document.createElement("IMG");
+  k.setAttribute("src", "paper.jpg");
+  k.setAttribute("style","width:176px;margin-top:-11px;margin-right:815px;margin-left:0px;height:114px;");
+    div5.appendChild(k);
+    var p19=document.createElement("p");
+          p19.setAttribute("style","margin-top:-106px; color:black; font-size:11px; margin-right:-54px;margin-left:184px;");
+          p19.innerHTML=" world's finall underwater hote villa open in Maldives.";
+           div5.appendChild(p19);
+           var p21=document.createElement("p");
+          p21.setAttribute("style","margin-top:-9px; color:black; font-size:11px; margin-right:-120px;margin-left:183px;");
+          p21.innerHTML="  One can book the villa dr 330,0000 a night";
+           div5.appendChild(p21);
+           var p20=document.createElement("p");
+          p20.setAttribute("style","margin-top:-10px; color:black; font-size:10px; margin-right:-128px; margin-left:183px;");
+          p20.innerHTML="You can now literally sleep with fish,vingrays,sheeks an";
+           div5.appendChild(p20);
+           var p22=document.createElement("p");
+          p22.setAttribute("style","margin-top:-9px; color:black; font-size:10px; margin-right:-128px; margin-left:183px;");
+          p22.innerHTML="d have a cace in lifetime experience ";
+           div5.appendChild(p22);
+
+           var j = document.createElement("IMG");
+  j.setAttribute("src", "run.jpg");
+  j.setAttribute("style","width:176px;margin-top:-69px;margin-right:114px;margin-left:0px;height:106px; float:right;");
+    div5.appendChild(j);
+    var p19=document.createElement("p");
+          p19.setAttribute("style","margin-top:-63px; color:black; font-size:11px; margin-right:-13px;margin-left:461px;");
+          p19.innerHTML=" world's finall underwater hote villa open in Maldives.";
+           div5.appendChild(p19);
+           var p21=document.createElement("p");
+          p21.setAttribute("style","margin-top:-8px; color:black; font-size:11px; margin-right:-91px;margin-left:462px;");
+          p21.innerHTML="  One can book the villa dr 330,0000 a night";
+           div5.appendChild(p21);
+           var p20=document.createElement("p");
+          p20.setAttribute("style","margin-top:-8px; color:black; font-size:10px;margin-right:-128px; margin-left:452px;");
+          p20.innerHTML="You can now literally sleep with fish,vingrays,sheeks an";
+           div5.appendChild(p20);
+           var p22=document.createElement("p");
+          p22.setAttribute("style","margin-top:-8px; color:black; font-size:10px; margin-right:-128px; margin-left:473px;");
+          p22.innerHTML="d have a cace in lifetime experience ";
+           div5.appendChild(p22);
+
+           var b = document.createElement("IMG");
+  b.setAttribute("src", "phone.jpg");
+  b.setAttribute("style","width:176px;margin-top:110px;height:106px; float:right;margin-right:-176px;");
+    div5.appendChild(b);
+    var p23=document.createElement("p");
+          p23.setAttribute("style","margin-top:140px; color:black; font-size:11px; margin-right:-140px;margin-left:461px;");
+          p23.innerHTML=" world's finall underwater hote villa open in Maldives.";
+           div5.appendChild(p23);
+           var p24=document.createElement("p");
+          p24.setAttribute("style","margin-top:-8px; color:black; font-size:11px; margin-right:-140px;margin-left:462px;");
+          p24.innerHTML="  One can book the villa dr 330,0000 a night";
+           div5.appendChild(p24);
+           var p25=document.createElement("p");
+          p25.setAttribute("style","margin-top:-9px; color:black; font-size:10px;margin-right:-140px; margin-left:452px;");
+          p25.innerHTML="You can now literally sleep with fish,vingrays,sheeks an";
+           div5.appendChild(p25);
+           var p26=document.createElement("p");
+          p26.setAttribute("style","margin-top:-7px; color:black; font-size:10px; margin-right:-140px; margin-left:473px;");
+          p26.innerHTML="d have a cace in lifetime experience ";
+           div5.appendChild(p26);
+
+           var h = document.createElement("IMG");
+  h.setAttribute("src", "gruop.jpg");
+  h.setAttribute("style","width:176px;margin-top:110px;height:106px; float:right;margin-right:-176px;");
+    div5.appendChild(h);
+    var p27=document.createElement("p");
+          p27.setAttribute("style","margin-top:140px; color:black; font-size:11px; margin-right:-140px;margin-left:461px;");
+          p27.innerHTML=" world's finall underwater hote villa open in Maldives.";
+           div5.appendChild(p27);
+           var p28=document.createElement("p");
+          p28.setAttribute("style","margin-top:-8px; color:black; font-size:11px; margin-right:-140px;margin-left:462px;");
+          p28.innerHTML="  One can book the villa dr 330,0000 a night";
+           div5.appendChild(p28);
+           var p29=document.createElement("p");
+          p29.setAttribute("style","margin-top:-9px; color:black; font-size:10px;margin-right:-140px; margin-left:452px;");
+          p29.innerHTML="You can now literally sleep with fish,vingrays,sheeks an";
+           div5.appendChild(p29);
+           var p30=document.createElement("p");
+          p30.setAttribute("style","margin-top:-7px; color:black; font-size:10px; margin-right:-140px; margin-left:473px;");
+          p30.innerHTML="d have a cace in lifetime experience ";
+           div5.appendChild(p30);
+
+
+
+
+
     
 </script>
 </body>
 </html>
+
