@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>PAN CARD USING JS</title>
+</head>
+<body id="mybody">
+<script>
+var a=document.getElementById("mybody");
+a.style.backgroundColor="white";
+var div=document.createElement("div");
+div.setAttribute("style","width:1900px; height:26px; margin-left:0px; background-color:gray;");
+document.body.appendChild(div);
+var s=document.createElement("span")
+s.setAttribute("style","background-color:red;height:14px;width:14px;border-radius:50%;display:inline-block;");
+div.appendChild(s);
+var s1=document.createElement("span")
+s1.setAttribute("style","background-color:yellow;height:14px;width:14px;border-radius:50%;display:inline-block;margin-left:7px;");
+div.appendChild(s1);
+var s2=document.createElement("span")
+s2.setAttribute("style","background-color:green;height:14px;width:14px;border-radius:50%;display:inline-block;margin-left:9px;");
+div.appendChild(s2);
+var p1=document.createElement("P");
+                    var l=document.createElement("label");
+             l.innerHTML="Search or enter the website name";
+             l.setAttribute("style","color:black;margin-left:-345px;font-size:16px;float:right;margin-right:1366px;margin-top:-31px;")
+           var t=document.createElement("input");
+                t.setAttribute("type","text");
+                        t.setAttribute("style","margin-left:9px;margin-top:-31px;height:13px;width:361px;float:right;margin-right:1225px;");
+                         p1.appendChild(t);
+                         p1.appendChild(l);
+                         div.appendChild(p1);
+                         var div1=document.createElement("div");
+div1.setAttribute("style","width:1900px; height:500px; margin-left:0px; background-color:blue;");
+document.body.appendChild(div1);
+                         var p2=document.createElement("p");
+          p2.setAttribute("style","margin-top:0px; color:white;font-size:18px; margin-right:0px;margin-left:25px;");
+          p2.innerHTML="Landing";
+           div1.appendChild(p2);
+           var p3=document.createElement("p");
+          p3.setAttribute("style","margin-top:-33px; color:white;font-size:18px; margin-right:0px;margin-left:333px;");
+          p3.innerHTML="Home";
+           div1.appendChild(p3);
+           var p4=document.createElement("p");
+          p4.setAttribute("style","margin-top:-39px; color:white;font-size:18px; margin-right:0px;margin-left:401px;");
+          p4.innerHTML="Features";
+           div1.appendChild(p4);
+           var p5=document.createElement("p");
+          p5.setAttribute("style","margin-top:-37px; color:white;font-size:18px; margin-right:0px;margin-left:479px;");
+          p5.innerHTML="Reviews";
+           div1.appendChild(p5);
+           var p6=document.createElement("p");
+          p6.setAttribute("style","margin-top:-38px; color:white;font-size:18px; margin-right:0px;margin-left:558px;");
+          p6.innerHTML="Pricing";
+           div1.appendChild(p6);
+           var p7=document.createElement("p");
+          p7.setAttribute("style","margin-top:-37px; color:white;font-size:18px; margin-right:0px;margin-left:633px;");
+          p7.innerHTML="FAQ";
+           div1.appendChild(p7);
+           var p14=document.createElement("P");
+                    var l3=document.createElement("label");
+             l3.innerHTML="Get Started";
+             l3.setAttribute("style","color:white;margin-left:0px;font-size:20px;margin-bottom:0px;margin-top:-38px; float:right;margin-right:1087px;")
+           var t3=document.createElement("input");
+                t3.setAttribute("type","button");
+                        t3.setAttribute("style","margin-left:0px;margin-top:-38px;height:18px;width:165px;background-color:blue;float:right;margin-right:1028px;");
+                         p14.appendChild(t3);
+                         p14.appendChild(l3);
+                         div1.appendChild(p14);
+                         var div3=document.createElement("div");
+div3.setAttribute("style","width:1550px; height:550px; margin-left:0px; background-color:blue;");
+document.body.appendChild(div3);
+var p8=document.createElement("p");
+          p8.setAttribute("style","margin-top:-400px; color:white;font-size:51px; margin-right:0px;margin-left:125px;");
+          p8.innerHTML="Fly makes you";
+           div3.appendChild(p8);
+           var p9=document.createElement("p");
+          p9.setAttribute("style","margin-top:-60px; color:white;font-size:51px; margin-right:0px;margin-left:128px;");
+          p9.innerHTML="faster";
+           div3.appendChild(p9);
+           var p10=document.createElement("p");
+          p10.setAttribute("style","margin-top:-41px; color:white;font-size:21px; margin-right:0px;margin-left:126px;");
+          p10.innerHTML="New free template by uicookiescom.For more";
+           div3.appendChild(p10);
+           var p11=document.createElement("p");
+          p11.setAttribute("style","margin-top:-14px; color:white;font-size:21px; margin-right:0px;margin-left:127px;");
+          p11.innerHTML="template visit the site.Lorem ipsum dolor sitamet,";
+           div3.appendChild(p11);
+           var p12=document.createElement("p");
+          p12.setAttribute("style","margin-top:-15px; color:white;font-size:21px; margin-right:0px;margin-left:125px;");
+          p12.innerHTML="consectetur adipisicing elit";
+           div3.appendChild(p12);
+           var p13=document.createElement("P");
+                    var l2=document.createElement("label");
+             l2.innerHTML="SEE PRICING";
+             l2.setAttribute("style","color:white;margin-left:-149px;font-size:20px;margin-bottom:-19px;margin-bottom:-19px;")
+           var t2=document.createElement("input");
+                t2.setAttribute("type","button");
+                        t2.setAttribute("style","margin-left:125px;margin-top:0px;height:18px;width:165px;background-color:green;");
+                         p13.appendChild(t2);
+                         p13.appendChild(l2);
+                         div3.appendChild(p13);
+                         var div4=document.createElement("div");
+div4.setAttribute("style","width:550px; height:450px; margin-left:600px; background-color:white;margin-top:-558px;");
+document.body.appendChild(div4);
+var p16=document.createElement("p");
+          p16.setAttribute("style","margin-top:-546px; color:white;font-size:35px; margin-right:0px;margin-left:147px;");
+          p16.innerHTML="Sign Up For Free";
+           div4.appendChild(p16);
+           var p17=document.createElement("P");
+                    var l4=document.createElement("label");
+             l4.innerHTML="Full Name";
+             l4.setAttribute("style","color:black;margin-left:-318px;font-size:20px;margin-bottom:-19px;margin-bottom:-19px;")
+           var t4=document.createElement("input");
+                t4.setAttribute("type","text");
+                        t4.setAttribute("style","margin-left:151px;margin-top:0px;height:18px;width:315px;background-color:gray;");
+                         p17.appendChild(t4);
+                         p17.appendChild(l4);
+                         div4.appendChild(p17);
+                         var p18=document.createElement("P");
+                    var l5=document.createElement("label");
+             l5.innerHTML="Email";
+             l5.setAttribute("style","color:black;margin-left:-318px;font-size:20px;margin-bottom:-19px;margin-bottom:-19px;")
+           var t5=document.createElement("input");
+                t5.setAttribute("type","text");
+                        t5.setAttribute("style","margin-left:151px;margin-top:0px;height:18px;width:315px;background-color:gray;");
+                         p18.appendChild(t5);
+                         p18.appendChild(l5);
+                         div4.appendChild(p18);
+                         var p19=document.createElement("P");
+                    var l6=document.createElement("label");
+             l6.innerHTML="Email";
+             l6.setAttribute("style","color:black;margin-left:-318px;font-size:20px;margin-bottom:-19px;margin-bottom:-19px;")
+           var t6=document.createElement("input");
+                t6.setAttribute("type","text");
+                        t6.setAttribute("style","margin-left:151px;margin-top:0px;height:18px;width:315px;background-color:gray;");
+                         p19.appendChild(t6);
+                         p19.appendChild(l6);
+                         div4.appendChild(p19);
+                         var p20=document.createElement("P");
+                    var l7=document.createElement("label");
+             l7.innerHTML="Type";
+             l7.setAttribute("style","color:black;margin-left:-318px;font-size:20px;margin-bottom:-19px;margin-bottom:-19px;")
+           var t7=document.createElement("input");
+                t7.setAttribute("type","text");
+                        t7.setAttribute("style","margin-left:151px;margin-top:0px;height:18px;width:315px;background-color:gray;");
+                         p20.appendChild(t7);
+                         p20.appendChild(l7);
+                         div4.appendChild(p20);
+                         var p21=document.createElement("P");
+                    var l8=document.createElement("label");
+             l8.innerHTML="Register";
+             l8.setAttribute("style","color:black;margin-left:-237px;font-size:20px;margin-bottom:-19px;margin-bottom:-19px;")
+           var t8=document.createElement("input");
+                t8.setAttribute("type","button");
+                        t8.setAttribute("style","margin-left:151px;margin-top:0px;height:31px;width:257px;background-color:blue;");
+                         p21.appendChild(t8);
+                         p21.appendChild(l8);
+                         div4.appendChild(p21);
+</script>
+
+</body>
+</html>
