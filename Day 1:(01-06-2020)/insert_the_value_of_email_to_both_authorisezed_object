@@ -1,0 +1,38 @@
+/*2.2 Insert a new key called email and assign a value email1@gmail.com andemail2@gmail.com respectively in both authorDetails object;*/
+function library(){
+var library=[
+    {
+        title:"javascript",
+        price:500,
+        readers:[
+            {
+                name:"person 1",
+                count:300
+            },
+            {
+                name:"person 2",
+                count:400
+            }
+            ],
+            authordetails:{
+                name:"raj",
+                age:40,
+                email:"email1@gmail.com"
+            },
+    },
+    {
+        title:"node js",
+        price:600,
+        readers:[],
+         authordetails:{
+                name:"raj",
+                age:40,
+                email:"email2@gmail.com"
+            }
+    }
+    
+    ]//console the output of email1 value
+    console.log(library[0].authordetails.email);
+    
+}
+library();
