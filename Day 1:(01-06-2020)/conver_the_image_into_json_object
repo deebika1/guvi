@@ -1,0 +1,66 @@
+//convert the image into json object with fuction
+function funame(){
+    var object=[{
+    Dimension:
+        {
+            Overal_length:3500,
+            Overal_width:1600,
+            Overal_height:1490,
+            Whellbase:2360,
+        Track_width:{
+            fornt:1405,
+            rear:1400
+        },
+        Minimum_turning_radius:4.5,
+        Minimum_ground_clearance:170,
+    
+        },
+        capacitites:{
+            Seating_capacity:5,
+            fuel_tank_capacity:35
+
+        },
+        Engine:{
+
+            Number_of_cylinders:3,
+            number_of_valves:12,
+            capacity:998,
+            bore_x_stroke:"73.0x79.5",
+        compression_ratio:"10.1",
+        Maximum_power:"67/6.200",
+        maximmum_torque:"90/3.500",
+        fuel_distribution:"mutiponintinjection"
+        },
+        transmission:{
+            type:"5-speed MIT"
+        },
+        chasis:{
+            steering:"Rack & Pinion,Power assisted",
+            Brakes:[{
+                front:"Ventilated_discs"
+
+
+            },
+            {
+               Rear:"Drums" 
+            }],
+            suspension:[{
+                fornt:"macPherson strut & coil spring"
+            },{
+                Rear:"Isolated trailing link & coik spring"
+            }],
+            shock_absorber:"gas filled",
+            tyre:"155//8Or 13"
+             },
+             weights:{
+                 kerb_weight:860-890,
+                 cross_vechile_weight:1320
+             }
+
+
+}];
+console.log(object);
+}
+var res;
+res=funame();
+console.log(res);
