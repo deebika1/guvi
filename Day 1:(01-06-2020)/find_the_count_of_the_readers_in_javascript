@@ -1,0 +1,47 @@
+//Print how many readers for javascript in console.
+function library(){
+var library=[
+    {
+        title:"javascript",
+        price:500,
+        readers:[
+            {
+                name:"person 1",
+                count:300
+            },
+            {
+                name:"person 2",
+                count:400
+            }
+            ],
+            authordetails:{
+                name:"raj",
+                age:40,
+                email:"email1@gmail.com"
+            },
+    },
+    {
+        title:"node js",
+        price:600,
+        readers:[],
+         authordetails:{
+                name:"raj",
+                age:40,
+                email:"email2@gmail.com"
+            }
+    },
+    {
+      newbooks:"SQL"   
+    }
+    
+    ]
+    // to find the count of the readers in the javascript
+    var c=library[0].readers;
+    var count=0;
+    for(var i in c){
+        count=count+1;
+    }
+    console.log(count);
+    
+}
+library();
