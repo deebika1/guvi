@@ -1,0 +1,41 @@
+//Insert a new reader in the readers array for Nodejs.
+function library(){
+var library=[
+    {
+        title:"javascript",
+        price:500,
+        readers:[
+            {
+                name:"person 1",
+                count:300
+            },
+            {
+                name:"person 2",
+                count:400
+            }
+            ],
+            authordetails:{
+                name:"raj",
+                age:40,
+                email:"email1@gmail.com"
+            },
+    },
+    {
+        title:"node js",
+        price:600,
+        readers:[],
+         authordetails:{
+                name:"raj",
+                age:40,
+                email:"email2@gmail.com"
+            }
+    }
+    
+    ]//insert a new reader in the reader array in nodejs
+    var c=library[1].readers.read="notice";
+    console.log(c);
+    // console the readers array
+    console.log(library[1].readers.read);
+    
+}
+library();
