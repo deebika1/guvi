@@ -1,0 +1,44 @@
+//Print the age of Nodejs Author in console.
+function library(){
+var library=[
+    {
+        title:"javascript",
+        price:500,
+        readers:[
+            {
+                name:"person 1",
+                count:300
+            },
+            {
+                name:"person 2",
+                count:400
+            }
+            ],
+            authordetails:{
+                name:"raj",
+                age:40,
+                email:"email1@gmail.com"
+            },
+    },
+    {
+        title:"node js",
+        price:600,
+        readers:[],
+         authordetails:{
+                name:"raj",
+                age:40,
+                email:"email2@gmail.com"
+            }
+    },
+    {
+      newbooks:"SQL"   
+    }
+    
+    ]
+    // to find the age of node js authores
+    var c=library[1].title;
+    if(c=="node js")
+    console.log(library[1].authordetails.age);
+    
+}
+library();
