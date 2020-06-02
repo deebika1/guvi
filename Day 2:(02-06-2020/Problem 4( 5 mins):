@@ -1,0 +1,12 @@
+var arr = ["GUVI", "I", "am", "a","geek"];
+function transformFirstAndLast(arr) 
+{
+var newObject={};
+key=arr[0];
+value=arr[arr.length-1];
+newObject[key]=value;
+return newObject;
+}
+var result;
+result=transformFirstAndLast(arr);
+console.log(result);
