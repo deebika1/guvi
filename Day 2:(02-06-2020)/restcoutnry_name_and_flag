@@ -1,0 +1,25 @@
+/*1. Rest Countries API : (restcountries.eu)
+1.1 Extract and print all the country name with the flag URL in console*/
+// html
+<!DOCTYPE html>
+<html>
+<head>
+<title>rest countries</title>
+</head>
+<body>
+<script src="main.js">
+</script>
+</body>
+</html>
+//js
+var request=new XMLHttpRequest()
+request.open('GET','https://restcountries.eu/rest/v2/all',true)
+request.onload=function(){
+    var jsondata=JSON.parse(this.response)
+    console.log(jsondata)
+    for(var i in jsondata)
+{
+    console.log(jsondata[i].name,":",jsondata[i].flag);
+}
+};
+request.send()
