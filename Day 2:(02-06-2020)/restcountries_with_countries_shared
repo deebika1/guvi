@@ -1,0 +1,27 @@
+/*1.4 Display the count of all countries sharing their border with the country name in
+console.
+(Example Output : Afghanistan shares its border with 6 countries that includes
+(“IRN”, “PAK”, “TKM”, “UZB”, “TJK”, “CHN”))*/
+//html
+<!DOCTYPE html>
+<html>
+<head>
+<title>rest countries</title>
+</head>
+<body>
+<script src="main.js">
+</script>
+</body>
+</html>
+//js
+var request=new XMLHttpRequest()
+request.open('GET','https://restcountries.eu/rest/v2/all',true)
+request.onload=function(){
+    var jsondata=JSON.parse(this.response)
+    console.log(jsondata)
+    for(var i in jsondata)
+{
+    console.log(jsondata[i].name+": "+"shares its border with "+jsondata[i].borders.length+" countries that includes"+"("+jsondata[i].borders+")");
+}
+};
+request.send()
