@@ -1,0 +1,145 @@
+//1.Add height and weight to Fluffy
+var cat = {
+ name: "Fluffy",
+  weight: 3,
+   height: 3,
+ activities: ["play", "eat cat food"],
+ catFriends: [
+ {
+ name: "bar",
+ activities: ["be_grumpy", "eat bread omblet"],
+ weight: 8,
+ furcolor: "white"
+ }, 
+ {
+ name: "foo",
+ activities: ["sleep", "pre sleep naps"],
+ weight: 3
+ }
+ ]
+}
+console.log(cat);
+//2.Fluffy name is spelled wrongly. Update it to Fluffyy
+var cat = {
+ name: "Fluffy",
+  weight: 3,
+   height: 3,
+ activities: ["play", "eat cat food"],
+ catFriends: [
+ {
+ name: "bar",
+ activities: ["be_grumpy", "eat bread omblet"],
+ weight: 8,
+ furcolor: "white"
+ }, 
+ {
+ name: "foo",
+ activities: ["sleep", "pre sleep naps"],
+ weight: 3
+ }
+ ]}
+ cat.name="Fulffyy";
+console.log(cat);
+//3.List all the activities of Fluffyy’s catFriends.
+var cat = {
+ name: "Fluffy",
+  weight: 3,
+   height: 3,
+ activities: ["play", "eat cat food"],
+ catFriends: [
+ {
+ name: "bar",
+ activities: ["be_grumpy", "eat bread omblet"],
+ weight: 8,
+ furcolor: "white"
+ }, 
+ {
+ name: "foo",
+ activities: ["sleep", "pre sleep naps"],
+ weight: 3
+ }
+ ]}
+ var c=cat.name;
+ if(c=="Fluffy")
+ console.log(cat.activities);
+//console.log(cat);
+//4.Print the catFriends names.
+var cat = {
+ name: "Fluffy",
+  weight: 3,
+   height: 3,
+ activities: ["play", "eat cat food"],
+ catFriends: [
+ {
+ name: "bar",
+ activities: ["be_grumpy", "eat bread omblet"],
+ weight: 8,
+ furcolor: "white"
+ }, 
+ {
+ name: "foo",
+ activities: ["sleep", "pre sleep naps"],
+ weight: 3
+ }
+ ]}
+ 
+ //console.log(cat.activities);
+ for(var i in cat.catFriends)
+ {
+console.log(cat.catFriends[i].name);
+}
+//5.Print the total weight of catFriends
+var cat = {
+ name: "Fluffy",
+  weight: 3,
+   height: 3,
+ activities: ["play", "eat cat food"],
+ catFriends: [
+ {
+ name: "bar",
+ activities: ["be_grumpy", "eat bread omblet"],
+ weight: 8,
+ furcolor: "white"
+ }, 
+ {
+ name: "foo",
+ activities: ["sleep", "pre sleep naps"],
+ weight: 3
+ }
+ ]}
+ 
+ //console.log(cat.activities);
+ var total_weight=0;
+ for(var i in cat.catFriends)
+ {
+    total_weight=total_weight+cat.catFriends[i].weight;
+}
+console.log(total_weight);
+//6.Print the total activities of all cats (op:6)
+var cat = {
+ name: "Fluffy",
+  weight: 3,
+   height: 3,
+ activities: ["play", "eat cat food"],
+ catFriends: [
+ {
+ name: "bar",
+ activities: ["be_grumpy", "eat bread omblet"],
+ weight: 8,
+ furcolor: "white"
+ }, 
+ {
+ name: "foo",
+ activities: ["sleep", "pre sleep naps"],
+ weight: 3
+ }
+ ]}
+ 
+ //console.log(cat.activities);
+ var total_weight=0;
+console.log(cat.activities);
+for(var i in cat.catFriends)
+{
+    console.log(cat.catFriends[i].activities);
+}
+//7.Add 2 more activities to bar & foo cats
