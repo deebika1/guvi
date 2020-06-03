@@ -1,0 +1,38 @@
+/*2. Do the below programs in anonymous function
+2.1. Print odd numbers in an array*/
+var array=[1,2,3,4,5];
+var odd=function()
+{
+ var result=array.filter(function(a){
+     return (a%2==1)
+     })
+     console.log(result);
+}
+odd();
+/*2.2. Convert all the strings to title caps in a string array*/
+var str1="deebika";
+var title=function(){
+    var first=str1[0].toUpperCase();
+    //console.log(first);
+    var s='';
+    for(var i=1;i<str1.length;i++)
+    {
+        s+=str1[i];
+    }
+    first+=s;
+    console.log(first);
+    
+}
+title();
+/*2.3. Sum of all numbers in an array*/
+var array=[1,2,3,4,5];
+var sum=function(){
+    var add=array.reduce(function(sum1,a){
+        //console.log(a);
+        return sum1+=a
+    })
+    console.log(add);
+    
+}
+sum();
+/*2.4. Return all the prime numbers in an array*/
