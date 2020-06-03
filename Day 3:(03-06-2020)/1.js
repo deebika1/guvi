@@ -388,19 +388,106 @@ return r;
 
 var result=getProperty(obj,"mykey");
 console.log(result);
-/*22.Write a function called “addProperty”.
-Given an object, and a key, “addProperty” sets a new property on the given object with a value of true.
-
-var obj = {
-mykey: “value”,
-myProperty: true
-}
+/*22.Write a function called “removeProperty”.
+Given an object and a key, “removeProperty” removes the given key from the given object.
 Input:
-removeProperty(obj, “mykey”);
 removeProperty(obj, “name”);
 Output:
-{
-myProperty: true
-}
 undefined*/
+var obj = {
+ mykey: "value",
+ myProperty: "true"
+};
+function addProperty(obj, key){
+    //var r=key.toString();
+    //var c=obj[r];
+    //console.log(c);
+    delete obj[key];
+    return obj
+  
+}
+var result=addProperty(obj,"mykey");
+console.log(result);
+/*23.Find the maximum number in an array of numbers*/
+function findMax(ar)
+{
+var max = ar.reduce(function(a, b) {
+    return Math.max(a, b);
+});
+console.log(max);
+}
+var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+ findMax(ar);
+/*24.Reverse a string*/
+var s = reverseString("JavaScript");
+console.log(s);
+//var v='';
+function reverseString(s)
+{ var v='';
+    for(var i=(s.length)-1;i>=0;i--)
+    {
+        v+=s[i];
+    }
+    return v;
+   // your code here  
+}
+/*25.Create a function that will merge two arrays and return the result as a new array*/
+var ar1 = [1, 2, 3];
+var ar2 = [4, 5, 6];
+var ar = mergeArrays(ar1, ar2);
+console.log(ar);
+function mergeArrays(ar1, ar2)
+{
+ var result = [];
+//this will add the first array to the result array
+for(let el in ar1)
+ {
+ result.push(ar1[el]);
+ }
+ 
+ for(let e2 in ar2)
+ {
+ result.push(ar2[e2]);
+ }
+ 
+ //Some piece of code goes here 
+ 
+ return result;
+}/*26.Create a function that receives an array of numbers and returns an array containing only the positive numbers*/
+var result=[];
+function getPositives(ar)
+{
+ for(var i=0;i<ar.length;i++)
+ {
+     if(ar[i]>0)
+     {
+         result.push(ar[i]);
+     }
+ }
+ return result;
+}
+var ar = [-5, 10, -3, 12, -9, 5, 90, 0, 1];
+var ar2 = getPositives(ar);
+console.log(ar2);
+/*27.Write a function `powersOfTwo` which will return list of all powers of 2 from 0 to n (where n is an exponent).
+n = 0 -> 2⁰ -> [1]
+n = 1 -> 2⁰, 2¹ -> [1,2]
+n = 2 -> 2⁰, 2¹, 2² -> [1,2,4]
+Input:
+powersOfTwo(0)
+powersOfTwo(1)
+powersOfTwo(2)
+Output:
+1
+1,2
+1,2,4*/
+function powersOfTwo(n){
+  var result=[];
+  for(var i=0;i<n;i++)
+  {
+      result.push(Math.pow(2,i))
+  }
+  return result;
+}
+console.log(powersOfTwo(3));
 
