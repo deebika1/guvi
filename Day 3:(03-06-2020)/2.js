@@ -116,3 +116,18 @@ var rotate1=function(){
    
 }
 rotate1();
+/*2.6 Return median of two sorted arrays of same size*/
+var array1=[1,2,3,4,5];
+var array2=[2,3,4,5,6];
+var median=function(array1,array2){
+    if(array1.length==array2.length)
+    {
+        var result1=array1.concat(array2);
+        var a=result1[result1.length/2];
+        var b=result1[result1.length/2-1];
+        var median=(a+b)/2;
+        console.log(median);
+        
+    }
+}
+median(array1,array2);
