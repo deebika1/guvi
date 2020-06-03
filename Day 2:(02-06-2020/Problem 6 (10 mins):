@@ -1,0 +1,34 @@
+/*Parsing a list of lists and convert into a JSON object:
+Write a function called “transformGeekData” that transforms some set of data from one format to another.
+Input (Array):
+var array = [[[“firstName”, “Vasanth”], [“lastName”, “Raja”], [“age”, 24], [“role”, “JSWizard”]], [[“firstName”, “Sri”], [“lastName”, “Devi”], [“age”, 28], [“role”, “Coder”]]];
+Output:
+[
+{firstName: “Vasanth”, lastName: “Raja”, age: 24, role: “JSWizard”},
+{firstName: “Sri”, lastName: “Devi”, age: 28, role: “Coder”}
+]*/
+var arr= [[["firstName", "Vasanth"], ["lastName", "Raja"], ["age", 24], ["role", "JSWizard"]], [["firstName", "Sri"], ["lastName", "Devi"], ["age", 28], ["role", "Coder"]]];
+function transformEmployeeData(arr) {
+ var transformEmployeeList = {};
+ var array1=[];
+ var newarray=[];
+ for(var m=0;m<arr.length;m++)
+ {
+     array1=arr[m];
+     //console.log(array1);
+     for(var b=0;b<array1.length;b++)
+     {
+         var key=b;
+         var i=0;
+         var value=array1[b];
+         transformEmployeeList[value[i]]=value[i+1];
+     }
+     newarray.push(transformEmployeeList);
+     array1='';
+ }
+ //console.log(transformEmployeeList);
+ return newarray
+ 
+}
+var result=transformEmployeeData(arr)
+console.log(result);
