@@ -1,0 +1,48 @@
+/*7 - findLastIndex
+This method is like Array.prototype.findIndex except that it iterates over elements of collection from right to left.
+
+Arguments :
+array (Array): The array to inspect.
+
+[predicate= T] (Function): The function invoked per iteration.
+
+Note: Here T Means A function that always returns true.
+
+Returns :
+(Number): Returns the index of the found element, else -1.
+
+Example
+findLastIndex([5, 12, 6, 130, 8])
+// => 4
+
+findLastIndex([1,2,3,4,5], (value, index, array) => value % 2 === 0)
+// => 3
+
+findLastIndex([1,2,3,4], (value, index, array) => value + value === 10)
+// => -1*/
+var dropRightwhile =function(array){
+var result=array.filter(function(a){
+     return (parseInt(a%2)==0)
+     })
+//console.log(result);
+  var i=0;
+  var j=0;
+  var v=[];
+  while(i<array.length)
+  { 
+     while(j<result.length)
+     {
+         if(array[i]!=result[j])
+         {
+             v.push(array[i]);
+             break;
+         }
+         j++;
+     }
+     i++;
+  }
+  //console.log(v);
+  var res=v.length;
+  console.log(res);
+}
+dropRightwhile([1,2,3,4,5]);
