@@ -1,0 +1,15 @@
+/*4 - drop
+Creates a slice of array with n elements dropped from the beginning.
+
+Arguments :
+array (Array): The array to query.
+
+[n=1] (number): The number of elements to drop.
+
+Returns :
+(Array): Returns the slice of array.*/
+var drop =function(array,size){
+ var res=array.slice(size);
+ console.log(res);
+}
+drop([1,  2,  3],  2);
