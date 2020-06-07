@@ -1,0 +1,28 @@
+/*9 - flattenDepth
+Recursively flatten array up to depth times.
+
+Arguments :
+array (Array): The array to flatten.
+
+[depth=1] (number): The maximum recursion depth.
+
+Returns :
+(Array): Returns the new flattened array.
+
+Example
+var array = [1, [2, [3, [4]],  5]];
+
+flattenDepth(array,  1);
+// => [1, 2, [3, [4]], 5]
+
+flattenDepth(array,  2);
+// => [1, 2, 3, [4], 5]*/
+var arr = [1, [2, [3, [4]],  5]];
+function flaten(arr){
+var flaten1= arr.reduce(function(a,b){ return a.concat(b) }, []);
+
+var flaten2 = flaten1.reduce(function(a,b){ return a.concat(b) }, []);
+var flaten3 = flaten2.reduce(function(a,b){ return a.concat(b) }, []);
+return flaten3
+}
+console.log(flaten(arr))
