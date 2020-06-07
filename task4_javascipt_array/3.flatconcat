@@ -7,7 +7,11 @@ array (Array): The array to concatenate.
 [values] (...*): The values to concatenate.
 
 Returns :
-(Array): Returns the new concatenated array.*/
+(Array): Returns the new concatenated array.
+Example
+var array = [1];
+flatconcat(array,  2, [3], [[4]]);
+// => [1, 2, 3, 4]*/
 array=[1];
 var flatconcat =function(a,b){
   var i=0;
