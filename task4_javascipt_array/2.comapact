@@ -1,0 +1,16 @@
+/*2 - compact(array)
+Creates an array with all falsey values removed. The values false, null, 0, "", undefined, and NaN are falsey.
+
+Arguments :
+array (Array): The array to compact.
+
+Returns :
+(Array): Returns the new array of filtered values.*/
+array=[0,  1, false,  2,  '',  3]
+var compact =function(){
+   var result=array.filter(function(a){
+     return (parseInt(a)>=0)
+     })
+     console.log(result);
+}
+compact();
