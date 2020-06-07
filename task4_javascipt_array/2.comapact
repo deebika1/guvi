@@ -5,7 +5,10 @@ Arguments :
 array (Array): The array to compact.
 
 Returns :
-(Array): Returns the new array of filtered values.*/
+(Array): Returns the new array of filtered values
+Example
+compact([0,  1, false,  2,  '',  3]);
+// => [1, 2, 3].*/
 array=[0,  1, false,  2,  '',  3]
 var compact =function(){
    var result=array.filter(function(a){
