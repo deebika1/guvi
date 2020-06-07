@@ -1,0 +1,36 @@
+/*10 - fromPairs
+this method returns an object composed from key-value pairs.
+
+Arguments :
+pairs (Array): The key-value pairs.
+
+Returns :
+(Object): Returns the new object.
+
+Example
+fromPairs([['a', 1], ['b', 2]]);
+// => { 'a': 1, 'b': 2 }*/
+var fromparis =function(array){
+var i=0;
+var object={};
+var j=0;
+while(i<array.length)2
+{ var k=0;
+    var key=i;
+    var value=array[i];
+    console.log(value);
+    while(j<value.length);
+    {
+        var subkey=j;
+        var subvalue=value[j]
+        console.log(subvalue);
+        object[subvalue[k]]=subvalue[k+1];
+        j++;
+    }
+    i++;
+    k=0;
+    j=0;
+}
+console.log(object);
+}
+fromparis([['a', 1], ['b', 2]]);
