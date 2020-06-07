@@ -1,0 +1,32 @@
+/*3 - flatconcat
+Creates a new array concatenating and flattens array a single level deep. with any additional arrays and/or values.
+
+Arguments :
+array (Array): The array to concatenate.
+
+[values] (...*): The values to concatenate.
+
+Returns :
+(Array): Returns the new concatenated array.*/
+array=[1];
+var flatconcat =function(a,b){
+  var i=0;
+  var result=[];
+  //console.log(a);
+  //console.log(b);
+  while(i<a.length)
+  { // console.log(a[i]);
+  //console.log(a[0]);
+      result.push(a[i]);
+      i++;
+  }
+  //console.log(result);
+  var j=0;
+  while(j<b.length)
+  {
+      result.push(b[j]);
+      j++;
+  }
+  console.log(result);
+}
+flatconcat(array,[2,3,4,5]);
