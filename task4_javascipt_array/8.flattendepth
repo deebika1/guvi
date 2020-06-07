@@ -1,0 +1,18 @@
+/*8 - flattenDeep
+Recursively flattens array.
+
+Arguments :
+array (Array): The array to flatten.
+
+Returns :
+(Array): Returns the new flattened array.
+
+Example
+flattenDeep([1, [2, [3, [4]],  5]]);
+// => [1, 2, 3, 4, 5]*/
+var arr=[[1],2,[3],[[4]]];
+var flaten=arr.reduce(function(a,b){
+    return a.concat(b)},[]);
+    var flaten1=arr.reduce(function(a,b){
+    return a.concat(b)},[]);
+console.log(flaten1);
