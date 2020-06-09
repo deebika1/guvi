@@ -30,7 +30,7 @@
           {className:"grid-item",style:{border:"2px solid black",height:"100px",width:"150px"}}     );
       const divelement=React.createElement(
           "div",
-        {className:"grid-container",style:{display:"grid",height:"100px",width:"500px",gridGap:"4px",gridTemplateColumns: "auto auto auto auto"}},
+        {className:"grid-container",style:{display:"grid",height:"70px",width:"80px",gridGap:"4px",gridTemplateColumns: "auto auto auto auto"}},
           
           element,
           element,
