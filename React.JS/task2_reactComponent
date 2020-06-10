@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Session</title>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  
+<body style="background-color:black">
+    <div id="body"></div>
+    <script type="text/babel">
+    const Header=()=> <div className="mine" style={{color:"red",width:"971px",height:"250px",backgroundColor:"brown",marginLeft:"50px"}}>
+    <h1 style={{color:"white",marginLeft:"42px",marginTop:"0px"}}>PIXEL GEEK</h1>
+    <h3 style={{color:"white",marginLeft:"361px",marginTop:"-44px"}}>VIDEOS</h3>
+    <h3 style={{color:"white",marginLeft:"470px",marginTop:"-35px"}}>RAMBLES</h3>
+    <h3 style={{color:"white",marginLeft:"602px",marginTop:"-35px"}}>PROJECTS</h3>
+    <h3 style={{color:"white",marginLeft:"742px",marginTop:"-35px"}}>THE</h3>
+    <h3 style={{color:"white",marginLeft:"797px",marginTop:"-35px"}}>OVERFLOW</h3>
+
+    </div>;
+    const Main=()=> <div className="mi" style={{color:"red",width:"220px",height:"800px",backgroundColor:"gray",marginLeft:"1021px",marginTop:"-250px",marginRight:"0px"}}></div>;
+    const Left=()=> <div className="left" style={{color:"red",width:"971px",height:"547px",backgroundColor:"gray",marginLeft:"50px",marginTop:"-550px"}}></div>;
+    const White=()=> <div className="left" style={{color:"red",width:"900px",height:"670px",backgroundColor:"white",marginLeft:"121px",marginTop:"-735px"}}>
+    <h1 style={{color:"brown",marginLeft:"47px"}}>Rejection is hard</h1>
+    <hr></hr>
+    <br></br>
+    <h6 style={{color:"gray",marginLeft:"47px"}}>FEBRUARY 12,2019</h6>
+    <p style={{fontSize:"20px",color:"black",marginLeft:"47px"}}>We are taught rejection at an early age when we want to do</p>
+    <p style={{fontSize:"20px",color:"black",marginLeft:"47px"}}>something or get something and ur parents say "no".</p>
+    <br></br>
+    <p style={{fontSize:"20px",color:"black",marginLeft:"47px"}}>Rejection also happens when:</p>
+    <ul>
+  <li style={{fontSize:"20px",color:"black",marginLeft:"47px"}}>we are aiming for a certain grade in school and we  don't get it.</li>
+  <br></br>
+  <li style={{fontSize:"20px",color:"black",marginLeft:"47px"}}>you want a boyfriend or girlfriend and he/she says"no.I don't like you in that way".</li>
+  <br></br>
+  <li style={{fontSize:"20px",color:"black",marginLeft:"47px"}}>you go through an interview process for a job and you don't get the position.</li>
+  <br></br>
+  <li style={{fontSize:"20px",color:"black",marginLeft:"47px"}}>when you work so hard to get a client and your proposal gets rejected.</li>
+</ul>  
+<br></br>
+<p style={{fontSize:"20px",color:"black",marginLeft:"47px"}}>At the root of it all,we all want something so bad and when life says</p>
+<p style={{fontSize:"20px",color:"black",marginLeft:"47px"}}>no,you can't have it,we get mad and either take it out on someone</p>
+<p style={{fontSize:"20px",color:"black",marginLeft:"47px"}}>else,something else or worse,ourselves.</p>
+<br></br>
+<p style={{fontSize:"20px",color:"black",marginLeft:"47px"}}>Rejection is part of life and its ok to be rejected.</p>
+
+    </div>;
+       
+        const App= () =>{
+            return (
+                <div>
+                <Header/>
+                <Main />
+                <Left />
+                <White />
+                </div>
+            );
+        };
+        ReactDOM.render(<App/>,document.getElementById("body"));
+    </script>
+    </body>
+    </html>
