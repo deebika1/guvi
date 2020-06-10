@@ -17,17 +17,17 @@
       src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
-  
+ 
 <body style="background-color:black">
     <div id="body"></div>
     <script type="text/babel">
     const Header=()=> <div className="mine" style={{color:"red",width:"971px",height:"250px",backgroundColor:"brown",marginLeft:"50px"}}>
     <h1 style={{color:"white",marginLeft:"42px",marginTop:"0px"}}>PIXEL GEEK</h1>
-    <h3 style={{color:"white",marginLeft:"361px",marginTop:"-44px"}}>VIDEOS</h3>
-    <h3 style={{color:"white",marginLeft:"470px",marginTop:"-35px"}}>RAMBLES</h3>
-    <h3 style={{color:"white",marginLeft:"602px",marginTop:"-35px"}}>PROJECTS</h3>
-    <h3 style={{color:"white",marginLeft:"742px",marginTop:"-35px"}}>THE</h3>
-    <h3 style={{color:"white",marginLeft:"797px",marginTop:"-35px"}}>OVERFLOW</h3>
+    <h3 style={{color:"white",marginLeft:"348px",marginTop:"-44px"}}>VIDEOS &#9632;</h3>
+    <h3 style={{color:"white",marginLeft:"465px",marginTop:"-35px"}}>RAMBLES &#9632;</h3>
+    <h3 style={{color:"white",marginLeft:"602px",marginTop:"-35px"}}>PROJECTS &#9632;</h3>
+    <h3 style={{color:"white",marginLeft:"748px",marginTop:"-35px"}}>THE</h3>
+    <h3 style={{color:"white",marginLeft:"797px",marginTop:"-35px"}}>OVERFLOW &#9632;</h3>
 
     </div>;
     const Main=()=> <div className="mi" style={{color:"red",width:"220px",height:"800px",backgroundColor:"gray",marginLeft:"1021px",marginTop:"-250px",marginRight:"0px"}}></div>;
