@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root">Hello JAVASCRIPT</div>
+
+    <script type="text/babel">
+      
+      const Count = ({ value }) => {
+        return <p>{value}</p>;
+      };
+
+      const CounterApp = () => {
+        const [number, setNumber] = React.useState(0);
+
+        const increment = () => {
+          setNumber(number + 1);
+        };
+
+        const decrement = () => {
+          setNumber(number - 1);
+        };
+
+        return (
+          <div>
+            <Count value={number} />
+            <button onClick={increment}>Increment</button> &nbsp;&nbsp;&nbsp;&nbsp;
+            <button onClick={decrement}>Decrement</button>
+            <br></br>
+            <br></br>
+            <Count value={number} />
+            <button onClick={<add/>}>Add</button>
+          </div>
+        );
+      }
+
+      const App = () => {
+        const [view, setView] = React.useState("app");
+
+        return (
+          <div>
+            <h1>{view === "home" ? "This is Home" : "Couter App"}</h1>
+            <button
+              onClick={() =>
+                view === "home" ? setView("app") : setView("home")
+              }
+            >
+              {view === "home" ? "Go to App" : "Go to Home"}
+            </button>
+            {view === "home" ? null : <CounterApp />}
+          </div>
+        );
+      };
+
+      const Count1 = ({ value1 }) => {
+        return <p>{value1}</p>;
+      };
+      const add=() =>{
+            
+            const [number1, setNumber2] = React.useState(0);
+
+        const increment1 = () => {
+          setNumber(number1+ 1);
+        };
+
+        const decrement1 = () => {
+          setNumber(number1 - 1);
+        };
+        
+        return (
+          <div>
+            <Count1 value1={number1} />
+            <button onClick={increment1}>Increment</button> &nbsp;&nbsp;&nbsp;&nbsp;
+            <button onClick={decrement1}>Decrement</button>
+        </div>
+        );
+      }
+      
+
+
+
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+
+      // const reRender = () => {
+      // ReactDOM.render(<App />, document.getElementById("root"));
+      // };
+
+      // reRender();
+    </script>
+  </body>
+</html>
