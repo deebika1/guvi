@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Session</title>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+ 
+<body>
+    <div id="body"></div>
+    <script type="text/babel">
+    const Header=()=> <div className="mine" style={{color:"black",width:"1020px",height:"241px",backgroundColor:"lightGreen",marginLeft:"95px"}}>
+        <img src="deebi.jpg"  style={{width:"150px",marginLeft:"55px"}}></img>
+        <h1 style={{color:"black",fontSize:"60px",marginLeft:"415px",marginTop:"-156px"}}>DEEBIKA</h1><br></br>
+        <img src="address.png"  style={{width:"44px",marginLeft:"415px",marginTop:"-9px",height:"35px"}}></img>
+            <h3 style={{color:"black",marginLeft:"457px",marginTop:"-33px"}}> 
+                Address: 8,Mariamman kovil street,muthiyalpet,puducherry-605003<br></br></h3>
+                <img src="phone.jpg"  style={{width:"20px",marginLeft:"415px",marginTop:"-1px",height:"20px"}}></img>
+                 <h3 style={{color:"black",marginLeft:"457px",marginTop:"-14px"}}> 
+                Phone No: 96291247587<br></br> </h3>
+                <img src="gmail.jpg"  style={{width:"20px",marginLeft:"415px",marginTop:"1px",height:"20px"}}></img>
+                <h3 style={{color:"black",marginLeft:"457px",marginTop:"-24px"}}> 
+                Mail Id: deebikakishore22@gmail.com.
+            </h3>
+
+            <h3 style={{color:"green",marginLeft:"1px"}}>PROFILE</h3>
+            <p style={{marginLeft:"1px"}}>To be associated with the progressive organization that give me scope to apply my knowledge and skill to envelope as the part of the team</p>
+            <p style={{marginLeft:"1px"}}>that dynamically works towards the growth of the organization</p>
+            <h3 style={{color:"green",marginLeft:"1px"}}>WORKING EXPIRENCES</h3>
+                <p style={{marginLeft:"1px"}}>Though i am a fresher i am not having any working experiences.</p>
+                <h3 style={{color:"green",marginLeft:"1px"}}>EXTRA CIRICULAR ACTIVITIES</h3>
+                    <ul style={{marginLeft:"1px"}}>
+                        <li> Member of organizing committee of various events in college.</li>
+                    <li>Effectively communicate information to others in an essential part of any workplaces.</li>
+                    </ul>
+
+
+                    <h3 style={{color:"green",marginLeft:"1px"}}>SKILLS</h3>
+                  <ul style={{marginLeft:"1px"}}>
+                      <li>Language Known: C </li>
+                    <li>Software Tools:</li>
+                    <li>    Cisco Packet Tracker</li>
+                    <li>VHDL</li>
+                    <li>Multisim</li>
+                      </ul>
+
+                      <h3 style={{color:"green",marginLeft:"1px"}}>EDUCATION</h3>
+            <h4 style={{marginLeft:"41px"}}>DEGREE</h4>
+        <ul style={{marginLeft:"1px"}}>
+            <li>Sri Manakula Vinayagar Engineering College Puducherry.</li>
+        <li>Electronics and Communication Enginerring. (Pursuing)</li>
+            <li>9.07 CGPA</li>
+            <h4 style={{marginLeft:"1px"}}>HSC</h4>
+            
+                <li>Amalorpavam higher secondary school, Puducherry.</li>
+                <li>87.5%</li>
+                <li>2016</li>
+         <h4 style={{marginLeft:"1px"}}>SLC:</h4>
+         <li>Sri Sankara Vidhayalaya Marticulation Higher Secondary School, Puducherry.</li>
+            <li>86.6%</li>
+            <li>2014</li>
+            </ul>
+
+
+            <h3 style={{color:"green",margiLeft:"1px"}}>PERSONAL TRAITS</h3>
+            <ul style={{marginLeft:"1px"}}>
+                <li> Self disciplined</li>
+                <li> Positive emotionality</li>
+                <li> Open with new and different ideas </li>
+                <li> Self confidence </li>
+            </ul>
+            <h3 style={{color:"green",marginLeft:"qpx"}}> PERSONAL PROFILE</h3>
+            <ul style={{marginLeft:"1px"}}>
+            <p style={{marginLeft:"1px"}}>Date of birth          : 22nd Oct 1999</p>
+            <p style={{marginLeft:"1px"}}>  Father’s Name       : Ganapathy. V.A</p>
+            <p style={{marginLeft:"1px"}}>  Mother’s Name      : Managalam. G </p>
+            <p style={{marginLeft:"1px"}}> Address                   : No.8, Mariamman Kovil Street,  Muthiya Mudhaliyarpet, Muthiyalpet, Puducherry-60500 </p>
+                   <p style={{marginLeft:"1px"}}> Language known   : English,Tamil </p>
+         </ul>
+    </div>;
+    const Footer=()=> <div className="mi" style={{color:"red",width:"220px",height:"1335px",backgroundColor:"gray",marginLeft:"1116px",marginTop:"-250px",marginRight:"0px"}}>
+      <img src="in.png"  style={{width:"20px",marginLeft:"415px",marginTop:"1px",height:"20px"}}></img>
+    </div>;
+    
+       
+        const App= () =>{
+            return (
+                <div>
+                <Header/>
+                 <Footer/>
+                </div>
+            );
+        };
+        ReactDOM.render(<App/>,document.getElementById("body"));
+    </script>
+    </body>
+    </html>
