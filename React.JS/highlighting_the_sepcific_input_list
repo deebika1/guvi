@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="ishu"></div>
+    <script type="text/babel">
+      const Inputs = () => {
+        const [value, setValue] = React.useState(" ");
+        const [todos, settodos] = React.useState([]);
+        const [todoindex, settodoindex] = React.useState([]);
+
+        const display = () => {
+          settodos(todos.concat([value]));
+          console.log(todos);
+          setValue("");
+        };
+        const remove = () => {
+          settodos(numbers.filter((value, key) => key !== i));
+        };
+
+        const Button = ({ onClick, value }) => (
+          <button onClick={onClick}>{value}</button>
+        );
+
+        return (
+          <div>
+            <input
+              type="text"
+              value={value}
+              onChange={(event) => setValue(event.target.value)}
+            />
+
+            <button onClick={display}>clickme</button>
+            <ul>
+              {todos.map((todo, index) => (
+                <li
+                  key={index}
+                  onMouseEnter={() => settodoindex(index)}
+                  style={{
+                    background: index == todoindex ? "lightGreen" : "pink",
+                  }}
+                  key={index}
+                >
+                  {todo}
+                  <button
+                    onClick={() =>
+                      settodos(todos.filter((count, i) => index !== i))
+                    }
+                  >
+                    {" "}
+                    &#10006;
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        );
+      };
+
+      ReactDOM.render(<Inputs />, document.getElementById("ishu"));
+    </script>
+  </body>
+</html>
