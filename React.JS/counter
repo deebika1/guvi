@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root">Hello JAVASCRIPT</div>
+    <script type="text/babel">
+      const Count = ({ value }) => {
+        return <p>{value}</p>;
+      };
+
+      
+      const Counnter = ({ count, increment, decrement, remove }) => (
+        <div>
+          <Count value={count} />
+          <Button onClick={increment} value={"Increment"} />
+          <Button onClick={decrement} value={"Decrement"} />
+          <Button onClick={remove} value={"Remove Counter"} />
+        </div>
+      );
+
+      const CounterApp = () => {
+        const [numbers, setNumbers] = React.useState([1,2,3,4,5]);
+
+        const increment = (index) => {
+          console.log(numbers);
+          console.log(index);
+          setNumbers(
+            numbers.map((element, i) => (i === index ? element + 1 : element))
+          );
+        };
+        const decrement = index => {
+          setNumbers(
+            numbers.map((element, i) => (i === index ? element - 1 : element))
+          );
+        };
+        return (
+          <div>
+            {numbers.map(function(element, index) {
+              return (
+                <Counnter
+                  key={index}
+                  count={element}
+                  increment={() => increment(index)}
+                  decrement={() => decrement(index)}
+                  remove={() =>
+                    setNumbers(numbers.filter((count, i) => index !== i))
+                  }
+                />
+              );
+            })}
+            <Button
+              onClick={() => setNumbers(numbers.concat([0]))}
+              value={"Add Couter"}
+            />
+          </div>
+        );
+      };
+      ReactDOM.render(<CounterApp />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
