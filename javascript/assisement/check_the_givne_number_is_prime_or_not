@@ -1,0 +1,28 @@
+const readline=require('readline');
+const inp=readline.createInterface({
+    input:process.stdin
+});
+const user=[];
+inp.on('line',(data)=>{
+    user.push(data)
+});
+inp.on('close',()=>{
+ var c=0;
+ var n=parseInt(user[0]);
+ for(var i=2;i<=n;i++)
+ {
+     if(n%i==0 && n!=i)
+     {
+         c=1;
+     }
+ }
+ if(c==0)
+ {
+     console.log("prime");
+ }
+ else
+ {
+     console.log("not a prime");
+ }
+ 
+})
