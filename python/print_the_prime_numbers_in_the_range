@@ -1,0 +1,19 @@
+/*Given a number N, print all prime numbers less than N(in ascending order).
+Input Size : 1 <= N <= 100000
+Sample Testcase :
+INPUT
+10
+OUTPUT
+2 3 5 7
+*/
+n=int(input())
+arr=[]
+for num in range(0,n+1):
+   # all prime numbers are greater than 1
+   if num > 1:
+       for i in range(2, num):
+           if (num % i) == 0:
+               break
+       else:
+           arr.append(str(num))
+print(" ".join(arr))
