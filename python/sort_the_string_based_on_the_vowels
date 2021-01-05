@@ -1,0 +1,58 @@
+/* input: 
+3 
+ Vishal 
+ Aaae 
+ Awqr
+ 
+ output:
+ Aaae
+Vishal
+Awqr
+
+explantion:
+
+based on the vowels count....sort the number of present in the string based on the decedning order.. print the output
+*/
+n=int(input())
+s1=input()
+s2=input()
+s3=input()
+print(n,"\n",s1,"\n",s2,"\n",s3)
+count1=0;
+count2=0;
+a=[]
+b=[]
+count3=0
+for i in s1:
+    if(i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U'):
+        count1=count1+1
+# print(count1)
+a.append(count1)
+b.append(s1)
+for i in s2:
+   if(i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U'):
+
+        count2=count2+1
+# print(count2)
+a.append(count2)
+b.append(s2)
+for i in s3:
+    if(i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U'):
+
+        count3=count3+1
+# print(count3)
+a.append(count3)
+b.append(s3)
+p=[]
+result=list(sorted(a,reverse=True))
+# print(result)
+for i in range(0,len(result)):
+    for j in range(0,len(a)):
+        if result[i]==a[j] :
+            # print(result[i],a[j])
+            # print("hii")
+            # print(b[j])
+            print(b[j])
+            p.append(b[j])
+# print(p)
+
